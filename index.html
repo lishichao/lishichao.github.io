@@ -332,18 +332,15 @@
             <p><img src="http://i4.piimg.com/5daa87b3f5ce23a2.jpg" alt=""></p>
 <p>之前的一段时间在学习swift，觉得可以出师了，哈哈哈，遂打算把oc 和swift混编起来，混起来才发现远远比想象的要复杂。当然在这个过程中，自己也学到了不少知识，享受到了不少乐趣，简记下来，也算是对自己的一个总结，如果能帮到别人那是更好不过的啦！好啦，开始吧！</p>
 <p>因为当前正在做的项目是用oc 写的，也不打算用swift重新写一遍，所以直接在当前项目里加入swift代码，这当然是允许的，不过在此之前要做一些准备工作。</p>
-<p>1.创建桥接文件</p>
-<p>首先我们直接在当前项目上新增加一个文件，语言选择swift，然后创建，此时，会弹出一个框，询问你是否需要Xcode自动帮你创建一个桥接文件，当然我们选择是啦！点击“Create Bridging Header”</p>
+<h1 id="创建桥接文件"><a href="#创建桥接文件" class="headerlink" title="创建桥接文件"></a>创建桥接文件</h1><p>首先我们直接在当前项目上新增加一个文件，语言选择swift，然后创建，此时，会弹出一个框，询问你是否需要Xcode自动帮你创建一个桥接文件，当然我们选择是啦！点击“Create Bridging Header”</p>
 <p>505C3601-7BD3-4F2C-AA9C-5C47145558E3.png</p>
 <p>然后我们就发现，项目目录下多了两个文件：一个是我们创建的文件，另外一个是Xcode给我们创建的桥接文件：</p>
 <p>B2397BB8-DABC-4B44-A676-9B71913E2E82.png</p>
 <p>但是别着急，看见了吗，报错啦！这是为什么呢？因为我新创建的文件是继承了一个之前oc 写的类作为父类，但是其实swift并不知道这个类是谁，此时Xcode为我们创建的桥接文件就应该发挥作用了，以后swift的类和oc 的类要通信就靠它了，刚才那个红叉怎么解决呢，别急，接下来就说这个问题。</p>
-<p>2.oc 和swift通信的中间人</p>
-<p>当然就是这个桥接文件了。我们把swift 要引入的oc 的类，在这个文件里导入，然后再Command+B 一下，看，红叉没有了</p>
+<h1 id="oc-和swift通信的中间人"><a href="#oc-和swift通信的中间人" class="headerlink" title="oc 和swift通信的中间人"></a>oc 和swift通信的中间人</h1><p>当然就是这个桥接文件了。我们把swift 要引入的oc 的类，在这个文件里导入，然后再Command+B 一下，看，红叉没有了</p>
 <p>A47BB66F-2291-4791-B7D2-B75379B0EEF8.png</p>
 <p>以后，swift 要用到哪个oc 的类，import 到这个 桥接文件，这样，swift类就可以愉快得和oc 的类进行通信了。</p>
-<p>3.oc 文件使用swift</p>
-<p>那反过来怎么办呢？也很简单，在你需要使用的那个类里边，import 这样一个文件 “项目名-Swift.h”：</p>
+<h1 id="oc-文件使用swift"><a href="#oc-文件使用swift" class="headerlink" title="oc 文件使用swift"></a>oc 文件使用swift</h1><p>那反过来怎么办呢？也很简单，在你需要使用的那个类里边，import 这样一个文件 “项目名-Swift.h”：</p>
 <p>8E2FD4C0-4DF2-4A1B-BB66-9F0D43E5BF35.png</p>
 <p>这样oc 就可以访问swift了。是不是so easy!</p>
 <p>在这里我的项目是叫做 iHome，所以我在oc 类里导入的就是 iHome-Swift.h,后缀 “-Swift.h” 不能变，按住Command键，点进这个 iHome-Swift.h 看到了什么？这里边是swift映射成可以被oc 识别的代码。</p>
