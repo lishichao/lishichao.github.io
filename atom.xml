@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lishichao.github.io/"/>
-  <updated>2016-04-19T14:35:07.000Z</updated>
+  <updated>2016-04-19T14:37:51.000Z</updated>
   <id>http://lishichao.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://lishichao.github.io/2016/04/18/iOS-%E6%94%AF%E4%BB%98-%E6%94%AF%E4%BB%98%E5%AE%9D%E3%80%81%E9%93%B6%E8%81%94%E3%80%81%E5%BE%AE%E4%BF%A1/"/>
     <id>http://lishichao.github.io/2016/04/18/iOS-支付-支付宝、银联、微信/</id>
     <published>2016-04-18T09:19:20.000Z</published>
-    <updated>2016-04-19T14:35:07.000Z</updated>
+    <updated>2016-04-19T14:37:51.000Z</updated>
     
     <content type="html">&lt;h4 id=&quot;这是开头语&quot;&gt;&lt;a href=&quot;#这是开头语&quot; class=&quot;headerlink&quot; title=&quot;这是开头语&quot;&gt;&lt;/a&gt;这是开头语&lt;/h4&gt;&lt;p&gt;前不久做了一个项目，涉及到支付宝和银联支付，支付宝和银联都是业界的老大哥，文档、SDK都是很屌，屌的找不到，屌的看不懂，屌到没朋友（吐槽而已），本文将涉及到的最新可用SDK、文档，以及本人支付遇到的一些坑标记一下。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&quot;资料&quot;&gt;&lt;a href=&quot;#资料&quot; class=&quot;headerlink&quot; title=&quot;资料&quot;&gt;&lt;/a&gt;资料&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lishichao/alipay&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;支付宝&lt;/a&gt;   //文档idk都包含了安卓、iOS版&lt;br&gt;&lt;a href=&quot;https://github.com/lishichao/unionpay&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;银 联&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://lishichao.com/Development_kit85427986.rar&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;银联官网资料&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/lishichao/MCPayDemo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
@@ -77,12 +77,12 @@
     <link href="http://lishichao.github.io/2016/04/13/%E8%B0%88%E4%B8%80%E4%B8%8B%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
     <id>http://lishichao.github.io/2016/04/13/谈一下我的博客/</id>
     <published>2016-04-12T16:25:03.000Z</published>
-    <updated>2016-04-18T09:24:03.000Z</updated>
+    <updated>2016-04-19T14:38:09.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;http://i4.piimg.com/6a3895a461aa3d1f.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;h3 id=&quot;博客终于上线啦&quot;&gt;&lt;a href=&quot;#博客终于上线啦&quot; class=&quot;headerlink&quot; title=&quot;博客终于上线啦&quot;&gt;&lt;/a&gt;博客终于上线啦&lt;/h3&gt;&lt;p&gt;一直想搭建一个属于自己的个人博客，最近几天抽出时间，今天终于正式上线。&lt;/p&gt;
 &lt;p&gt;我曾用过新浪博客，简书，LOFTER，OSChina，CSDN，累觉不爱，今天终于可以用这个逼格极高的程序猿写作方式来续写自己的故事，分享自己的技术文章了。&lt;/p&gt;
-&lt;p&gt;现在发觉搭建的个人博客令人思想更自由，可以记录一切，更不怕随着博客平台的更换而丢失。&lt;/p&gt;
+&lt;p&gt;现在发觉搭建的个人博客令人思想更自由，可以记录一切，更不怕随着博客平台的更换而丢失。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;介绍下我的博客&quot;&gt;&lt;a href=&quot;#介绍下我的博客&quot; class=&quot;headerlink&quot; title=&quot;介绍下我的博客&quot;&gt;&lt;/a&gt;介绍下我的博客&lt;/h3&gt;&lt;p&gt;介绍博客之前，要先麻烦朋友记住一个名字：lishichao。为什么要记住它呢，因为域名是：lishichao.com啊！哈哈（冷）。&lt;/p&gt;
 &lt;p&gt;目前我的博客内容是同时挂载在两个地方GitHub、Coding以同时支持两个域名访问。&lt;/p&gt;
 &lt;p&gt;我的博客主要会包括&lt;strong&gt;技术&lt;/strong&gt;、&lt;strong&gt;艺术&lt;/strong&gt;和&lt;strong&gt;思考&lt;/strong&gt;。&lt;/p&gt;
@@ -104,7 +104,9 @@
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;http://i4.piimg.com/6a3895a461aa3d1f.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;博客终于上线啦&quot;&gt;&lt;a href=&quot;#博客终于上线啦&quot; class=&quot;headerlink&quot; title=&quot;博客终于上线啦&quot;&gt;&lt;/
+&lt;h3 id=&quot;博客终于上线啦&quot;&gt;&lt;a href=&quot;#博客终于上线啦&quot; class=&quot;headerlink&quot; title=&quot;博客终于上线啦&quot;&gt;&lt;/a&gt;博客终于上线啦&lt;/h3&gt;&lt;p&gt;一直想搭建一个属于自己的个人博客，最近几天抽出时间，今天终于正式上线。&lt;/p&gt;
+&lt;p&gt;我曾用过新浪博客，简书，LOFTER，OSChina，CSDN，累觉不爱，今天终于可以用这个逼格极高的程序猿写作方式来续写自己的故事，分享自己的技术文章了。&lt;/p&gt;
+&lt;p&gt;现在发觉搭建的个人博客令人思想更自由，可以记录一切，更不怕随着博客平台的更换而丢失。&lt;br&gt;
     
     </summary>
     
