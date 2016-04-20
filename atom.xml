@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lishichao.github.io/"/>
-  <updated>2016-04-20T11:12:58.000Z</updated>
+  <updated>2016-04-20T14:58:59.000Z</updated>
   <id>http://lishichao.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://lishichao.github.io/2016/04/18/iOS-%E6%94%AF%E4%BB%98-%E6%94%AF%E4%BB%98%E5%AE%9D%E3%80%81%E9%93%B6%E8%81%94%E3%80%81%E5%BE%AE%E4%BF%A1/"/>
     <id>http://lishichao.github.io/2016/04/18/iOS-支付-支付宝、银联、微信/</id>
     <published>2016-04-18T09:19:20.000Z</published>
-    <updated>2016-04-20T11:12:58.000Z</updated>
+    <updated>2016-04-20T14:58:59.000Z</updated>
     
     <content type="html">&lt;h4 id=&quot;这是开头语&quot;&gt;&lt;a href=&quot;#这是开头语&quot; class=&quot;headerlink&quot; title=&quot;这是开头语&quot;&gt;&lt;/a&gt;这是开头语&lt;/h4&gt;&lt;p&gt;前不久做了一个项目，涉及到支付宝和银联支付，支付宝和银联都是业界的老大哥，文档、SDK都是很屌，屌的找不到，屌的看不懂，屌到没朋友（吐槽而已），本文将涉及到的最新可用SDK、文档，以及本人支付遇到的一些坑标记一下。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&quot;资料&quot;&gt;&lt;a href=&quot;#资料&quot; class=&quot;headerlink&quot; title=&quot;资料&quot;&gt;&lt;/a&gt;资料&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lishichao/alipay&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;支付宝&lt;/a&gt;   //文档idk都包含了安卓、iOS版&lt;br&gt;&lt;a href=&quot;https://github.com/lishichao/unionpay&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;银 联&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://lishichao.com/Development_kit85427986.rar&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;银联官网资料&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/lishichao/MCPayDemo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
