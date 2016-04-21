@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lishichao.github.io/"/>
-  <updated>2016-04-21T08:42:58.000Z</updated>
+  <updated>2016-04-21T08:44:30.000Z</updated>
   <id>http://lishichao.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://lishichao.github.io/2016/04/21/App%E7%9A%84%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD/"/>
     <id>http://lishichao.github.io/2016/04/21/App的打赏功能/</id>
     <published>2016-04-21T06:45:31.000Z</published>
-    <updated>2016-04-21T08:42:58.000Z</updated>
+    <updated>2016-04-21T08:44:30.000Z</updated>
     
     <content type="html">&lt;h4 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;上一篇技术文章介绍了支付宝、微信、银联三大支付的集成步骤和文档说明。&lt;/li&gt;
@@ -34,7 +34,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;好了，闲话不在多说，现在步入正题，以我最近项目为例来简述打赏功能的实现，支付方式微信&lt;/p&gt;
+&lt;p&gt;好了，闲话不在多说，现在步入正题，以我最近项目为例来简述打赏功能的实现，支付方式微信&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&quot;打赏界面实现&quot;&gt;&lt;a href=&quot;#打赏界面实现&quot; class=&quot;headerlink&quot; title=&quot;打赏界面实现&quot;&gt;&lt;/a&gt;打赏界面实现&lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;利用AutoLayout很容易实现，UI这块的布局实现忽略，看效果图。&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/reward_ui.png&quot; alt=&quot;打赏界面&quot;&gt;&lt;/li&gt;
@@ -67,7 +67,17 @@
     
       &lt;h4 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;上一篇技术文章介绍了支付宝、微信、银联三大支付的集成步骤和文档说明。&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;今天带大家一起来分析实现下App的
+&lt;li&gt;&lt;p&gt;今天带大家一起来分析实现下App的打赏功能，步入正题前先说下现在打赏功能的重要性，微信红包功能在掀起一阵狂潮之后，热度已经散的差不多了，而逐渐崭露头角的打赏功能，已经流行在大部分的App里面。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;譬如支付宝、简书、新浪微博、Bilibili动画、落网等等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;那些网络主播，明明可以被用户免费看，却经常收获总额几十万的打赏。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;由此可见打赏功能的重要性，至于如何让你的纯干货刺激到用户打赏，关注&lt;a href=&quot;http://www.jianshu.com/users/ab8e592732ea/latest_articles&quot;&gt;我的简书&lt;/a&gt;，有文章说明。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;好了，闲话不在多说，现在步入正题，以我最近项目为例来简述打赏功能的实现，支付方式微信&lt;br&gt;
     
     </summary>
     

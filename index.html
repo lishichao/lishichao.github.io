@@ -290,7 +290,7 @@
             </time>
           </span>
 	
-	<span class="post-count">&nbsp; |&nbsp; 字数 1,721</span>
+	<span class="post-count">&nbsp; |&nbsp; 字数 1,726</span>
 
 	<span class="post-count">&nbsp; |&nbsp; 阅读预计 9分钟</span>
 
@@ -352,8 +352,7 @@
 
       
         
-          
-            <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><ul>
+          <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><ul>
 <li>上一篇技术文章介绍了支付宝、微信、银联三大支付的集成步骤和文档说明。</li>
 <li><p>今天带大家一起来分析实现下App的打赏功能，步入正题前先说下现在打赏功能的重要性，微信红包功能在掀起一阵狂潮之后，热度已经散的差不多了，而逐渐崭露头角的打赏功能，已经流行在大部分的App里面。</p>
 </li>
@@ -361,39 +360,16 @@
 </li>
 <li><p>那些网络主播，明明可以被用户免费看，却经常收获总额几十万的打赏。</p>
 </li>
-<li><p>由此可见打赏功能的重要性，至于如何让你的纯干货刺激到用户打赏，关注<a href="http://www.jianshu.com/users/ab8e592732ea/latest_articles" target="_blank" rel="external">我的简书</a>，有文章说明。</p>
+<li><p>由此可见打赏功能的重要性，至于如何让你的纯干货刺激到用户打赏，关注<a href="http://www.jianshu.com/users/ab8e592732ea/latest_articles">我的简书</a>，有文章说明。</p>
 </li>
 </ul>
 <blockquote>
-<p>好了，闲话不在多说，现在步入正题，以我最近项目为例来简述打赏功能的实现，支付方式微信</p>
-</blockquote>
-<h4 id="打赏界面实现"><a href="#打赏界面实现" class="headerlink" title="打赏界面实现"></a>打赏界面实现</h4><ol>
-<li>利用AutoLayout很容易实现，UI这块的布局实现忽略，看效果图。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/reward_ui.png" alt="打赏界面"></li>
-<li>引入微信开发者平台的sdk，具体见上篇文章，现在只介绍关键代码。</li>
-<li><p>需要用到的两个类文件</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">WXApiManager.h</span><br><span class="line"></span><br><span class="line">WXApiRequestHandler.h</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>点击按钮跳转微信</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">- (IBAction)onePayAction:(id)sender &#123;</span><br><span class="line">   NSString *price = @&quot;100&quot;;</span><br><span class="line">   NSString *rewardTitle = [NSString </span><br><span class="line">   stringWithFormat:@&quot;打赏独立音乐人：%@&quot;,_playerModel.songer];</span><br><span class="line">    NSString *response = [WXApiRequestHandler jumpToBizPay: price shopName:_rewardString];</span><br><span class="line">    [self payFailAlert: response];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>WXApiRequestHandler.m</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">+ (NSString *)jumpToBizPay:(NSString *)price shopName:(NSString *)shopName&#123;</span><br><span class="line"></span><br><span class="line">    //============================================================</span><br><span class="line">    // V3&amp;V4支付流程实现</span><br><span class="line">    // 注意:参数配置请查看服务器端Demo</span><br><span class="line">    // 更新时间：2015年11月20日</span><br><span class="line">    //============================================================</span><br><span class="line">    //https://api.mch.weixin.qq.com/pay/unifiedorder</span><br><span class="line">    //http://wxpay.weixin.qq.com/pub_v2/app/app_pay.php?plat=ios</span><br><span class="line">    BOOL isConnect = [CommonUtil connectedToNetwork];</span><br><span class="line">    if (!isConnect) &#123;</span><br><span class="line">        return  @&quot;网络不给力呀~&quot;;</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        NSString *url = @&quot;http://wxpay.weixin.qq.com/pub_v2/app/app_pay.php?plat=ios&quot;;</span><br><span class="line">        NSLog(@&quot;payUrl:%@&quot;,url);</span><br><span class="line">        url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];</span><br><span class="line">        [[[HttpAFNetworing shareInstance] httpMgr] GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) &#123;</span><br><span class="line">            NSLog(@&quot;responseObject:%@&quot;,responseObject);</span><br><span class="line">            NSDictionary *dict = responseObject;</span><br><span class="line">            if(responseObject != nil)&#123;</span><br><span class="line">                NSMutableString *retcode = [dict objectForKey:@&quot;retcode&quot;];</span><br><span class="line">                if (retcode.intValue == 0)&#123;</span><br><span class="line">                    NSMutableString *stamp  = [dict objectForKey:@&quot;timestamp&quot;];</span><br><span class="line">                    </span><br><span class="line">                //调起微信支付</span><br><span class="line">                PayReq* req = [[PayReq alloc] init];</span><br><span class="line">                req.partnerId = [dict objectForKey:@&quot;partnerid&quot;];</span><br><span class="line">                req.prepayId = [dict objectForKey:@&quot;prepayid&quot;];</span><br><span class="line">                req.nonceStr = [dict objectForKey:@&quot;noncestr&quot;];</span><br><span class="line">                req.timeStamp = stamp.intValue;</span><br><span class="line">                req.package = [dict objectForKey:@&quot;package&quot;];</span><br><span class="line">                req.sign = [dict objectForKey:@&quot;sign&quot;];</span><br><span class="line">                [WXApi sendReq:req];</span><br><span class="line">                    </span><br><span class="line">                //日志输出</span><br><span class="line">                NSLog(@&quot;appid=%@\npartid=%@\nprepayid=%@\nnoncestr=%@\ntimestamp=%ld\npackage=%@\nsign=%@&quot;,[dict objectForKey:@&quot;appid&quot;],req.partnerId,req.prepayId,req.nonceStr,(long)req.timeStamp,req.package,req.sign );</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; failure:^(AFHTTPRequestOperation *operation, NSError *error) &#123;</span><br><span class="line">            [CommonUtil NoNetWorkNotiTip];</span><br><span class="line">        &#125;];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    return @&quot;&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">- (void)payFailAlert:(NSString *)resp</span><br><span class="line">&#123;</span><br><span class="line">    if( ![@&quot;&quot; isEqual:resp] )&#123;</span><br><span class="line">        UIAlertView *alter = [[UIAlertView alloc] initWithTitle:@&quot;支付失败&quot; message:resp delegate:nil cancelButtonTitle:@&quot;OK&quot; otherButtonTitles:nil];</span><br><span class="line">        </span><br><span class="line">        [alter show];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</code></pre><h4 id="打赏完成界面实现"><a href="#打赏完成界面实现" class="headerlink" title="打赏完成界面实现"></a>打赏完成界面实现</h4><blockquote>
-<p>UI布局AutoLayout实现，不再贴代码</p>
-</blockquote>
-<p><img src="http://7xstl7.com1.z0.glb.clouddn.com/reward_succ.png" alt="打赏完成界面"></p>
-<h4 id="留言成功后分享打赏界面"><a href="#留言成功后分享打赏界面" class="headerlink" title="留言成功后分享打赏界面"></a>留言成功后分享打赏界面</h4><blockquote>
-<p>UI布局AutoLayout实现，不再贴代码</p>
-</blockquote>
-<p><img src="http://7xstl7.com1.z0.glb.clouddn.com/reward_share.png" alt="留言完成分享打赏界面"></p>
-<h4 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h4><ul>
-<li>如需要Demo后者布局代码的请留言。</li>
-</ul>
-
-          
+<p>好了，闲话不在多说，现在步入正题，以我最近项目为例来简述打赏功能的实现，支付方式微信<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/04/21/App的打赏功能/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
