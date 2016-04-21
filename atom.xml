@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lishichao.github.io/"/>
-  <updated>2016-04-20T14:58:59.000Z</updated>
+  <updated>2016-04-21T08:42:58.000Z</updated>
   <id>http://lishichao.github.io/</id>
   
   <author>
@@ -14,6 +14,69 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>App的打赏功能</title>
+    <link href="http://lishichao.github.io/2016/04/21/App%E7%9A%84%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD/"/>
+    <id>http://lishichao.github.io/2016/04/21/App的打赏功能/</id>
+    <published>2016-04-21T06:45:31.000Z</published>
+    <updated>2016-04-21T08:42:58.000Z</updated>
+    
+    <content type="html">&lt;h4 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;上一篇技术文章介绍了支付宝、微信、银联三大支付的集成步骤和文档说明。&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;今天带大家一起来分析实现下App的打赏功能，步入正题前先说下现在打赏功能的重要性，微信红包功能在掀起一阵狂潮之后，热度已经散的差不多了，而逐渐崭露头角的打赏功能，已经流行在大部分的App里面。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;譬如支付宝、简书、新浪微博、Bilibili动画、落网等等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;那些网络主播，明明可以被用户免费看，却经常收获总额几十万的打赏。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;由此可见打赏功能的重要性，至于如何让你的纯干货刺激到用户打赏，关注&lt;a href=&quot;http://www.jianshu.com/users/ab8e592732ea/latest_articles&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;我的简书&lt;/a&gt;，有文章说明。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;好了，闲话不在多说，现在步入正题，以我最近项目为例来简述打赏功能的实现，支付方式微信&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;打赏界面实现&quot;&gt;&lt;a href=&quot;#打赏界面实现&quot; class=&quot;headerlink&quot; title=&quot;打赏界面实现&quot;&gt;&lt;/a&gt;打赏界面实现&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;利用AutoLayout很容易实现，UI这块的布局实现忽略，看效果图。&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/reward_ui.png&quot; alt=&quot;打赏界面&quot;&gt;&lt;/li&gt;
+&lt;li&gt;引入微信开发者平台的sdk，具体见上篇文章，现在只介绍关键代码。&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;需要用到的两个类文件&lt;/p&gt;
+ &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;WXApiManager.h&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;WXApiRequestHandler.h&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击按钮跳转微信&lt;/p&gt;
+ &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;- (IBAction)onePayAction:(id)sender &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   NSString *price = @&amp;quot;100&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   NSString *rewardTitle = [NSString &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   stringWithFormat:@&amp;quot;打赏独立音乐人：%@&amp;quot;,_playerModel.songer];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    NSString *response = [WXApiRequestHandler jumpToBizPay: price shopName:_rewardString];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    [self payFailAlert: response];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;WXApiRequestHandler.m&lt;/p&gt;
+ &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;+ (NSString *)jumpToBizPay:(NSString *)price shopName:(NSString *)shopName&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    //============================================================&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    // V3&amp;amp;V4支付流程实现&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    // 注意:参数配置请查看服务器端Demo&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    // 更新时间：2015年11月20日&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    //============================================================&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    //https://api.mch.weixin.qq.com/pay/unifiedorder&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    //http://wxpay.weixin.qq.com/pub_v2/app/app_pay.php?plat=ios&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    BOOL isConnect = [CommonUtil connectedToNetwork];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    if (!isConnect) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        return  @&amp;quot;网络不给力呀~&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;else&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        NSString *url = @&amp;quot;http://wxpay.weixin.qq.com/pub_v2/app/app_pay.php?plat=ios&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        NSLog(@&amp;quot;payUrl:%@&amp;quot;,url);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        [[[HttpAFNetworing shareInstance] httpMgr] GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            NSLog(@&amp;quot;responseObject:%@&amp;quot;,responseObject);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            NSDictionary *dict = responseObject;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            if(responseObject != nil)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                NSMutableString *retcode = [dict objectForKey:@&amp;quot;retcode&amp;quot;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                if (retcode.intValue == 0)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    NSMutableString *stamp  = [dict objectForKey:@&amp;quot;timestamp&amp;quot;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                //调起微信支付&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                PayReq* req = [[PayReq alloc] init];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                req.partnerId = [dict objectForKey:@&amp;quot;partnerid&amp;quot;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                req.prepayId = [dict objectForKey:@&amp;quot;prepayid&amp;quot;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                req.nonceStr = [dict objectForKey:@&amp;quot;noncestr&amp;quot;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                req.timeStamp = stamp.intValue;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                req.package = [dict objectForKey:@&amp;quot;package&amp;quot;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                req.sign = [dict objectForKey:@&amp;quot;sign&amp;quot;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                [WXApi sendReq:req];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                //日志输出&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                NSLog(@&amp;quot;appid=%@\npartid=%@\nprepayid=%@\nnoncestr=%@\ntimestamp=%ld\npackage=%@\nsign=%@&amp;quot;,[dict objectForKey:@&amp;quot;appid&amp;quot;],req.partnerId,req.prepayId,req.nonceStr,(long)req.timeStamp,req.package,req.sign );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125; failure:^(AFHTTPRequestOperation *operation, NSError *error) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            [CommonUtil NoNetWorkNotiTip];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    return @&amp;quot;&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;- (void)payFailAlert:(NSString *)resp&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    if( ![@&amp;quot;&amp;quot; isEqual:resp] )&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        UIAlertView *alter = [[UIAlertView alloc] initWithTitle:@&amp;quot;支付失败&amp;quot; message:resp delegate:nil cancelButtonTitle:@&amp;quot;OK&amp;quot; otherButtonTitles:nil];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        [alter show];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;打赏完成界面实现&quot;&gt;&lt;a href=&quot;#打赏完成界面实现&quot; class=&quot;headerlink&quot; title=&quot;打赏完成界面实现&quot;&gt;&lt;/a&gt;打赏完成界面实现&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;UI布局AutoLayout实现，不再贴代码&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/reward_succ.png&quot; alt=&quot;打赏完成界面&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;留言成功后分享打赏界面&quot;&gt;&lt;a href=&quot;#留言成功后分享打赏界面&quot; class=&quot;headerlink&quot; title=&quot;留言成功后分享打赏界面&quot;&gt;&lt;/a&gt;留言成功后分享打赏界面&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;UI布局AutoLayout实现，不再贴代码&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/reward_share.png&quot; alt=&quot;留言完成分享打赏界面&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;结束&quot;&gt;&lt;a href=&quot;#结束&quot; class=&quot;headerlink&quot; title=&quot;结束&quot;&gt;&lt;/a&gt;结束&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;如需要Demo后者布局代码的请留言。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;上一篇技术文章介绍了支付宝、微信、银联三大支付的集成步骤和文档说明。&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;今天带大家一起来分析实现下App的
+    
+    </summary>
+    
+      <category term="iOS技术" scheme="http://lishichao.github.io/categories/iOS%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="iOS技术归纳" scheme="http://lishichao.github.io/tags/iOS%E6%8A%80%E6%9C%AF%E5%BD%92%E7%BA%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>iOS 支付 [支付宝、银联、微信]</title>
