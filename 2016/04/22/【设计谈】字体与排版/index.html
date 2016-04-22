@@ -1,0 +1,943 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="设计,design," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Amin_iOS·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/uploads/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="无论你是做网页还是App设计，文字内容总是能占到整个版面将近80%的区域。因此理解字体与排版对UI设计师来说非常关键。你需要始终把内容的可读性放在首位去考虑和权衡你对字体与排版的选择。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【设计谈】字体与排版">
+<meta property="og:url" content="http://lishichao.github.io/2016/04/22/【设计谈】字体与排版/index.html">
+<meta property="og:site_name" content="Amin_iOS·Blog">
+<meta property="og:description" content="无论你是做网页还是App设计，文字内容总是能占到整个版面将近80%的区域。因此理解字体与排版对UI设计师来说非常关键。你需要始终把内容的可读性放在首位去考虑和权衡你对字体与排版的选择。">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_1.jpg">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_2.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_4.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_5.jpg">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_6.jpg">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_7.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_8.jpg">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_9.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_10.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_11.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_12.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_13.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_14.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_15.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_16.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_17.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_18.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_19.jpg">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_20.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_21.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_22.png">
+<meta property="og:updated_time" content="2016-04-22T10:45:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【设计谈】字体与排版">
+<meta name="twitter:description" content="无论你是做网页还是App设计，文字内容总是能占到整个版面将近80%的区域。因此理解字体与排版对UI设计师来说非常关键。你需要始终把内容的可读性放在首位去考虑和权衡你对字体与排版的选择。">
+<meta name="twitter:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_1.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 【设计谈】字体与排版 | Amin_iOS·Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Amin_iOS·Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">从这里，开启梦想之门！</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbook">
+          <a href="/guestbook" rel="section">
+            
+              <i class="menu-item-icon fa fa-commenting fa-fw"></i> <br />
+            
+            留言
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'SpFc6UCUJ1z1Hz2YFnz7','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                【设计谈】字体与排版
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-22T17:55:47+08:00" content="2016-04-22">
+              2016-04-22
+            </time>
+          </span>
+	
+	<span class="post-count">&nbsp; |&nbsp; 字数 4,182</span>
+
+	<span class="post-count">&nbsp; |&nbsp; 阅读预计 19分钟</span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/设计/" itemprop="url" rel="index">
+                    <span itemprop="name">设计</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/22/【设计谈】字体与排版/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/22/【设计谈】字体与排版/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/04/22/【设计谈】字体与排版/" class="leancloud_visitors" data-flag-title="【设计谈】字体与排版">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>无论你是做网页还是App设计，文字内容总是能占到整个版面将近80%的区域。因此理解字体与排版对UI设计师来说非常关键。你需要始终把内容的可读性放在首位去考虑和权衡你对字体与排版的选择。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_1.jpg" alt=""><br><a id="more"></a></p>
+<h3 id="字体的基础术语"><a href="#字体的基础术语" class="headerlink" title="字体的基础术语"></a>字体的基础术语</h3><p>了解字体设计的基础术语非常重要，这些术语在介绍字体设计的相关文章中经常出现。比如 x-height（X字高）指的是从字母的基准线开始往上到最矮字母的顶端的距离，当X字高的比例相对大一些的话就能增加易读性。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_2.png" alt=""></p>
+<h3 id="衬线字与非衬线字"><a href="#衬线字与非衬线字" class="headerlink" title="衬线字与非衬线字"></a>衬线字与非衬线字</h3><p>在西方国家的字母体系，分成两大字族：serif（衬线字体）及sans serif（无衬线字体）。衬线字（下图中的宋体、Times New Roman）是指在字的笔画开始及结束的地方有额外的装饰，而且笔画的粗细会因直横的不同而有所不同。 相反的，无衬线字（下图中的思源黑体、Helvetica）就没有这些额外装饰，而且笔画粗细大致上是差不多。</p>
+<p>衬线字的字体较易辨识，也因此具有较高的易读性。 反之无衬线字则较醒目。通常来说，需要强调、突出的小篇幅文字一般使用无衬线字,而在长篇正文中，为了阅读的便利，一般使用衬线字。在实际应用中，因为中文的宋体和西文的衬线体，中文的黑体和西文的无衬线体，在风格和应用场景上相似，所以通常搭配使用。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_4.png" alt=""></p>
+<h3 id="字体排版建议"><a href="#字体排版建议" class="headerlink" title="字体排版建议"></a>字体排版建议</h3><p>在你对字体排版技巧了如指掌之前，首先需要保证你的内容能够简单且清晰地展现出来。优秀的文字与排版使我们更愿意去阅读，所以最好先关注你所设定的字体和排版是否便于阅读，然后再考虑为了美观改进行修饰。我们可以参考这篇英文指南    ：<a href="http://practicaltypography.com/typography-in-ten-minutes.html" target="_blank" rel="external">优秀字体排版的5条原则</a>并且将文中的这些原则应用到我们的App和Web设计中去。</p>
+<h3 id="iOS中的系统字体"><a href="#iOS中的系统字体" class="headerlink" title="iOS中的系统字体"></a>iOS中的系统字体</h3><p>随着iOS 9系统以及EI Capitan系统的发布，现在的系统字体变为了Apple自己设计的 [San Francisco]。iOS仍然在其他地方使用<strong>SF UI</strong>,而在Apple Watch中使用<strong>SF Compact</strong><br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_5.jpg" alt=""><br>San Francisco 有两类尺寸: <strong><em>文本模式（SF UI Text）</em></strong> 和 <strong><em>展示模式（SF UI Display）</em></strong>。 文本模式适用于小于20 points的尺寸，展示模式则适用于大于20 points的尺寸。当你在你的app中使用San Francisco时，iOS会自动在适当的时机在文本模式和展示模式中切换。</p>
+<blockquote>
+<p>注：如果你使用诸如Sketch或Photoshop的工具来进行设计，那么当你设置的字体大于等于20 points的时候，你需要切换到展示模式。iOS会根据字体大小为San Francisco自动调整字间距。</p>
+</blockquote>
+<p><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_6.jpg" alt=""></p>
+<h3 id="选择Body字体"><a href="#选择Body字体" class="headerlink" title="选择Body字体"></a>选择Body字体</h3><p>为body text挑选合适的字体是最重要的。务必选择那些可读性强的，看上去干净易读的字体。我推荐的常用英文字体有：San Francisco, Helvetica Neue, Avenir Next, Open Sans, Museo Sans。中文字体则有，华文细黑，思源黑体<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_7.png" alt=""></p>
+<h3 id="字体的大小"><a href="#字体的大小" class="headerlink" title="字体的大小"></a>字体的大小</h3><p>在iPhone,iPad,iWatch 中设置的Body字体不应该小于<strong><em>11pt</em></strong>，这样才能被正常阅读。我们推荐的Body文本大小应该在<strong><em>15-18pt</em></strong>。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_8.jpg" alt=""><br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_9.png" alt=""></p>
+<h3 id="字体的字重"><a href="#字体的字重" class="headerlink" title="字体的字重"></a>字体的字重</h3><p>当我们设置更大的字体来获得更好的易读性的同时，我们也应相应地减小字体的字重（粗细），考虑Light，Thin或者Ultra Thin。过重的字体会太过醒目，从而影响其他内容的显示效果。</p>
+<p>当字体大小为<strong><em>12-18pt</em></strong>时，使用Regular，<strong><em>18-24pt</em></strong>时，使用Light，<strong><em>24-32pt</em></strong>,使用Thin，当字体大小超过<strong><em>32pt</em></strong>时，建议使用Ultralight。以上都是建议值，你应该根据不同字体的显示效果进行设定使文字内容看上去清晰和精致，从而保持良好阅读体验。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_10.png" alt=""><br>现代字体都有多种字重设置：Regular，Light，Thin和Ultralight</p>
+<h3 id="合理设置行高，让文字也能够呼吸"><a href="#合理设置行高，让文字也能够呼吸" class="headerlink" title="合理设置行高，让文字也能够呼吸"></a>合理设置行高，让文字也能够呼吸</h3><p>行间距（leading）应该设置为字体大小的120%到145%之间。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_11.png" alt=""></p>
+<p>在右边的例子中，行高设为了与字体高度相同的100%，而在左边的例子中，我将它设为<strong><em>145%</em></strong>。它们的显示效果有着非常明显差异。当字数进一步增加时，你更会发现阅读行距设置过小的大段文字会非常累。合理设置行高，也是一种留白的技巧，能够增强用户的阅读体验。</p>
+<h3 id="每行45-90个字"><a href="#每行45-90个字" class="headerlink" title="每行45-90个字"></a>每行45-90个字</h3><p>行长指单行文字的长度，如果一行中包含的字数太多，文本内容将会很难阅读。英文字符一般在45-90字比较适宜，而中文35-60字为宜。合理的行长使用户在行间跳转时非常感到轻快和愉悦，反之则会使阅读成为一种负担。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_12.png" alt=""></p>
+<h3 id="字体样式"><a href="#字体样式" class="headerlink" title="字体样式"></a>字体样式</h3><p>字体样式对易读性和快速浏览非常重要，一般的原则是，被修饰的文本不应超过整个文本的10%，如果所有文本都都通过修饰被强调的话，那反而就不是强调了。当然，一次不应该同时使超过三种的强调样式。换句话说，不要在同一段文本中同时使用，颜色，字体改变，大小，下划线，斜体，粗体。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_13.png" alt=""></p>
+<h3 id="寻找合适的字体"><a href="#寻找合适的字体" class="headerlink" title="寻找合适的字体"></a>寻找合适的字体</h3><p>大部分商用字体都很贵，但也有很多优秀的字体是免费的。你只需要从中挑选你最喜欢的字体，并应用到你的设计中就可以了。下面就介绍几个非常优秀的字体网站。</p>
+<h4 id="Google-Fonts-（需翻墙）"><a href="#Google-Fonts-（需翻墙）" class="headerlink" title="Google Fonts （需翻墙）"></a><a href="https://www.google.com/fonts" target="_blank" rel="external">Google Fonts （需翻墙）</a></h4><p>在Google Fonts，你可以免费下载你喜欢的字体，并且按照你的需要在项目中使用。由于在iOS中使用其他字体的唯一方法就是将字体文件导入到系统中，因此Google Fonts的下载功能非常有用。Google Fonts包含超过1400种不同的字体，其中包含最著名的：Open Sans和Roboto字体，他们是Android系统使用的默认字体。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_14.png" alt=""><br>你可以使用Mac上的 <strong><em><a href="@"https://skyfonts.com"">SkyFonts</a></em></strong>来自动同步字体到你的桌面。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_15.png" alt=""><br>如果你需要在你的网站中直接使用Google Web Fonts，你可以选择360的代理来访问Google的免费字体库。下面是使用说明，非常简单。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_16.png" alt=""></p>
+<h4 id="Typekit"><a href="#Typekit" class="headerlink" title="Typekit"></a><a href="https://typekit.com/fonts" target="_blank" rel="external">Typekit<a></a></a></h4><p>有非常多优秀的字体。这对于那些刚刚起步的人来说，非常有用。这其中就有我非常喜欢的<strong><em>Proxima Nova</em></strong>和<strong><em>Museo</em></strong>字体。它还将<strong><em>思源黑体</em></strong>等中文字体也收入其中了。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_17.png" alt=""></p>
+<h3 id="有字库"><a href="#有字库" class="headerlink" title="有字库"></a><a href="http://www.youziku.com" target="_blank" rel="external">有字库</a></h3><p>对于在需要大量使用中文字体的用户来说，有字库是一个不错的选择。它是国内目前比较优秀的Web Font服务平台，包含了大量优秀的中文字体。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_18.png" alt=""></p>
+<h3 id="其他资源"><a href="#其他资源" class="headerlink" title="其他资源"></a>其他资源</h3><p>字体和排版是一门值得深入探索的艺术。每个字体的形成和发展过程都有着深远的历史可以追溯。当你设计的作品也能被称作艺术品时，那就是对你最大的肯定。</p>
+<h3 id="文字排版指南"><a href="#文字排版指南" class="headerlink" title="文字排版指南"></a><a href="http://typogui.de" target="_blank" rel="external">文字排版指南</a></h3><p>这是一篇英文文字排版指南，但提到的内容和大部分意见对中文字体的选择和排版同样具有意义。非常值得阅读。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_19.jpg" alt=""></p>
+<h3 id="字体设计基础：字由心生"><a href="#字体设计基础：字由心生" class="headerlink" title="字体设计基础：字由心生"></a><a href="http://www.uisdc.com/font-design-basis" target="_blank" rel="external">字体设计基础：字由心生</a></h3><p>汉字怎么样发展而来的？我们现在用到 字体是通过什么字体演变过来的？当今字体又是沿用了先人的那些字体基础？… … 通过这篇文章，能够对汉字的这些基础知识有所了解。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_20.png" alt=""></p>
+<h3 id="哪种字体最适合快速阅读"><a href="#哪种字体最适合快速阅读" class="headerlink" title="哪种字体最适合快速阅读"></a><a href="http://www.uisdc.com/fonts-for-quick-reading" target="_blank" rel="external">哪种字体最适合快速阅读</a></h3><p>这篇文章详细介绍了中英文字体的搭配建议，很有参考价值。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_21.png" alt=""></p>
+<h3 id="Type-is-Beautiful"><a href="#Type-is-Beautiful" class="headerlink" title="Type is Beautiful"></a><a href="http://www.typeisbeautiful.com" target="_blank" rel="external">Type is Beautiful</a></h3><p>是一个非常有名的关于字体的博客网站，提供了大量字体研究的文章，适合从初学者到资深设计师阅读。同时它还提供了一个播客，名叫“字谈字畅”<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_22.png" alt=""></p>
+<blockquote>
+<p>稀土掘金联合编辑：技匠，以上内容欢迎大家分享到朋友圈/微博等。如需转载，请通过我的微信公众号联系。谢谢大家！</p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+
+    <div>
+      
+        
+<div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center">
+  <div style="margin: 10px">坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton", disable="enable", onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}", style="cursor: pointer; border: 0; outline: 0; border-radius: 100%; padding: 0; margin: 0; letter-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none">
+    <span onmouseover="this.style.color='rgb(236,96,0)';this.style.background='rgb(204,204,204)'" onMouseOut="this.style.color='#fff';this.style.background='rgb(236,96,0)'" style="display: inline-block; width: 75px; height: 75px; border-radius: 100%; line-height: 81px; color: #fff; font: 400 35px/75px 'microsofty'; background: rgb(236,96,0)">赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechat-reward.png" alt="李世超 WeChat Pay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>微信打赏</p>
+      </div>
+    
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay-reward.png" alt="李世超 Alipay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>支付宝打赏</p>
+      </div>
+    
+  </div>
+</div>
+
+      
+    </div>
+
+<! -- 添加微信图标 -->
+    
+    
+
+    <div style="padding: 10px 0; margin: 0px auto; width: 90%; text-align: center">
+
+    <span style="padding: 10px; margin: 0px">
+    
+    欢迎大家关注：Amin_iOS的微信公众号
+    
+    </span>
+
+    
+    <a href="http://i2.piimg.com/c3957b482e32ec3f.jpg" title=“Amin_iOS的微信公众号" class="fancybox" rel="article0">
+    <img src="http://i2.piimg.com/c3957b482e32ec3f.jpg" title="Amin_iOS的微信公众号" height="160px" width="160px">
+    </a>
+    
+
+    </div>
+
+    
+    
+
+    <footer class="post-footer">
+
+      
+        <div class="post-tags">
+          
+            <a href="/tags/设计/" rel="tag">#设计</a>
+          
+            <a href="/tags/design/" rel="tag">#design</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/21/App的打赏功能/" rel="next" title="App的打赏功能">
+                <i class="fa fa-chevron-left"></i> App的打赏功能
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/04/22/【设计谈】字体与排版/"
+           data-title="【设计谈】字体与排版" data-url="http://lishichao.github.io/2016/04/22/【设计谈】字体与排版/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://i4.piimg.com/5daa87b3f5ce23a2.jpg"
+               alt="李世超" />
+          <p class="site-author-name" itemprop="name">李世超</p>
+          <p class="site-description motion-element" itemprop="description">嗨，我是李世超 (@Amin_iOS)，一名移动端的Development And Management，现居广州。正在修行，探求创意之源，记录自己学习的点滴。</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/lishichao" target="_blank">
+                  
+                    <i class="fa fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/lishichao706" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/users/ab8e592732ea/latest_articles" target="_blank">
+                  
+                    <i class="fa fa-pinterest"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/Amin_706" target="_blank">
+                  
+                    <i class="fa fa-twitter"></i>
+                  
+                  twitter
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        <div class="links-of-blogroll motion-element">
+          
+            <div class="links-of-blogroll-title">我的链接</div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://i2.piimg.com/c3957b482e32ec3f.jpg" target="_blank">微信公众号</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://blog.csdn.net/lishichao706" target="_blank">CSDN</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.zhihu.com/people/amin706" target="_blank">知乎</a>
+                </li>
+              
+            </ul>
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#字体的基础术语"><span class="nav-number">1.</span> <span class="nav-text">字体的基础术语</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#衬线字与非衬线字"><span class="nav-number">2.</span> <span class="nav-text">衬线字与非衬线字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字体排版建议"><span class="nav-number">3.</span> <span class="nav-text">字体排版建议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS中的系统字体"><span class="nav-number">4.</span> <span class="nav-text">iOS中的系统字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择Body字体"><span class="nav-number">5.</span> <span class="nav-text">选择Body字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字体的大小"><span class="nav-number">6.</span> <span class="nav-text">字体的大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字体的字重"><span class="nav-number">7.</span> <span class="nav-text">字体的字重</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#合理设置行高，让文字也能够呼吸"><span class="nav-number">8.</span> <span class="nav-text">合理设置行高，让文字也能够呼吸</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#每行45-90个字"><span class="nav-number">9.</span> <span class="nav-text">每行45-90个字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字体样式"><span class="nav-number">10.</span> <span class="nav-text">字体样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#寻找合适的字体"><span class="nav-number">11.</span> <span class="nav-text">寻找合适的字体</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Google-Fonts-（需翻墙）"><span class="nav-number">11.1.</span> <span class="nav-text">Google Fonts （需翻墙）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Typekit"><span class="nav-number">11.2.</span> <span class="nav-text">Typekit</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有字库"><span class="nav-number">12.</span> <span class="nav-text">有字库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他资源"><span class="nav-number">13.</span> <span class="nav-text">其他资源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文字排版指南"><span class="nav-number">14.</span> <span class="nav-text">文字排版指南</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字体设计基础：字由心生"><span class="nav-number">15.</span> <span class="nav-text">字体设计基础：字由心生</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#哪种字体最适合快速阅读"><span class="nav-number">16.</span> <span class="nav-text">哪种字体最适合快速阅读</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Type-is-Beautiful"><span class="nav-number">17.</span> <span class="nav-text">Type is Beautiful</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2010 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">李世超</span>
+</div>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+
+<span id="busuanzi_container_site_uv">
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+</span>
+
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"lishichao706"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("ra6bHW5t35zfNi95BaebO5Rh-gzGzoHsz", "DEN151uTixxJPfeJRfDoB5Vv");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>
