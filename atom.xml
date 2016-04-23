@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lishichao.github.io/"/>
-  <updated>2016-04-23T09:42:04.000Z</updated>
+  <updated>2016-04-23T09:45:04.000Z</updated>
   <id>http://lishichao.github.io/</id>
   
   <author>
@@ -20,15 +20,15 @@
     <link href="http://lishichao.github.io/2016/04/23/%E4%B8%BB%E6%B5%81APP%E5%9F%BA%E6%9C%AC%E9%AA%A8%E6%9E%B6%E7%9A%84%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA/"/>
     <id>http://lishichao.github.io/2016/04/23/主流APP基本骨架的快速搭建/</id>
     <published>2016-04-23T09:01:21.000Z</published>
-    <updated>2016-04-23T09:42:04.000Z</updated>
+    <updated>2016-04-23T09:45:04.000Z</updated>
     
     <content type="html">&lt;ul&gt;
 &lt;li&gt;在许多我们日常使用的应用中，我们会发现，他们的界面骨架（或者说样子）基本相同&lt;ul&gt;
-&lt;li&gt;像&lt;strong&gt;&lt;em&gt;QQ&lt;/em&gt;&lt;/strong&gt;、&lt;strong&gt;&lt;em&gt;简书&lt;/em&gt;&lt;/strong&gt;、&lt;strong&gt;&lt;em&gt;微博&lt;/em&gt;&lt;/strong&gt;等。&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_1.png&quot; alt=&quot;&quot;&gt; &lt;/li&gt;
+&lt;li&gt;像&lt;strong&gt;&lt;em&gt;QQ&lt;/em&gt;&lt;/strong&gt;、&lt;strong&gt;&lt;em&gt;简书&lt;/em&gt;&lt;/strong&gt;、&lt;strong&gt;&lt;em&gt;微博&lt;/em&gt;&lt;/strong&gt;等。&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_1.png&quot; alt=&quot;&quot;&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt; &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;他们有一个相似的基本界面骨架是这样子的：&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_2.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
-&lt;li&gt;首先，界面有一些什么组成&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_3.png&quot; alt=&quot;&quot;&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;首先，界面有一些什么组成&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_3.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;TabBar上切换不同的导航控制器（界面），NavigationBar上点击BarButtonItem跳转（push）到下一个界面&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;那么这样的基本界面骨架，我们如何去搭建呢？&lt;/p&gt;
@@ -178,11 +178,7 @@
     
       &lt;ul&gt;
 &lt;li&gt;在许多我们日常使用的应用中，我们会发现，他们的界面骨架（或者说样子）基本相同&lt;ul&gt;
-&lt;li&gt;像&lt;strong&gt;&lt;em&gt;QQ&lt;/em&gt;&lt;/strong&gt;、&lt;strong&gt;&lt;em&gt;简书&lt;/em&gt;&lt;/strong&gt;、&lt;strong&gt;&lt;em&gt;微博&lt;/em&gt;&lt;/strong&gt;等。&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_1.png&quot; alt=&quot;&quot;&gt; &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;他们有一个相似的基本界面骨架是这样子的：&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_2.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
-&lt;li&gt;首先，界面有一些什么组成&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_3.png&quot; alt=&quot;&quot;&gt;
+&lt;li&gt;像&lt;strong&gt;&lt;em&gt;QQ&lt;/em&gt;&lt;/strong&gt;、&lt;strong&gt;&lt;em&gt;简书&lt;/em&gt;&lt;/strong&gt;、&lt;strong&gt;&lt;em&gt;微博&lt;/em&gt;&lt;/strong&gt;等。&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_1.png&quot; alt=&quot;&quot;&gt;
     
     </summary>
     
