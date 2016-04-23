@@ -1,0 +1,1075 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="iOS技术," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Amin_iOS·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/uploads/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="在许多我们日常使用的应用中，我们会发现，他们的界面骨架（或者说样子）基本相同
+像QQ、简书、微博等。 
+
+
+他们有一个相似的基本界面骨架是这样子的：
+首先，界面有一些什么组成">
+<meta property="og:type" content="article">
+<meta property="og:title" content="主流APP基本骨架的快速搭建">
+<meta property="og:url" content="http://lishichao.github.io/2016/04/23/主流APP基本骨架的快速搭建/index.html">
+<meta property="og:site_name" content="Amin_iOS·Blog">
+<meta property="og:description" content="在许多我们日常使用的应用中，我们会发现，他们的界面骨架（或者说样子）基本相同
+像QQ、简书、微博等。 
+
+
+他们有一个相似的基本界面骨架是这样子的：
+首先，界面有一些什么组成">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_1.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_2.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_3.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_4.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_5.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_6.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_7.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_8.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_9.png">
+<meta property="og:updated_time" content="2016-04-23T09:42:04.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="主流APP基本骨架的快速搭建">
+<meta name="twitter:description" content="在许多我们日常使用的应用中，我们会发现，他们的界面骨架（或者说样子）基本相同
+像QQ、简书、微博等。 
+
+
+他们有一个相似的基本界面骨架是这样子的：
+首先，界面有一些什么组成">
+<meta name="twitter:image" content="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_1.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 主流APP基本骨架的快速搭建 | Amin_iOS·Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Amin_iOS·Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">从这里，开启梦想之门！</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbook">
+          <a href="/guestbook" rel="section">
+            
+              <i class="menu-item-icon fa fa-commenting fa-fw"></i> <br />
+            
+            留言
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'SpFc6UCUJ1z1Hz2YFnz7','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                主流APP基本骨架的快速搭建
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="fa fa-calendar-check-o" style="margin:2px"></span>
+            <time itemprop="dateCreated" datetime="2016-04-23T17:01:21+08:00" content="2016-04-23">
+              2016-04-23
+            </time>
+          </span>
+	
+	<span class="post-count">&nbsp; |&nbsp; 字数 8,705
+	</span>
+
+	<span class="post-count">&nbsp; |&nbsp; 阅读预计 49分钟</span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="fa fa-folder-o" style="margin:2px"></span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/iOS技术归纳/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS技术归纳</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/23/主流APP基本骨架的快速搭建/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/23/主流APP基本骨架的快速搭建/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/04/23/主流APP基本骨架的快速搭建/" class="leancloud_visitors" data-flag-title="主流APP基本骨架的快速搭建">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="fa fa-eye" style="margin:2px"></span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <ul>
+<li>在许多我们日常使用的应用中，我们会发现，他们的界面骨架（或者说样子）基本相同<ul>
+<li>像<strong><em>QQ</em></strong>、<strong><em>简书</em></strong>、<strong><em>微博</em></strong>等。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_1.png" alt=""> </li>
+</ul>
+</li>
+<li>他们有一个相似的基本界面骨架是这样子的：<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_2.png" alt=""></li>
+<li>首先，界面有一些什么组成<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_3.png" alt=""><a id="more"></a></li>
+<li><p>TabBar上切换不同的导航控制器（界面），NavigationBar上点击BarButtonItem跳转（push）到下一个界面</p>
+</li>
+<li><p>那么这样的基本界面骨架，我们如何去搭建呢？</p>
+</li>
+</ul>
+<h3 id="iPhone项目开始时候要处理注意的地方"><a href="#iPhone项目开始时候要处理注意的地方" class="headerlink" title="iPhone项目开始时候要处理注意的地方"></a>iPhone项目开始时候要处理注意的地方</h3><p><img src="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_4.png" alt=""></p>
+<ul>
+<li>APP的名称设置</li>
+</ul>
+<p><img src="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_5.png" alt=""></p>
+<h3 id="搭建流程思考"><a href="#搭建流程思考" class="headerlink" title="搭建流程思考"></a>搭建流程思考</h3><h6 id="自定义TabBarController"><a href="#自定义TabBarController" class="headerlink" title="自定义TabBarController"></a>自定义TabBarController</h6><ul>
+<li>添加四个子控制器</li>
+<li>设置好四个子控制器的相关属性（TabBarItem内部图片和文字的设置）</li>
+</ul>
+<h6 id="自定义NavigationController（重写push：方法，封装返回键）"><a href="#自定义NavigationController（重写push：方法，封装返回键）" class="headerlink" title="自定义NavigationController（重写push：方法，封装返回键）"></a>自定义NavigationController（重写push：方法，封装返回键）</h6><ul>
+<li>这里的返回键的封装（设置）是很有用也很常见的，也很方便，掌握了，今后直接在项目中拿出来用就可以了</li>
+<li>但这里是先搭建基本骨架。有关总结在我的另外一篇文章《项目开发中封装一个返回键–很实用》《项目开发中封装一个BarButtonItem类别-很实用》</li>
+</ul>
+<blockquote>
+<p>我们这里界面的搭建可以选择storyboard搭建，但这种情况一般是界面比较少的情况下选用。</p>
+<p>当我们的界面很多，到时候要各种进行界面间跳转的时候，我们仍然使用storyboard搭建的话，要是几十个控制器之间的跳转，眼睛都看花你的。<br>所以界面多得时候，我们选择代码创建<br>这里我将选择代码创建，让大家知道一个大概的思路</p>
+</blockquote>
+<hr>
+<ul>
+<li>在AppDelegate.m文件中重新创建，而不会使用Main.storyboard.<br>先创建根控制器</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions &#123;</span><br><span class="line">    // <span class="number">1.</span>创建窗口</span><br><span class="line">    self.window = [[UIWindow alloc] init];</span><br><span class="line">    self.window.frame = [UIScreen mainScreen].bounds;</span><br><span class="line"></span><br><span class="line">    // <span class="number">2.</span>设置窗口的根控制器</span><br><span class="line">    self.window.rootViewController = [[CYTabbarController alloc] init];</span><br><span class="line"></span><br><span class="line">    // <span class="number">3.</span>显示窗口</span><br><span class="line">    [self.window makeKeyAndVisible];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> YES;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>新建一个(自定义)TabBarController</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#import "CYTabbarController.h"</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@interface CYTabbarController ()</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@end</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@implementation CYTabbarController</span></span><br><span class="line"></span><br><span class="line">- (void)viewDidLoad &#123;</span><br><span class="line">    [super viewDidLoad];</span><br><span class="line"></span><br><span class="line">    // UIControlStateNormal情况下的文字属性</span><br><span class="line">    NSMutableDictionary *normalAtrrs = [NSMutableDictionary dictionary];</span><br><span class="line">    // 文字颜色</span><br><span class="line">    normalAtrrs[NSForegroundColorAttributeName] = [UIColor grayColor];</span><br><span class="line"></span><br><span class="line">    // UIControlStateSelected情况的文字属性</span><br><span class="line">    NSMutableDictionary *selectedAtrrs = [NSMutableDictionary dictionary];</span><br><span class="line">    // 文字颜色</span><br><span class="line">    selectedAtrrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    UITabBarItem *item = [UITabBarItem appearance];</span><br><span class="line">    [item setTitleTextAttributes:normalAtrrs forState:UIControlStateNormal];</span><br><span class="line">    [item setTitleTextAttributes:selectedAtrrs forState:UIControlStateSelected];</span><br><span class="line"></span><br><span class="line">    // 添加四个子控制器</span><br><span class="line">    UIViewController *vc1 = [[UIViewController alloc] init];</span><br><span class="line">    vc1.tabBarItem.title = @<span class="string">"精华"</span>;</span><br><span class="line">    vc1.tabBarItem.image = [UIImage imageNamed:@<span class="string">"tabBar_essence_icon"</span>];</span><br><span class="line">    vc1.tabBarItem.selectedImage = [UIImage imageNamed:@<span class="string">"tabBar_essence_click_icon"</span>];</span><br><span class="line">    vc1.view.backgroundColor = [UIColor greenColor];</span><br><span class="line">    [self addChildViewController:vc1];</span><br><span class="line"></span><br><span class="line">    UIViewController *vc2 = [[UIViewController alloc] init];</span><br><span class="line">    vc2.tabBarItem.title = @<span class="string">"新帖"</span>;</span><br><span class="line">    vc2.tabBarItem.image = [UIImage imageNamed:@<span class="string">"tabBar_new_icon"</span>];</span><br><span class="line">    vc2.tabBarItem.selectedImage = [UIImage imageNamed:@<span class="string">"tabBar_new_click_icon"</span>];</span><br><span class="line">    vc2.view.backgroundColor = [UIColor grayColor];</span><br><span class="line">    [self addChildViewController:vc2];</span><br><span class="line"></span><br><span class="line">    UIViewController *vc3 = [[UIViewController alloc] init];</span><br><span class="line">    vc3.tabBarItem.title = @<span class="string">"关注"</span>;</span><br><span class="line">    vc3.tabBarItem.image = [UIImage imageNamed:@<span class="string">"tabBar_friendTrends_icon"</span>];</span><br><span class="line">    vc3.tabBarItem.selectedImage = [UIImage imageNamed:@<span class="string">"tabBar_friendTrends_click_icon"</span>];</span><br><span class="line">    vc3.view.backgroundColor = [UIColor blueColor];</span><br><span class="line">    [self addChildViewController:vc3];</span><br><span class="line"></span><br><span class="line">    UIViewController *vc4 = [[UIViewController alloc] init];</span><br><span class="line">    vc4.tabBarItem.title = @<span class="string">"我"</span>;</span><br><span class="line">    vc4.tabBarItem.image = [UIImage imageNamed:@<span class="string">"tabBar_me_icon"</span>];</span><br><span class="line">    vc4.tabBarItem.selectedImage = [UIImage imageNamed:@<span class="string">"tabBar_me_click_icon"</span>];</span><br><span class="line">    vc4.view.backgroundColor = [UIColor yellowColor];</span><br><span class="line">    [self addChildViewController:vc4];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@end</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>这样就创建成功了，你说快不快！</li>
+<li>当然不可能代码这么多，下面我会进行抽取</li>
+<li>运行式样：<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_6.png" alt=""></li>
+</ul>
+<h3 id="代码的抽取"><a href="#代码的抽取" class="headerlink" title="代码的抽取"></a>代码的抽取</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#import "CYTabbarController.h"</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@interface CYTabbarController ()</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@end</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@implementation CYTabbarController</span></span><br><span class="line"></span><br><span class="line">- (void)viewDidLoad &#123;</span><br><span class="line">    [super viewDidLoad];</span><br><span class="line"></span><br><span class="line">    // 开始抽取代码了：</span><br><span class="line">    [self setUpItem];</span><br><span class="line">    [self setUpChildVc];</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> *  设置Item的属性</span><br><span class="line"> */</span><br><span class="line">- (void)setUpItem</span><br><span class="line">&#123;</span><br><span class="line">    // UIControlStateNormal情况下的文字属性</span><br><span class="line">    NSMutableDictionary *normalAtrrs = [NSMutableDictionary dictionary];</span><br><span class="line">    // 文字颜色</span><br><span class="line">    normalAtrrs[NSForegroundColorAttributeName] = [UIColor grayColor];</span><br><span class="line"></span><br><span class="line">    // UIControlStateSelected情况的文字属性</span><br><span class="line">    NSMutableDictionary *selectedAtrrs = [NSMutableDictionary dictionary];</span><br><span class="line">    // 文字颜色</span><br><span class="line">    selectedAtrrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];</span><br><span class="line"></span><br><span class="line">    // 统一给所有的UITabBatItem设置文字属性</span><br><span class="line">    // 只有后面带有UI_APPEARANCE_SELECTOR方法的才可以通过appearance来设置</span><br><span class="line">    UITabBarItem *item = [UITabBarItem appearance];</span><br><span class="line">    [item setTitleTextAttributes:normalAtrrs forState:UIControlStateNormal];</span><br><span class="line">    [item setTitleTextAttributes:selectedAtrrs forState:UIControlStateSelected];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> *  设置setUpChildVc的属性，添加所有的子控件</span><br><span class="line"> */</span><br><span class="line">- (void)setUpChildVc</span><br><span class="line">&#123;</span><br><span class="line">    [self setUpChildVc:[UIViewController <span class="class"><span class="keyword">class</span>]  <span class="title">title</span>:</span>@<span class="string">"精华"</span> image:@<span class="string">"tabBar_essence_icon"</span> selectedImage:@<span class="string">"tabBar_essence_click_icon"</span>];</span><br><span class="line">    [self setUpChildVc:[UIViewController <span class="class"><span class="keyword">class</span>]  <span class="title">title</span>:</span>@<span class="string">"新帖"</span> image:@<span class="string">"tabBar_new_icon"</span> selectedImage:@<span class="string">"tabBar_new_click_icon"</span>];</span><br><span class="line">    [self setUpChildVc:[UIViewController <span class="class"><span class="keyword">class</span>]  <span class="title">title</span>:</span>@<span class="string">"关注"</span> image:@<span class="string">"tabBar_friendTrends_icon"</span> selectedImage:@<span class="string">"tabBar_friendTrends_click_icon"</span>];</span><br><span class="line">    [self setUpChildVc:[UIViewController <span class="class"><span class="keyword">class</span>]  <span class="title">title</span>:</span>@<span class="string">"我"</span> image:@<span class="string">"tabBar_me_icon"</span> selectedImage:@<span class="string">"tabBar_me_click_icon"</span>];</span><br><span class="line">//    // 添加四个子控制器</span><br><span class="line">//    UIViewController *vc1 = [[UIViewController alloc] init];</span><br><span class="line">//    vc1.tabBarItem.title = @<span class="string">"精华"</span>;</span><br><span class="line">//    vc1.tabBarItem.image = [UIImage imageNamed:@<span class="string">"tabBar_essence_icon"</span>];</span><br><span class="line">//    vc1.tabBarItem.selectedImage = [UIImage imageNamed:@<span class="string">"tabBar_essence_click_icon"</span>];</span><br><span class="line">//    vc1.view.backgroundColor = [UIColor greenColor];</span><br><span class="line">//    [self addChildViewController:vc1];</span><br><span class="line">//</span><br><span class="line">//    UIViewController *vc2 = [[UIViewController alloc] init];</span><br><span class="line">//    vc2.tabBarItem.title = @<span class="string">"新帖"</span>;</span><br><span class="line">//    vc2.tabBarItem.image = [UIImage imageNamed:@<span class="string">"tabBar_new_icon"</span>];</span><br><span class="line">//    vc2.tabBarItem.selectedImage = [UIImage imageNamed:@<span class="string">"tabBar_new_click_icon"</span>];</span><br><span class="line">//    vc2.view.backgroundColor = [UIColor grayColor];</span><br><span class="line">//    [self addChildViewController:vc2];</span><br><span class="line">//</span><br><span class="line">//    UIViewController *vc3 = [[UIViewController alloc] init];</span><br><span class="line">//    vc3.tabBarItem.title = @<span class="string">"关注"</span>;</span><br><span class="line">//    vc3.tabBarItem.image = [UIImage imageNamed:@<span class="string">"tabBar_friendTrends_icon"</span>];</span><br><span class="line">//    vc3.tabBarItem.selectedImage = [UIImage imageNamed:@<span class="string">"tabBar_friendTrends_click_icon"</span>];</span><br><span class="line">//    vc3.view.backgroundColor = [UIColor blueColor];</span><br><span class="line">//    [self addChildViewController:vc3];</span><br><span class="line">//</span><br><span class="line">//    UIViewController *vc4 = [[UIViewController alloc] init];</span><br><span class="line">//    vc4.tabBarItem.title = @<span class="string">"我"</span>;</span><br><span class="line">//    vc4.tabBarItem.image = [UIImage imageNamed:@<span class="string">"tabBar_me_icon"</span>];</span><br><span class="line">//    vc4.tabBarItem.selectedImage = [UIImage imageNamed:@<span class="string">"tabBar_me_click_icon"</span>];</span><br><span class="line">//    vc4.view.backgroundColor = [UIColor yellowColor];</span><br><span class="line">//    [self addChildViewController:vc4];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (void)setUpChildVc:(Class)vcClass title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage</span><br><span class="line">&#123;</span><br><span class="line">    UIViewController *vc = [[UIViewController alloc] init];</span><br><span class="line">    vc.tabBarItem.title = title;</span><br><span class="line">    vc.tabBarItem.image = [UIImage imageNamed:image];</span><br><span class="line">    vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];</span><br><span class="line">    // 创建一个随机色</span><br><span class="line">    vc.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(<span class="number">100</span>)/<span class="number">100.0</span> green:arc4random_uniform(<span class="number">100</span>)/<span class="number">100.0</span> blue:arc4random_uniform(<span class="number">100</span>)/<span class="number">100.0</span> alpha:<span class="number">1.0</span>];</span><br><span class="line">    [self addChildViewController:vc];</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">@end</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>在微博和简书APP中在TabBar中间有一个加号按钮，用于发布或者别的功能</li>
+<li>那么这么重要的一个按钮，我们如何实现呢？<ul>
+<li>首先，上面系统的TabBar是满足不了我们了，所以我们只能自定义一个TabBar</li>
+<li>自定义TabBar后，就要开始在上面进行子控件的布局，修改他们的位置了</li>
+<li>重写initWithFrame:方法以及LayoutSubViews:方法，布局子控件</li>
+</ul>
+</li>
+<li>在自定义的CYTabBarController中</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  CYTabbarController.m</span><br><span class="line">//  李世超</span><br><span class="line">//  Copyright (c) <span class="number">2015</span>年 congying. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line"><span class="comment">#import "CYTabbarController.h"</span></span><br><span class="line"><span class="comment">#import "CYEssenceViewController.h"</span></span><br><span class="line"><span class="comment">#import "CYFocusViewController.h"</span></span><br><span class="line"><span class="comment">#import "CYPublishViewController.h"</span></span><br><span class="line"><span class="comment">#import "CYNewPostViewController.h"</span></span><br><span class="line"><span class="comment">#import "CYMeViewController.h"</span></span><br><span class="line"><span class="comment">#import "CYTabBar.h"</span></span><br><span class="line"><span class="comment">#import "CYNavigationController.h"</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@interface CYTabbarController ()</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@end</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@implementation CYTabbarController</span></span><br><span class="line"></span><br><span class="line">- (void)viewDidLoad &#123;</span><br><span class="line">    [super viewDidLoad];</span><br><span class="line">    // 开始抽取代码了：</span><br><span class="line"></span><br><span class="line">    // 抽取Item属性</span><br><span class="line">    [self setUpItem];</span><br><span class="line"></span><br><span class="line">    // 布局子控件</span><br><span class="line">    [self setUpChildVc];</span><br><span class="line"></span><br><span class="line">    // 处理tabBar</span><br><span class="line">    [self setUpTabBar];</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">/**</span><br><span class="line"> *  处理tabBar</span><br><span class="line"> */</span><br><span class="line">- (void)setUpTabBar</span><br><span class="line">&#123;</span><br><span class="line">    [self setValue:[[CYTabBar alloc] init] forKey:@<span class="string">"tabBar"</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> *  设置Item的属性</span><br><span class="line"> */</span><br><span class="line">- (void)setUpItem</span><br><span class="line">&#123;</span><br><span class="line">    // UIControlStateNormal情况下的文字属性</span><br><span class="line">    NSMutableDictionary *normalAtrrs = [NSMutableDictionary dictionary];</span><br><span class="line">    // 文字颜色</span><br><span class="line">    normalAtrrs[NSForegroundColorAttributeName] = [UIColor grayColor];</span><br><span class="line"></span><br><span class="line">    // UIControlStateSelected情况的文字属性</span><br><span class="line">    NSMutableDictionary *selectedAtrrs = [NSMutableDictionary dictionary];</span><br><span class="line">    // 文字颜色</span><br><span class="line">    selectedAtrrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];</span><br><span class="line"></span><br><span class="line">    // 统一给所有的UITabBatItem设置文字属性</span><br><span class="line">    // 只有后面带有UI_APPEARANCE_SELECTOR方法的才可以通过appearance来设置</span><br><span class="line">    UITabBarItem *item = [UITabBarItem appearance];</span><br><span class="line">    [item setTitleTextAttributes:normalAtrrs forState:UIControlStateNormal];</span><br><span class="line">    [item setTitleTextAttributes:selectedAtrrs forState:UIControlStateSelected];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> *  设置setUpChildVc的属性，添加所有的子控件</span><br><span class="line"> */</span><br><span class="line">- (void)setUpChildVc</span><br><span class="line">&#123;</span><br><span class="line">    [self setUpChildVc:[[CYEssenceViewController alloc] init] title:@<span class="string">"精华"</span> image:@<span class="string">"tabBar_essence_icon"</span> selectedImage:@<span class="string">"tabBar_essence_click_icon"</span>];</span><br><span class="line">    [self setUpChildVc:[[CYNewPostViewController alloc] init] title:@<span class="string">"新帖"</span> image:@<span class="string">"tabBar_new_icon"</span> selectedImage:@<span class="string">"tabBar_new_click_icon"</span>];</span><br><span class="line">    [self setUpChildVc:[[CYFocusViewController alloc] init] title:@<span class="string">"关注"</span> image:@<span class="string">"tabBar_friendTrends_icon"</span> selectedImage:@<span class="string">"tabBar_friendTrends_click_icon"</span>];</span><br><span class="line">    [self setUpChildVc:[[CYMeViewController alloc] init] title:@<span class="string">"我"</span> image:@<span class="string">"tabBar_me_icon"</span> selectedImage:@<span class="string">"tabBar_me_click_icon"</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (void)setUpChildVc:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage</span><br><span class="line">&#123;</span><br><span class="line">    // 包装一个导航控制器</span><br><span class="line">    CYNavigationController *nav = [[CYNavigationController alloc] initWithRootViewController:vc];</span><br><span class="line">    [self addChildViewController:nav];</span><br><span class="line"></span><br><span class="line">    // 设置子控制器的tabBarItem</span><br><span class="line">    nav.tabBarItem.title = title;</span><br><span class="line">    nav.tabBarItem.image = [UIImage imageNamed:image];</span><br><span class="line">    nav.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];</span><br><span class="line">    nav.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(<span class="number">100</span>)/<span class="number">100.0</span> green:arc4random_uniform(<span class="number">100</span>)/<span class="number">100.0</span> blue:arc4random_uniform(<span class="number">100</span>)/<span class="number">100.0</span> alpha:<span class="number">1.0</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@end</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>自定义一个TabBar</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#import "CYTabBar.h"</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@interface CYTabBar()</span></span><br><span class="line">/** 增加发布按钮*/</span><br><span class="line"><span class="meta">@property (nonatomic, weak) UIButton *publishButton;</span></span><br><span class="line"><span class="meta">@end</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@implementation CYTabBar</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">- (instancetype) initWithFrame:(CGRect)frame</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> (self = [super initWithFrame:frame]) &#123;</span><br><span class="line">        // 设置背景图片</span><br><span class="line">        self.backgroundImage = [UIImage imageNamed:@<span class="string">"tabbar-light"</span>];</span><br><span class="line"></span><br><span class="line">        UIButton *publishButton = [UIButton buttonWithType:UIButtonTypeCustom];</span><br><span class="line">        [publishButton setBackgroundImage:[UIImage imageNamed:@<span class="string">"tabBar_publish_icon"</span>] forState:UIControlStateNormal];</span><br><span class="line">        [publishButton setBackgroundImage:[UIImage imageNamed:@<span class="string">"tabBar_publish_click_icon"</span>] forState:UIControlStateHighlighted];</span><br><span class="line">        [publishButton sizeToFit];</span><br><span class="line">        // 监听按钮点击（发布按钮）</span><br><span class="line">        [publishButton addTarget:self action:@selector(publishClick) forControlEvents:UIControlEventTouchUpInside];</span><br><span class="line">        //        publishButton.center = CGPointMake(self.frame.size.width * <span class="number">0.5</span>, self.frame.size.height * <span class="number">0.5</span>);</span><br><span class="line">        [self addSubview:publishButton];</span><br><span class="line">        self.publishButton = publishButton;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> self;</span><br><span class="line">&#125;</span><br><span class="line">- (void)publishClick</span><br><span class="line">&#123;</span><br><span class="line">    NSLog(@<span class="string">"%s"</span>,__func__);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> *  重写layoutSubviews方法，布局子控件</span><br><span class="line"> */</span><br><span class="line">- (void)layoutSubviews</span><br><span class="line">&#123;</span><br><span class="line">    [super layoutSubviews];</span><br><span class="line"></span><br><span class="line">    // TabBar的尺寸</span><br><span class="line">    CGFloat width = self.frame.size.width;</span><br><span class="line">    CGFloat height = self.frame.size.height;</span><br><span class="line">    // 设置发布按钮的位置</span><br><span class="line">    self.publishButton.center = CGPointMake(width * <span class="number">0.5</span>, height * <span class="number">0.5</span>);</span><br><span class="line"></span><br><span class="line">    // 设置索引</span><br><span class="line">    int index = <span class="number">0</span>;</span><br><span class="line">    // 按钮的尺寸</span><br><span class="line">    CGFloat tabBarButtonW = self.frame.size.width / <span class="number">5</span>;</span><br><span class="line">    CGFloat tabBarButtonH = self.frame.size.height;</span><br><span class="line">    CGFloat tabBarButtonY = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    // 设置四个TabBarButton的frame</span><br><span class="line">    <span class="keyword">for</span> (UIView *tabBarButton <span class="keyword">in</span> self.subviews) &#123;</span><br><span class="line">        <span class="keyword">if</span> (![NSStringFromClass(tabBarButton.<span class="keyword">class</span>) isEqualToString:@<span class="string">"UITabBarButton"</span>]) <span class="keyword">continue</span>;</span><br><span class="line"></span><br><span class="line">        // 计算按钮X的值</span><br><span class="line">        CGFloat tabBarButtonX = index * tabBarButtonW;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (index &gt;= <span class="number">2</span>) &#123;</span><br><span class="line">            tabBarButtonX += tabBarButtonW; // 给后面<span class="number">2</span>个button增加一个宽度的X值</span><br><span class="line">        &#125;</span><br><span class="line">        tabBarButton.frame = CGRectMake(tabBarButtonX, tabBarButtonY, tabBarButtonW, tabBarButtonH);</span><br><span class="line">        index++;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_7.png" alt=""></p>
+<h3 id="一些细节方面的注意处理以及一些补充："><a href="#一些细节方面的注意处理以及一些补充：" class="headerlink" title="一些细节方面的注意处理以及一些补充："></a>一些细节方面的注意处理以及一些补充：</h3><ul>
+<li>TabBarItem内部图片和文字的设置</li>
+<li>为什么要设置呢：<ul>
+<li>因为不设置的话，苹果就会自动将它渲染成蓝色，而不是我们（客户）想要的样式</li>
+</ul>
+</li>
+<li><p>图标高亮和正常状态是如何设置它本身的颜色</p>
+<ul>
+<li>Xcode中设置，一劳永逸</li>
+</ul>
+<p><img src="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_8.png" alt=""></p>
+<ul>
+<li>代码实现方式（了解一下，知道的办法多一点毕竟不是坏事）：</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//    UIImage *tempImage = [UIImage imageNamed:@<span class="string">"tabBar_essence_click_icon"</span>];</span><br><span class="line">   //    UIImage *selectedImage = [tempImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];</span><br><span class="line">   //    vc1.tabBarItem.selectedImage = selectedImage;</span><br><span class="line">   vc1.tabBarItem.selectedImage = [[UIImage imageNamed:@<span class="string">"tabBar_essence_click_icon"</span> ]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];</span><br><span class="line">   // 这里的设置可以不让系统给图片渲染成蓝色</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如何设置TabBarItem的文字颜色呢？只能代码了</p>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">// UIControlStateNormal情况下的文字属性</span><br><span class="line">    NSMutableDictionary *normalAtrrs = [NSMutableDictionary dictionary];</span><br><span class="line">    // 文字颜色</span><br><span class="line">    normalAtrrs[NSForegroundColorAttributeName] = [UIColor grayColor];</span><br><span class="line"></span><br><span class="line">    // UIControlStateSelected情况的文字属性</span><br><span class="line">    NSMutableDictionary *selectedAtrrs = [NSMutableDictionary dictionary];</span><br><span class="line">    // 文字颜色</span><br><span class="line">    selectedAtrrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    UITabBarItem *item = [UITabBarItem appearance];</span><br><span class="line">    [item setTitleTextAttributes:normalAtrrs forState:UIControlStateNormal];</span><br><span class="line">    [item setTitleTextAttributes:selectedAtrrs forState:UIControlStateSelected];</span><br></pre></td></tr></table></figure>
+<h3 id="换肤"><a href="#换肤" class="headerlink" title="换肤"></a>换肤</h3><ul>
+<li>通过设置appearance来进行换肤，一设置，全部控件都跟着变</li>
+<li>但是有条件：</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 统一给所有的UITabBatItem设置文字属性</span><br><span class="line">// 只有后面带有UI_APPEARANCE_SELECTOR方法的才可以通过appearance来设置</span><br><span class="line">UITabBarItem *item = [UITabBarItem appearance];</span><br><span class="line">[item setTitleTextAttributes:normalAtrrs forState:UIControlStateNormal];</span><br><span class="line">[item setTitleTextAttributes:selectedAtrrs forState:UIControlStateSelected];</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>控制器之间的关系<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_9.png" alt=""></p>
+</li>
+<li><p>由上图的关系可以知道下面注释的代码与没注释的代码效果是一样的</p>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"> // 包装一个导航控制器</span><br><span class="line">    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];</span><br><span class="line">    [self addChildViewController:nav];</span><br><span class="line"></span><br><span class="line">    nav.tabBarItem.title = title;</span><br><span class="line">    nav.tabBarItem.image = [UIImage imageNamed:image];</span><br><span class="line">    nav.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];</span><br><span class="line">    nav.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(<span class="number">100</span>)/<span class="number">100.0</span> green:arc4random_uniform(<span class="number">100</span>)/<span class="number">100.0</span> blue:arc4random_uniform(<span class="number">100</span>)/<span class="number">100.0</span> alpha:<span class="number">1.0</span>];</span><br><span class="line"></span><br><span class="line">//    vc.tabBarItem.title = title;</span><br><span class="line">//    vc.tabBarItem.image = [UIImage imageNamed:image];</span><br><span class="line">//    vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];</span><br><span class="line">//    vc.view.backgroundColor = [UIColor </span><br><span class="line">colorWithRed:arc4random_uniform(<span class="number">100</span>)/<span class="number">100.0</span> green:arc4random_uniform(<span class="number">100</span>)/<span class="number">100.0</span> blue:arc4random_uniform(<span class="number">100</span>)/<span class="number">100.0</span> alpha:<span class="number">1.0</span>];</span><br></pre></td></tr></table></figure>
+<ul>
+<li>代码抽取里的代码严谨点替换成下面的代码</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> *  设置setUpChildVc的属性，添加所有的子控件</span><br><span class="line"> */</span><br><span class="line">- (void)setupChildVc:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage</span><br><span class="line">&#123;</span><br><span class="line">    [self setUpChildVc:[[CYEssenceViewController alloc] init]  title:@<span class="string">"精华"</span> image:@<span class="string">"tabBar_essence_icon"</span> selectedImage:@<span class="string">"tabBar_essence_click_icon"</span>];</span><br><span class="line">    [self setUpChildVc:[[CYNewPostViewController alloc] init]  title:@<span class="string">"新帖"</span> image:@<span class="string">"tabBar_new_icon"</span> selectedImage:@<span class="string">"tabBar_new_click_icon"</span>];</span><br><span class="line">    [self setUpChildVc:[[CYFocusViewController  alloc] init]  title:@<span class="string">"关注"</span> image:@<span class="string">"tabBar_friendTrends_icon"</span> selectedImage:@<span class="string">"tabBar_friendTrends_click_icon"</span>];</span><br><span class="line">    [self setUpChildVc:[CYMeViewController alloc]  title:@<span class="string">"我"</span> image:@<span class="string">"tabBar_me_icon"</span> selectedImage:@<span class="string">"tabBar_me_click_icon"</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">    // 包装一个导航控制器</span><br><span class="line">    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];</span><br><span class="line">    [self addChildViewController:nav];</span><br><span class="line"></span><br><span class="line">    nav.tabBarItem.title = title;</span><br><span class="line">    nav.tabBarItem.image = [UIImage imageNamed:image];</span><br><span class="line">    nav.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];</span><br><span class="line">    nav.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(<span class="number">100</span>)/<span class="number">100.0</span> green:arc4random_uniform(<span class="number">100</span>)/<span class="number">100.0</span> blue:arc4random_uniform(<span class="number">100</span>)/<span class="number">100.0</span> alpha:<span class="number">1.0</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>下面两种方法都可以传图片</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/ 这样传图片，它传的图片尺寸和原始尺寸一样</span><br><span class="line">    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@<span class="string">"MainTitle"</span>]];</span><br><span class="line">    // 这两种方法所实现的效果是一样的，但是很明显用上面的</span><br><span class="line">//    UIImageView *titleView = [[UIImageView alloc] init];</span><br><span class="line">//    titleView.image = [UIImage imageNamed:@<span class="string">"MainTitle"</span>];</span><br><span class="line">//    [titleView sizeToFit];</span><br><span class="line">//    self.navigationItem.titleView = titleView;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>打印（获取）window的三种方法：</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">NSLog(@<span class="string">"%@ %@ %@"</span>, self.view.superview, self.view.window, [UIApplication sharedApplication].keyWindow);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>创建一个随机色</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nav.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(<span class="number">100</span>)/<span class="number">100.0</span> green:arc4random_uniform(<span class="number">100</span>)/<span class="number">100.0</span> blue:arc4random_uniform(<span class="number">100</span>)/<span class="number">100.0</span> alpha:<span class="number">1.0</span>];</span><br></pre></td></tr></table></figure>
+<ul>
+<li>小小注意点：</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">self.title =@<span class="string">"我的关注"</span>;</span><br><span class="line">   相当于下面两句</span><br><span class="line">   self.navigationItem.title = @<span class="string">"我的关注"</span>;</span><br><span class="line">   self.tabBarItem.title = @<span class="string">"我的关注"</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="一般在公司项目开始开发时候，你在公司会给你下面相关文档"><a href="#一般在公司项目开始开发时候，你在公司会给你下面相关文档" class="headerlink" title="一般在公司项目开始开发时候，你在公司会给你下面相关文档"></a>一般在公司项目开始开发时候，你在公司会给你下面相关文档</h3><ul>
+<li><strong><em>API\接口文档</em></strong></li>
+<li>作用<ul>
+<li>跟服务器进行交互的文档</li>
+</ul>
+</li>
+<li><p>格式</p>
+<ul>
+<li>HTML网页</li>
+<li>word文档</li>
+</ul>
+</li>
+<li><p>开发进度文档</p>
+<ul>
+<li>任务\进度</li>
+<li>需求文档</li>
+</ul>
+</li>
+<li><p>有哪些模块</p>
+<ul>
+<li>有哪些功能</li>
+<li>大致的界面</li>
+</ul>
+</li>
+<li><p>原型图</p>
+<ul>
+<li>详细的界面描述</li>
+<li>界面的跳转关系</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>界面之间跳转后的返回键如何巧妙的设置呢？</li>
+<li>后续文章将会介绍–《项目开发中封装一个返回键–很实用》《项目开发中封装一个BarButtonItem类别-很实用》</li>
+</ul>
+<blockquote>
+<p>需要Demo的请留言。</p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+
+    <div>
+      
+        
+<div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center">
+  <div style="margin: 10px">坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton", disable="enable", onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}", style="cursor: pointer; border: 0; outline: 0; border-radius: 100%; padding: 0; margin: 0; letter-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none">
+    <span onmouseover="this.style.color='rgb(236,96,0)';this.style.background='rgb(204,204,204)'" onMouseOut="this.style.color='#fff';this.style.background='rgb(236,96,0)'" style="display: inline-block; width: 75px; height: 75px; border-radius: 100%; line-height: 81px; color: #fff; font: 400 35px/75px 'microsofty'; background: rgb(236,96,0)">赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechat-reward.png" alt="李世超 WeChat Pay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>微信打赏</p>
+      </div>
+    
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay-reward.png" alt="李世超 Alipay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>支付宝打赏</p>
+      </div>
+    
+  </div>
+</div>
+
+      
+    </div>
+
+<! -- 添加微信图标 -->
+    
+    
+
+    <div style="padding: 10px 0; margin: 0px auto; width: 90%; text-align: center">
+
+    <span style="padding: 10px; margin: 0px">
+    
+    欢迎大家关注：Amin_iOS的微信公众号
+    
+    </span>
+
+    
+    <a href="http://i2.piimg.com/c3957b482e32ec3f.jpg" title=“Amin_iOS的微信公众号" class="fancybox" rel="article0">
+    <img src="http://i2.piimg.com/c3957b482e32ec3f.jpg" title="Amin_iOS的微信公众号" height="160px" width="160px">
+    </a>
+    
+
+    </div>
+
+    
+    
+
+    <footer class="post-footer">
+
+      
+        <div class="post-tags">
+          
+            <a href="/tags/iOS技术/" rel="tag">#iOS技术</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/22/【设计谈】字体与排版/" rel="next" title="【设计谈】字体与排版">
+                <i class="fa fa-chevron-left"></i> 【设计谈】字体与排版
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/04/23/主流APP基本骨架的快速搭建/"
+           data-title="主流APP基本骨架的快速搭建" data-url="http://lishichao.github.io/2016/04/23/主流APP基本骨架的快速搭建/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://i4.piimg.com/5daa87b3f5ce23a2.jpg"
+               alt="李世超" />
+          <p class="site-author-name" itemprop="name">李世超</p>
+          <p class="site-description motion-element" itemprop="description">嗨，我是李世超 (@Amin_iOS)，一名移动端的Development And Management，现居广州。正在修行，探求创意之源，记录自己学习的点滴。</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/lishichao" target="_blank">
+                  
+                    <i class="fa fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/lishichao706" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/users/ab8e592732ea/latest_articles" target="_blank">
+                  
+                    <i class="fa fa-pinterest"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/Amin_706" target="_blank">
+                  
+                    <i class="fa fa-twitter"></i>
+                  
+                  twitter
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        <div class="links-of-blogroll motion-element">
+          
+            <div class="links-of-blogroll-title">我的链接</div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://i2.piimg.com/c3957b482e32ec3f.jpg" target="_blank">微信公众号</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://blog.csdn.net/lishichao706" target="_blank">CSDN</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.zhihu.com/people/amin706" target="_blank">知乎</a>
+                </li>
+              
+            </ul>
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#iPhone项目开始时候要处理注意的地方"><span class="nav-number">1.</span> <span class="nav-text">iPhone项目开始时候要处理注意的地方</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搭建流程思考"><span class="nav-number">2.</span> <span class="nav-text">搭建流程思考</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#自定义TabBarController"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">自定义TabBarController</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#自定义NavigationController（重写push：方法，封装返回键）"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">自定义NavigationController（重写push：方法，封装返回键）</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码的抽取"><span class="nav-number">3.</span> <span class="nav-text">代码的抽取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一些细节方面的注意处理以及一些补充："><span class="nav-number">4.</span> <span class="nav-text">一些细节方面的注意处理以及一些补充：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#换肤"><span class="nav-number">5.</span> <span class="nav-text">换肤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一般在公司项目开始开发时候，你在公司会给你下面相关文档"><span class="nav-number">6.</span> <span class="nav-text">一般在公司项目开始开发时候，你在公司会给你下面相关文档</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2010 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">李世超</span>
+</div>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+
+<span id="busuanzi_container_site_uv">
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+</span>
+
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"lishichao706"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("JDa3L42Y5MiAqtYFX35OrssM-gzGzoHsz", "lOQmfvDtuB60v4dhjjy7wbKv");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>
