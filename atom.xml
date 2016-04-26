@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lishichao.github.io/"/>
-  <updated>2016-04-23T09:53:03.000Z</updated>
+  <updated>2016-04-26T10:14:34.000Z</updated>
   <id>http://lishichao.github.io/</id>
   
   <author>
@@ -14,6 +14,75 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>React Native-目前最火的前端技术</title>
+    <link href="http://lishichao.github.io/2016/04/26/React-Native-%E7%9B%AE%E5%89%8D%E6%9C%80%E7%81%AB%E7%9A%84%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
+    <id>http://lishichao.github.io/2016/04/26/React-Native-目前最火的前端技术/</id>
+    <published>2016-04-26T09:32:49.000Z</published>
+    <updated>2016-04-26T10:14:34.000Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;文章摘要&lt;/strong&gt;： 一名程序员只用这一门技术，就可以同时写出Android-App，iOS-App，以及后台应用程序。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/ReactNative.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h4 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h4&gt;&lt;p&gt;React Native使你能够在Javascript和&lt;a href=&quot;http://facebook.github.io/react/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;React&lt;/a&gt;的基础上获得完全一致的开发体验，构建世界一流的原生APP。&lt;/p&gt;
+&lt;p&gt;React Native着力于提高多平台开发的开发效率 —— 仅需学习一次，编写任何平台(Learn once, write anywhere)。&lt;/p&gt;
+&lt;p&gt;Facebook已经在多项产品中使用了React Native，并且将持续地投入建设React Native。&lt;/p&gt;
+&lt;h4 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h4&gt;&lt;h5 id=&quot;做为一名产品经理，你是否遇到过这样的窘境，&quot;&gt;&lt;a href=&quot;#做为一名产品经理，你是否遇到过这样的窘境，&quot; class=&quot;headerlink&quot; title=&quot;做为一名产品经理，你是否遇到过这样的窘境，&quot;&gt;&lt;/a&gt;做为一名产品经理，你是否遇到过这样的窘境，&lt;/h5&gt;&lt;blockquote&gt;
+&lt;p&gt;“帮我把字体调成 16号呗，颜色变成 #FFFF00FF，老大说这里最好改一下”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;作为一名 app 的开发只能无奈但心里窃喜的告诉你，“只能等下个版本了，必须要重新发布才能改”，如果你问为什么不能改了就生效啊，那说明你对技术的理解要么真的很差，要么你就是知道这项 React-Native 新技术所爆发出来的力量。&lt;/p&gt;
+&lt;h5 id=&quot;React-Native-是-Facebook-推出的一个用-JavaScript-语言就能同时编写-ios，android，以及后台的一项技术。&quot;&gt;&lt;a href=&quot;#React-Native-是-Facebook-推出的一个用-JavaScript-语言就能同时编写-ios，android，以及后台的一项技术。&quot; class=&quot;headerlink&quot; title=&quot;React Native 是 Facebook 推出的一个用 JavaScript 语言就能同时编写 ios，android，以及后台的一项技术。&quot;&gt;&lt;/a&gt;React Native 是 Facebook 推出的一个用 JavaScript 语言就能同时编写 ios，android，以及后台的一项技术。&lt;/h5&gt;&lt;blockquote&gt;
+&lt;p&gt;今年9月 发布了 android 版本，又在程序员里面掀起了一波小高潮，不断有喜欢尝鲜的程序员投入到这个领域。&lt;/p&gt;
+&lt;p&gt;用大白话说，就是从此一名程序员自己就可以创业了，他只用这一门技术，就可以同时写出 androidapp，ios app，以及后台应用程序，并且，请注意这里，它可以做到实时热更新（就像网页一样，改了一个字体，随时可上线），app 也能做到随时都能更新了，第一段讲的那个需求可以分分钟秒杀解决，不用新发版本，只需在服务器改动一下代码即可，是不是很牛逼，是不是很牛逼，是不是很牛逼，真的很牛逼。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&quot;到这里，你只需要理解一句话，就是-Facebook-提供了一套解决方案，它利用-JavaScript-作为开发语言，可以同时来编写前端，移动终端，后台应用程序。&quot;&gt;&lt;a href=&quot;#到这里，你只需要理解一句话，就是-Facebook-提供了一套解决方案，它利用-JavaScript-作为开发语言，可以同时来编写前端，移动终端，后台应用程序。&quot; class=&quot;headerlink&quot; title=&quot;到这里，你只需要理解一句话，就是 Facebook 提供了一套解决方案，它利用 JavaScript 作为开发语言，可以同时来编写前端，移动终端，后台应用程序。&quot;&gt;&lt;/a&gt;到这里，你只需要理解一句话，就是 Facebook 提供了一套解决方案，它利用 JavaScript 作为开发语言，可以同时来编写前端，移动终端，后台应用程序。&lt;/h5&gt;&lt;h4 id=&quot;为什么-React-Native-受到了如此大的关注，以及它的优越性到底在什么地方。&quot;&gt;&lt;a href=&quot;#为什么-React-Native-受到了如此大的关注，以及它的优越性到底在什么地方。&quot; class=&quot;headerlink&quot; title=&quot;为什么 React Native 受到了如此大的关注，以及它的优越性到底在什么地方。&quot;&gt;&lt;/a&gt;为什么 React Native 受到了如此大的关注，以及它的优越性到底在什么地方。&lt;/h4&gt;&lt;h5 id=&quot;目前，一个成熟的互联网产品基本囊括了：移动终端和网页两种主要形态。&quot;&gt;&lt;a href=&quot;#目前，一个成熟的互联网产品基本囊括了：移动终端和网页两种主要形态。&quot; class=&quot;headerlink&quot; title=&quot;目前，一个成熟的互联网产品基本囊括了：移动终端和网页两种主要形态。&quot;&gt;&lt;/a&gt;目前，一个成熟的互联网产品基本囊括了：移动终端和网页两种主要形态。&lt;/h5&gt;&lt;blockquote&gt;
+&lt;p&gt;在移动终端 app 和网页的开发历程中，涉及了很多技术角色：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;前端开发（俗名叫做网站的）前端开发需要精通 html，css，javascript 这些基本的 web 语言知识。&lt;/li&gt;
+&lt;li&gt;移动终端开发（android 和 iOS 开发）&lt;ul&gt;
+&lt;li&gt;Android 开发用 Java（这个词读 “扎瓦”，别读成了 “加瓦”，读成这样很 Low B 的）语言编写。&lt;/li&gt;
+&lt;li&gt;iOS 开发用 Objective-C（现在新出了Swift，个人觉得语法更容易理解）编写。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;后台开发（他们的程序大多没有界面，主要是为网页和 app 提供数据和保障服务的稳定性），每个角色各司其职，分别需要不同的技能。&lt;ul&gt;
+&lt;li&gt;后台开发，有的公司用 Java，有的公司用 C++，用啥的都有，能满足性能需要就可以了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;已经看崩溃了吧，对于一个非计算机专业的人，根本不会理解为什么要存在这么多语言，为什么这里要用 C 语言，那里要用 C++，有的地方要用 Python，而又有很大的一个人群对你高呼：“PHP 才是世界最好的语言”。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&quot;其实他们每种语言都有不同的使用场景，有的语言效率高，有的语言语法更简洁漂亮，有的是专为后台而生，有的是特定场景下的唯一选择。&quot;&gt;&lt;a href=&quot;#其实他们每种语言都有不同的使用场景，有的语言效率高，有的语言语法更简洁漂亮，有的是专为后台而生，有的是特定场景下的唯一选择。&quot; class=&quot;headerlink&quot; title=&quot;其实他们每种语言都有不同的使用场景，有的语言效率高，有的语言语法更简洁漂亮，有的是专为后台而生，有的是特定场景下的唯一选择。&quot;&gt;&lt;/a&gt;其实他们每种语言都有不同的使用场景，有的语言效率高，有的语言语法更简洁漂亮，有的是专为后台而生，有的是特定场景下的唯一选择。&lt;/h5&gt;&lt;h5 id=&quot;随便类比，任何一个领域，都有很多不同的工具来满足不同的场景，是需求决定了当前状态。&quot;&gt;&lt;a href=&quot;#随便类比，任何一个领域，都有很多不同的工具来满足不同的场景，是需求决定了当前状态。&quot; class=&quot;headerlink&quot; title=&quot;随便类比，任何一个领域，都有很多不同的工具来满足不同的场景，是需求决定了当前状态。&quot;&gt;&lt;/a&gt;随便类比，任何一个领域，都有很多不同的工具来满足不同的场景，是需求决定了当前状态。&lt;/h5&gt;&lt;blockquote&gt;
+&lt;p&gt;现在好了，React 整套解决方案完成了江湖统一，FaceBook 也号称这们技术是 “Learn Once，Write AnyWhere”，学习成本只有一次，却完成了所有开发角色的统一。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;这意味着：app-将来都是可像网页一样热更新，随时发布。&quot;&gt;&lt;a href=&quot;#这意味着：app-将来都是可像网页一样热更新，随时发布。&quot; class=&quot;headerlink&quot; title=&quot;这意味着：app 将来都是可像网页一样热更新，随时发布。&quot;&gt;&lt;/a&gt;这意味着：app 将来都是可像网页一样热更新，随时发布。&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;对于一名开发人员，将再也没有前端，终端，后台的区分，他所关注的就是做一整套应用程序，人力将得到最大幅度的整合与释放。&lt;/li&gt;
+&lt;li&gt;代码复用将会是主旋律，因为是一种语言，大家重复造轮子的成本会越来越节省。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;目前，React Native 也还是有一些缺点的，比如他的 sdk 组件包 size 还比较大，crash 还比较多，在 ios 上支持的内容已经相当不错，android 还属于初级阶段，但是目前最新的版本也才是 0.16，相信再过一年， 一定会牛逼闪闪。&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;文章摘要&lt;/strong&gt;： 一名程序员只用这一门技术，就可以同时写出Android-App，iOS-App，以及后台应用程序。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/ReactNative.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="前端技术" scheme="http://lishichao.github.io/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="React Native技术" scheme="http://lishichao.github.io/tags/React-Native%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>主流APP基本骨架的快速搭建</title>
