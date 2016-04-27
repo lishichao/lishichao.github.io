@@ -4,8 +4,50 @@
 
     
   <url>
+    <loc>http://lishichao.github.io/2016/04/22/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/</loc>
+    <lastmod>2016-04-27T08:56:12.000Z</lastmod>
+    <data>
+        <display>
+        <title>【设计谈】字体与排版</title>
+        <pubTime>2016-04-22T09:55:47.000Z</pubTime>
+        
+        <tag>设计</tag>
+         
+        <tag>design</tag>
+         
+         
+           
+             
+              <breadCrumb title="设计" url="http://lishichao.github.io/categories/%E8%AE%BE%E8%AE%A1/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lishichao.github.io/2016/04/23/%E4%B8%BB%E6%B5%81APP%E5%9F%BA%E6%9C%AC%E9%AA%A8%E6%9E%B6%E7%9A%84%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2016-04-27T08:52:51.000Z</lastmod>
+    <data>
+        <display>
+        <title>主流APP基本骨架的快速搭建</title>
+        <pubTime>2016-04-23T09:01:21.000Z</pubTime>
+        
+        <tag>iOS技术</tag>
+         
+         
+           
+             
+              <breadCrumb title="iOS技术归纳" url="http://lishichao.github.io/categories/iOS%E6%8A%80%E6%9C%AF%E5%BD%92%E7%BA%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lishichao.github.io/2016/04/27/%E5%8F%91%E7%8E%B0%E4%BC%98%E7%A7%80-APP-%E7%9A%84%E4%B8%80%E4%BA%9B%E9%80%94%E5%BE%84/</loc>
-    <lastmod>2016-04-27T07:38:54.000Z</lastmod>
+    <lastmod>2016-04-27T08:52:00.000Z</lastmod>
     <data>
         <display>
         <title>发现优秀 APP 的一些途径</title>
@@ -25,7 +67,7 @@
     
   <url>
     <loc>http://lishichao.github.io/2016/04/26/React-Native-%E7%9B%AE%E5%89%8D%E6%9C%80%E7%81%AB%E7%9A%84%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2016-04-26T10:14:34.000Z</lastmod>
+    <lastmod>2016-04-27T08:50:49.000Z</lastmod>
     <data>
         <display>
         <title>React Native-目前最火的前端技术</title>
@@ -44,12 +86,12 @@
 
     
   <url>
-    <loc>http://lishichao.github.io/2016/04/23/%E4%B8%BB%E6%B5%81APP%E5%9F%BA%E6%9C%AC%E9%AA%A8%E6%9E%B6%E7%9A%84%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2016-04-23T09:53:03.000Z</lastmod>
+    <loc>http://lishichao.github.io/2016/04/21/App%E7%9A%84%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD/</loc>
+    <lastmod>2016-04-27T08:47:25.000Z</lastmod>
     <data>
         <display>
-        <title>主流APP基本骨架的快速搭建</title>
-        <pubTime>2016-04-23T09:01:21.000Z</pubTime>
+        <title>App的打赏功能</title>
+        <pubTime>2016-04-21T06:45:31.000Z</pubTime>
         
         <tag>iOS技术</tag>
          
@@ -114,48 +156,6 @@
     </url>
 
     
-  <url>
-    <loc>http://lishichao.github.io/2016/04/21/App%E7%9A%84%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD/</loc>
-    <lastmod>2016-04-22T10:52:37.000Z</lastmod>
-    <data>
-        <display>
-        <title>App的打赏功能</title>
-        <pubTime>2016-04-21T06:45:31.000Z</pubTime>
-        
-        <tag>iOS技术</tag>
-         
-         
-           
-             
-              <breadCrumb title="iOS技术归纳" url="http://lishichao.github.io/categories/iOS%E6%8A%80%E6%9C%AF%E5%BD%92%E7%BA%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>http://lishichao.github.io/2016/04/22/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/</loc>
-    <lastmod>2016-04-22T10:45:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>【设计谈】字体与排版</title>
-        <pubTime>2016-04-22T09:55:47.000Z</pubTime>
-        
-        <tag>设计</tag>
-         
-        <tag>design</tag>
-         
-         
-           
-             
-              <breadCrumb title="设计" url="http://lishichao.github.io/categories/%E8%AE%BE%E8%AE%A1/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
     
 </urlset>
