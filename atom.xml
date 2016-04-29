@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lishichao.github.io/"/>
-  <updated>2016-04-27T09:01:30.000Z</updated>
+  <updated>2016-04-29T02:49:40.000Z</updated>
   <id>http://lishichao.github.io/</id>
   
   <author>
@@ -14,6 +14,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>设计师为什么要学编程，开发者为什么要学设计?</title>
+    <link href="http://lishichao.github.io/2016/04/29/%E8%AE%BE%E8%AE%A1%E5%B8%88%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%AD%A6%E7%BC%96%E7%A8%8B%EF%BC%8C%E5%BC%80%E5%8F%91%E8%80%85%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%AD%A6%E8%AE%BE%E8%AE%A1/"/>
+    <id>http://lishichao.github.io/2016/04/29/设计师为什么要学编程，开发者为什么要学设计/</id>
+    <published>2016-04-29T02:41:57.000Z</published>
+    <updated>2016-04-29T02:49:40.000Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要：设计师和开发者目前正处于互联网的两端，看着彼此做不同的工作。如果他们能互相学习对方的技术，那么会协作得更好。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E6%9D%82%E8%B0%88/1.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;很多开发者认为，设计师应该学会如何编写代码，这一点是真的：通过学习，设计师会更加了解项目是怎么构建的，反过来自然就知道该如何设计产品。&lt;/p&gt;
+&lt;p&gt;作为一名设计师，了解介质是设计的重要组成部分。建筑师在设计一座建筑物时知道什么是可行什么是不可行的；平面设计师了解纸张质量、类型和重量；因此网页设计师应该了解HTML、CSS和Javascript是真的。当然，知道对方是如何工作与真的知道彼此工作是如何相互作用，这之间还是有区别的。如果你从来没有从零开始创建过一个基本的网站，这可能意味着你不完全知道项目是怎么来的。&lt;/p&gt;
+&lt;p&gt;优秀的网页设计师一般都认识代码，它们之间有很强的相关性。然而，学习代码并不意味着能让你立马变成更好的设计师，因为这取决于你的手艺，优秀的设计师都想成为手艺人。他们真正关心的是他们能创造什么，所以他们会尽可能多地去学习、了解。如果你不知道具体的东西这是好事，事实上这会让你去接受并想去学习。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E6%9D%82%E8%B0%88/2.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;开发人员也不要因此自满，设计同时也是开发的重要组成部分。你做的产品是供人们使用的，你必须关心产品的外观。作为一名开发者，你的工作不仅仅是写好代码，还要为人们提供具有良好设计的产品及服务。你越是关心设计过程，最终做出来的产品也更好。&lt;/p&gt;
+&lt;p&gt;任何一个好的Web应用程序都有一个共同点——好的设计。这不出自某个独立的设计团队或某个单独的开发团队之手，而是设计师和开发者互相协作产生的。双方要多了解对方工作的过程，这是做好产品的最简单方法。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当然，并不是说设计师就应该学会编程、开发人员就应该学会设计。但是，学会欣赏对方的工作是件物超所值的事。&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;摘要：设计师和开发者目前正处于互联网的两端，看着彼此做不同的工作。如果他们能互相学习对方的技术，那么会协作得更好。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E6%9D%82%E8%B0%88/1.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://lishichao.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="随笔" scheme="http://lishichao.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>发现优秀 APP 的一些途径</title>
