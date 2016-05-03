@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="“李世超的博客, 程序员, 开发者, iOS开发者”" />
+  <meta name="keywords" content="技术知识," />
 
 
 
@@ -82,15 +82,23 @@
 
 
 
-<meta name="description" content="嗨，我是李世超 (@Amin_iOS)，一名移动端的Development And Management，现居广州。正在修行，探求创意之源，记录自己学习的点滴。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Amin_iOS·Blog">
-<meta property="og:url" content="http://lishichao.github.io/categories/iOS技术归纳/index.html">
+<meta name="description" content="在开发界，“抓包”这个词想必大家耳熟能详。通过抓包工具，能够获取设备在网络通讯过程中的交换数据包。在 Windows 平台上，笔者使用较多的是 Fiddler 工具，但是由于 Fiddle 使用 C# 语言开发的，不支持 Mac OS 系统，所以不能在 Mac 上使用。本文给大家推荐的是 Mac 平台下的一款抓包神器：Charles。它是使用 Java 语言开发的，跨平台，支持各个系统下的设备使">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac平台下的抓包神器 —— Charles">
+<meta property="og:url" content="http://lishichao.github.io/2016/05/03/Mac平台下的抓包神器-——-Charles/index.html">
 <meta property="og:site_name" content="Amin_iOS·Blog">
-<meta property="og:description" content="嗨，我是李世超 (@Amin_iOS)，一名移动端的Development And Management，现居广州。正在修行，探求创意之源，记录自己学习的点滴。">
+<meta property="og:description" content="在开发界，“抓包”这个词想必大家耳熟能详。通过抓包工具，能够获取设备在网络通讯过程中的交换数据包。在 Windows 平台上，笔者使用较多的是 Fiddler 工具，但是由于 Fiddle 使用 C# 语言开发的，不支持 Mac OS 系统，所以不能在 Mac 上使用。本文给大家推荐的是 Mac 平台下的一款抓包神器：Charles。它是使用 Java 语言开发的，跨平台，支持各个系统下的设备使">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/charles.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/tools.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/finder.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/phone_1.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/phone_2.jpg">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/phone_3.png">
+<meta property="og:updated_time" content="2016-05-03T06:24:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Amin_iOS·Blog">
-<meta name="twitter:description" content="嗨，我是李世超 (@Amin_iOS)，一名移动端的Development And Management，现居广州。正在修行，探求创意之源，记录自己学习的点滴。">
+<meta name="twitter:title" content="Mac平台下的抓包神器 —— Charles">
+<meta name="twitter:description" content="在开发界，“抓包”这个词想必大家耳熟能详。通过抓包工具，能够获取设备在网络通讯过程中的交换数据包。在 Windows 平台上，笔者使用较多的是 Fiddler 工具，但是由于 Fiddle 使用 C# 语言开发的，不支持 Mac OS 系统，所以不能在 Mac 上使用。本文给大家推荐的是 Mac 平台下的一款抓包神器：Charles。它是使用 Java 语言开发的，跨平台，支持各个系统下的设备使">
+<meta name="twitter:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/charles.png">
 
 
 
@@ -108,7 +116,7 @@
   };
 </script>
 
-  <title> 分类: iOS技术归纳 | Amin_iOS·Blog </title>
+  <title> Mac平台下的抓包神器 —— Charles | Amin_iOS·Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -129,7 +137,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -277,110 +285,238 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        iOS技术归纳
-        <small>分类</small>
-      </h2>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Mac平台下的抓包神器 —— Charles
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="fa fa-calendar-o" style="margin:2px"></span>
+            <time itemprop="dateCreated" datetime="2016-05-03T14:10:46+08:00" content="2016-05-03">
+              2016-05-03
+            </time>
+          </span>
+	
+	<span class="post-count">&nbsp; |&nbsp; 字数 714
+	</span>
+
+	<span class="post-count">&nbsp; |&nbsp; 阅读预计 3分钟</span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="fa fa-folder-o" style="margin:2px"></span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/03/Mac平台下的抓包神器-——-Charles/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/03/Mac平台下的抓包神器-——-Charles/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/05/03/Mac平台下的抓包神器-——-Charles/" class="leancloud_visitors" data-flag-title="Mac平台下的抓包神器 —— Charles">
+               &nbsp; | &nbsp;
+               <span class="fa fa-eye" style="margin:2px"></span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>在开发界，“抓包”这个词想必大家耳熟能详。通过抓包工具，能够获取设备在网络通讯过程中的交换数据包。在 Windows 平台上，笔者使用较多的是 Fiddler 工具，但是由于 Fiddle 使用 C# 语言开发的，不支持 Mac OS 系统，所以不能在 Mac 上使用。本文给大家推荐的是 Mac 平台下的一款抓包神器：Charles。它是使用 Java 语言开发的，跨平台，支持各个系统下的设备使用。</p>
+</blockquote>
+<p><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/charles.png" alt=""><br><a id="more"></a></p>
+<p>官网地址：<a href="http://www.charlesproxy.com/" target="_blank" rel="external">http://www.charlesproxy.com/</a></p>
+<h4 id="安装及破解教程"><a href="#安装及破解教程" class="headerlink" title="安装及破解教程"></a>安装及破解教程</h4><hr>
+<p>在官网中下载 Mac 版安装文件，安装过程很简单，这里不多赘述。我们找一个接口数据测试一下抓包效果，如图所示：<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/tools.png" alt=""><br>官方版本只支持免费使用30天，但是无所不能的天朝程序员拥有破解的办法。通过替换安装包内容中的 charles.jar 文件可以完美破解（亦枫使用的 Charles 是3.11.2版本，前后版本的破解方法应该一致）。</p>
+<p>这里破解文件 charles.jar 可以在下面链接地址中获取：<br><a href="http://download.csdn.net/detail/wenbitianxiafeng/9448481" target="_blank" rel="external">http://download.csdn.net/detail/wenbitianxiafeng/9448481</a></p>
+<p>打开 Fidder，找到应用程序中的 Charles，右击显示包内容，替换<br>Contents/Java目录下的 Charles.jar 文件即可。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/finder.png" alt=""></p>
+<h4 id="HTTP抓包"><a href="#HTTP抓包" class="headerlink" title="HTTP抓包"></a>HTTP抓包</h4><ol>
+<li><p>在 Mac 中打开 Charles 应用；</p>
+</li>
+<li><p>设置手机HTTP代理：确保移动设备与 Mac 笔记本在同一局域网内，添加代理ip地址（Mac内网地址）和端口号（8888），这里以 iPhone为例，如图所示：<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/phone_1.png" alt=""></p>
+</li>
+<li>在iOS设备上访问接口数据，在 Charles 弹出的确认窗中选择 Allow，允许即可。</li>
+</ol>
+<h3 id="HTTPS抓包"><a href="#HTTPS抓包" class="headerlink" title="HTTPS抓包"></a>HTTPS抓包</h3><ol>
+<li>安装 Charles 证书：使用 Safari 浏览器访问地址：<br><a href="http://www.charlesproxy.com/getssl" target="_blank" rel="external">http://www.charlesproxy.com/getssl</a><br>，浏览器会下载证书并提示安装：<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/phone_2.jpg" alt=""></li>
+<li>安装完成之后，在 Charles 中选择需要代理地址，右击，选中 Enable SSL Proxying，这样就可以抓取 HTTPS 数据包了。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/phone_3.png" alt=""></li>
+</ol>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+
+    <div>
+      
+        
+<div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center">
+  <div style="margin: 10px">坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton", disable="enable", onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}", style="cursor: pointer; border: 0; outline: 0; border-radius: 100%; padding: 0; margin: 0; letter-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none">
+    <span onmouseover="this.style.color='rgb(236,96,0)';this.style.background='rgb(204,204,204)'" onMouseOut="this.style.color='#fff';this.style.background='rgb(236,96,0)'" style="display: inline-block; width: 75px; height: 75px; border-radius: 100%; line-height: 81px; color: #fff; font: 400 35px/75px 'microsofty'; background: rgb(236,96,0)">赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechat-reward.png" alt="李世超 WeChat Pay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>微信打赏</p>
+      </div>
+    
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay-reward.png" alt="李世超 Alipay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>支付宝打赏</p>
+      </div>
+    
+  </div>
+</div>
+
+      
+    </div>
+
+<! -- 添加微信图标 -->
+    
+    
+
+    <div style="padding: 10px 0; margin: 0px auto; width: 90%; text-align: center">
+
+    <span style="padding: 10px; margin: 0px">
+    
+    欢迎大家关注：Amin_iOS的微信公众号
+    
+    </span>
+
+    
+    <a href="http://i2.piimg.com/c3957b482e32ec3f.jpg" title=“Amin_iOS的微信公众号" class="fancybox" rel="article0">
+    <img src="http://i2.piimg.com/c3957b482e32ec3f.jpg" title="Amin_iOS的微信公众号" height="160px" width="160px">
+    </a>
+    
+
     </div>
 
     
+    
+
+    <footer class="post-footer">
+
+      
+        <div class="post-tags">
+          
+            <a href="/tags/技术知识/" rel="tag">#技术知识</a>
+          
+        </div>
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/29/设计师为什么要学编程，开发者为什么要学设计/" rel="next" title="设计师为什么要学编程，开发者为什么要学设计?">
+                <i class="fa fa-chevron-left"></i> 设计师为什么要学编程，开发者为什么要学设计?
+              </a>
+            
+          </div>
 
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/04/23/主流APP基本骨架的快速搭建/" itemprop="url">
-              
-                <span itemprop="name">主流APP基本骨架的快速搭建</span>
-              
-            </a>
-        
-      </h1>
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-04-23T17:01:21+08:00"
-              content="2016-04-23" >
-          04-23
-        </time>
-      </div>
-
-    </header>
+      
+      
+    </footer>
   </article>
 
 
-    
+    <div class="post-spread">
       
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
         
-            <a class="post-title-link" href="/2016/04/21/App的打赏功能/" itemprop="url">
-              
-                <span itemprop="name">App的打赏功能</span>
-              
-            </a>
-        
-      </h1>
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-04-21T14:45:31+08:00"
-              content="2016-04-21" >
-          04-21
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
       
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/04/18/iOS-支付-支付宝、银联、微信/" itemprop="url">
-              
-                <span itemprop="name">iOS 支付 [支付宝、银联、微信]</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-04-18T17:19:20+08:00"
-              content="2016-04-18" >
-          04-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </section>
-
-  
-
+    </div>
+  </div>
 
 
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/03/Mac平台下的抓包神器-——-Charles/"
+           data-title="Mac平台下的抓包神器 —— Charles" data-url="http://lishichao.github.io/2016/05/03/Mac平台下的抓包神器-——-Charles/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -400,8 +536,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://i4.piimg.com/5daa87b3f5ce23a2.jpg"
@@ -524,6 +669,17 @@
       </section>
 
       
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装及破解教程"><span class="nav-number">1.</span> <span class="nav-text">安装及破解教程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HTTP抓包"><span class="nav-number">2.</span> <span class="nav-text">HTTP抓包</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTPS抓包"><span class="nav-number"></span> <span class="nav-text">HTTPS抓包</span></a></div>
+            
+          </div>
+        </section>
+      
 
     </div>
   </aside>
@@ -626,6 +782,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lishichao.github.io/"/>
-  <updated>2016-04-29T03:04:56.000Z</updated>
+  <updated>2016-05-03T06:24:40.000Z</updated>
   <id>http://lishichao.github.io/</id>
   
   <author>
@@ -14,6 +14,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac平台下的抓包神器 —— Charles</title>
+    <link href="http://lishichao.github.io/2016/05/03/Mac%E5%B9%B3%E5%8F%B0%E4%B8%8B%E7%9A%84%E6%8A%93%E5%8C%85%E7%A5%9E%E5%99%A8-%E2%80%94%E2%80%94-Charles/"/>
+    <id>http://lishichao.github.io/2016/05/03/Mac平台下的抓包神器-——-Charles/</id>
+    <published>2016-05-03T06:10:46.000Z</published>
+    <updated>2016-05-03T06:24:40.000Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;在开发界，“抓包”这个词想必大家耳熟能详。通过抓包工具，能够获取设备在网络通讯过程中的交换数据包。在 Windows 平台上，笔者使用较多的是 Fiddler 工具，但是由于 Fiddle 使用 C# 语言开发的，不支持 Mac OS 系统，所以不能在 Mac 上使用。本文给大家推荐的是 Mac 平台下的一款抓包神器：Charles。它是使用 Java 语言开发的，跨平台，支持各个系统下的设备使用。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/charles.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;官网地址：&lt;a href=&quot;http://www.charlesproxy.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.charlesproxy.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;安装及破解教程&quot;&gt;&lt;a href=&quot;#安装及破解教程&quot; class=&quot;headerlink&quot; title=&quot;安装及破解教程&quot;&gt;&lt;/a&gt;安装及破解教程&lt;/h4&gt;&lt;hr&gt;
+&lt;p&gt;在官网中下载 Mac 版安装文件，安装过程很简单，这里不多赘述。我们找一个接口数据测试一下抓包效果，如图所示：&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/tools.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;官方版本只支持免费使用30天，但是无所不能的天朝程序员拥有破解的办法。通过替换安装包内容中的 charles.jar 文件可以完美破解（亦枫使用的 Charles 是3.11.2版本，前后版本的破解方法应该一致）。&lt;/p&gt;
+&lt;p&gt;这里破解文件 charles.jar 可以在下面链接地址中获取：&lt;br&gt;&lt;a href=&quot;http://download.csdn.net/detail/wenbitianxiafeng/9448481&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://download.csdn.net/detail/wenbitianxiafeng/9448481&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;打开 Fidder，找到应用程序中的 Charles，右击显示包内容，替换&lt;br&gt;Contents/Java目录下的 Charles.jar 文件即可。&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/finder.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;HTTP抓包&quot;&gt;&lt;a href=&quot;#HTTP抓包&quot; class=&quot;headerlink&quot; title=&quot;HTTP抓包&quot;&gt;&lt;/a&gt;HTTP抓包&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;在 Mac 中打开 Charles 应用；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;设置手机HTTP代理：确保移动设备与 Mac 笔记本在同一局域网内，添加代理ip地址（Mac内网地址）和端口号（8888），这里以 iPhone为例，如图所示：&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/phone_1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;在iOS设备上访问接口数据，在 Charles 弹出的确认窗中选择 Allow，允许即可。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;HTTPS抓包&quot;&gt;&lt;a href=&quot;#HTTPS抓包&quot; class=&quot;headerlink&quot; title=&quot;HTTPS抓包&quot;&gt;&lt;/a&gt;HTTPS抓包&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;安装 Charles 证书：使用 Safari 浏览器访问地址：&lt;br&gt;&lt;a href=&quot;http://www.charlesproxy.com/getssl&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.charlesproxy.com/getssl&lt;/a&gt;&lt;br&gt;，浏览器会下载证书并提示安装：&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/phone_2.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;安装完成之后，在 Charles 中选择需要代理地址，右击，选中 Enable SSL Proxying，这样就可以抓取 HTTPS 数据包了。&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/phone_3.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;在开发界，“抓包”这个词想必大家耳熟能详。通过抓包工具，能够获取设备在网络通讯过程中的交换数据包。在 Windows 平台上，笔者使用较多的是 Fiddler 工具，但是由于 Fiddle 使用 C# 语言开发的，不支持 Mac OS 系统，所以不能在 Mac 上使用。本文给大家推荐的是 Mac 平台下的一款抓包神器：Charles。它是使用 Java 语言开发的，跨平台，支持各个系统下的设备使用。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/charles.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术" scheme="http://lishichao.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="技术知识" scheme="http://lishichao.github.io/tags/%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>设计师为什么要学编程，开发者为什么要学设计?</title>
