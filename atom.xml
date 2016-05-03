@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lishichao.github.io/"/>
-  <updated>2016-05-03T06:31:02.000Z</updated>
+  <updated>2016-05-03T06:40:36.000Z</updated>
   <id>http://lishichao.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://lishichao.github.io/2016/05/03/Mac%E5%B9%B3%E5%8F%B0%E4%B8%8B%E7%9A%84%E6%8A%93%E5%8C%85%E7%A5%9E%E5%99%A8-%E2%80%94%E2%80%94-Charles/"/>
     <id>http://lishichao.github.io/2016/05/03/Mac平台下的抓包神器-——-Charles/</id>
     <published>2016-05-03T06:10:46.000Z</published>
-    <updated>2016-05-03T06:31:02.000Z</updated>
+    <updated>2016-05-03T06:40:36.000Z</updated>
     
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;在开发界，“抓包”这个词想必大家耳熟能详。通过抓包工具，能够获取设备在网络通讯过程中的交换数据包。在 Windows 平台上，笔者使用较多的是 Fiddler 工具，但是由于 Fiddle 使用 C# 语言开发的，不支持 Mac OS 系统，所以不能在 Mac 上使用。本文给大家推荐的是 Mac 平台下的一款抓包神器：Charles。它是使用 Java 语言开发的，跨平台，支持各个系统下的设备使用。&lt;/p&gt;
