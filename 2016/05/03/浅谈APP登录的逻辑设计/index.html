@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="React Native技术," />
+  <meta name="keywords" content="设计," />
 
 
 
@@ -82,18 +82,35 @@
 
 
 
-<meta name="description" content="文章摘要： 一名程序员只用这一门技术，就可以同时写出Android-App，iOS-App，以及后台应用程序。">
+<meta name="description" content="引言
+大部分APP设计都无法回避的一个模块，就是登录。我们登录过太多的APP账号，它们有着各式各样的逻辑，然而这些差异背后的逻辑又是怎样的呢？那我们在进行APP登录的逻辑设计时，又需要基于哪些考虑来进行设计呢？
+
+
+是否必须登录后才能使用APP？有的APP一上来就要求用户完成注册、登录等一系列动作，然后才能使用APP里的各项功能；而又有的APP则不要求用户马上完成注册、登录也可以使用大部分功能，甚">
 <meta property="og:type" content="article">
-<meta property="og:title" content="React Native-目前最火的前端技术">
-<meta property="og:url" content="http://lishichao.github.io/2016/04/26/React-Native-目前最火的前端技术/index.html">
+<meta property="og:title" content="浅谈APP登录的逻辑设计">
+<meta property="og:url" content="http://lishichao.github.io/2016/05/03/浅谈APP登录的逻辑设计/index.html">
 <meta property="og:site_name" content="Amin_iOS·Blog">
-<meta property="og:description" content="文章摘要： 一名程序员只用这一门技术，就可以同时写出Android-App，iOS-App，以及后台应用程序。">
-<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/ReactNative.jpg">
-<meta property="og:updated_time" content="2016-04-27T09:02:12.000Z">
+<meta property="og:description" content="引言
+大部分APP设计都无法回避的一个模块，就是登录。我们登录过太多的APP账号，它们有着各式各样的逻辑，然而这些差异背后的逻辑又是怎样的呢？那我们在进行APP登录的逻辑设计时，又需要基于哪些考虑来进行设计呢？
+
+
+是否必须登录后才能使用APP？有的APP一上来就要求用户完成注册、登录等一系列动作，然后才能使用APP里的各项功能；而又有的APP则不要求用户马上完成注册、登录也可以使用大部分功能，甚">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/login_ui.jpg">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/tantan.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/example.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/login.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/edit.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/login_2.png">
+<meta property="og:updated_time" content="2016-05-03T07:13:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="React Native-目前最火的前端技术">
-<meta name="twitter:description" content="文章摘要： 一名程序员只用这一门技术，就可以同时写出Android-App，iOS-App，以及后台应用程序。">
-<meta name="twitter:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/ReactNative.jpg">
+<meta name="twitter:title" content="浅谈APP登录的逻辑设计">
+<meta name="twitter:description" content="引言
+大部分APP设计都无法回避的一个模块，就是登录。我们登录过太多的APP账号，它们有着各式各样的逻辑，然而这些差异背后的逻辑又是怎样的呢？那我们在进行APP登录的逻辑设计时，又需要基于哪些考虑来进行设计呢？
+
+
+是否必须登录后才能使用APP？有的APP一上来就要求用户完成注册、登录等一系列动作，然后才能使用APP里的各项功能；而又有的APP则不要求用户马上完成注册、登录也可以使用大部分功能，甚">
+<meta name="twitter:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/login_ui.jpg">
 
 
 
@@ -111,7 +128,7 @@
   };
 </script>
 
-  <title> React Native-目前最火的前端技术 | Amin_iOS·Blog </title>
+  <title> 浅谈APP登录的逻辑设计 | Amin_iOS·Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -301,7 +318,7 @@
             
             
               
-                React Native-目前最火的前端技术
+                浅谈APP登录的逻辑设计
               
             
           </h1>
@@ -310,12 +327,12 @@
         <div class="post-meta">
           <span class="post-time">
             <span class="fa fa-calendar-o" style="margin:2px"></span>
-            <time itemprop="dateCreated" datetime="2016-04-26T17:32:49+08:00" content="2016-04-26">
-              2016-04-26
+            <time itemprop="dateCreated" datetime="2016-05-03T14:48:42+08:00" content="2016-05-03">
+              2016-05-03
             </time>
           </span>
 	
-	<span class="post-count">&nbsp; |&nbsp; 字数 2,497
+	<span class="post-count">&nbsp; |&nbsp; 字数 2,612
 	</span>
 
 	<span class="post-count">&nbsp; |&nbsp; 阅读预计 10分钟</span>
@@ -326,8 +343,8 @@
               <span class="fa fa-folder-o" style="margin:2px"></span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/前端技术/" itemprop="url" rel="index">
-                    <span itemprop="name">前端技术</span>
+                  <a href="/categories/design/" itemprop="url" rel="index">
+                    <span itemprop="name">design</span>
                   </a>
                 </span>
 
@@ -342,8 +359,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/04/26/React-Native-目前最火的前端技术/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/26/React-Native-目前最火的前端技术/" itemprop="commentsCount"></span>
+                <a href="/2016/05/03/浅谈APP登录的逻辑设计/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/03/浅谈APP登录的逻辑设计/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -353,7 +370,7 @@
 
           
           
-             <span id="/2016/04/26/React-Native-目前最火的前端技术/" class="leancloud_visitors" data-flag-title="React Native-目前最火的前端技术">
+             <span id="/2016/05/03/浅谈APP登录的逻辑设计/" class="leancloud_visitors" data-flag-title="浅谈APP登录的逻辑设计">
                &nbsp; | &nbsp;
                <span class="fa fa-eye" style="margin:2px"></span>
                <span class="leancloud-visitors-count"></span>
@@ -371,53 +388,24 @@
       
 
       
-        <blockquote>
-<p><strong>文章摘要</strong>： 一名程序员只用这一门技术，就可以同时写出Android-App，iOS-App，以及后台应用程序。</p>
+        <h4 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h4><blockquote>
+<p>大部分APP设计都无法回避的一个模块，就是登录。我们登录过太多的APP账号，它们有着各式各样的逻辑，然而这些差异背后的逻辑又是怎样的呢？那我们在进行APP登录的逻辑设计时，又需要基于哪些考虑来进行设计呢？</p>
 </blockquote>
-<p><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/ReactNative.jpg" alt=""></p>
-<a id="more"></a>
-<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>React Native使你能够在Javascript和<a href="http://facebook.github.io/react/" target="_blank" rel="external">React</a>的基础上获得完全一致的开发体验，构建世界一流的原生APP。</p>
-<p>React Native着力于提高多平台开发的开发效率 —— 仅需学习一次，编写任何平台(Learn once, write anywhere)。</p>
-<p>Facebook已经在多项产品中使用了React Native，并且将持续地投入建设React Native。</p>
-<h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><h5 id="做为一名产品经理，你是否遇到过这样的窘境，"><a href="#做为一名产品经理，你是否遇到过这样的窘境，" class="headerlink" title="做为一名产品经理，你是否遇到过这样的窘境，"></a>做为一名产品经理，你是否遇到过这样的窘境，</h5><blockquote>
-<p>“帮我把字体调成 16号呗，颜色变成 #FFFF00FF，老大说这里最好改一下”</p>
-</blockquote>
-<p>作为一名 app 的开发只能无奈但心里窃喜的告诉你，“只能等下个版本了，必须要重新发布才能改”，如果你问为什么不能改了就生效啊，那说明你对技术的理解要么真的很差，要么你就是知道这项 React-Native 新技术所爆发出来的力量。</p>
-<h5 id="React-Native-是-Facebook-推出的一个用-JavaScript-语言就能同时编写-ios，android，以及后台的一项技术。"><a href="#React-Native-是-Facebook-推出的一个用-JavaScript-语言就能同时编写-ios，android，以及后台的一项技术。" class="headerlink" title="React Native 是 Facebook 推出的一个用 JavaScript 语言就能同时编写 ios，android，以及后台的一项技术。"></a>React Native 是 Facebook 推出的一个用 JavaScript 语言就能同时编写 ios，android，以及后台的一项技术。</h5><blockquote>
-<p>今年9月 发布了 android 版本，又在程序员里面掀起了一波小高潮，不断有喜欢尝鲜的程序员投入到这个领域。</p>
-<p>用大白话说，就是从此一名程序员自己就可以创业了，他只用这一门技术，就可以同时写出 androidapp，ios app，以及后台应用程序，并且，请注意这里，它可以做到实时热更新（就像网页一样，改了一个字体，随时可上线），app 也能做到随时都能更新了，第一段讲的那个需求可以分分钟秒杀解决，不用新发版本，只需在服务器改动一下代码即可，是不是很牛逼，是不是很牛逼，是不是很牛逼，真的很牛逼。</p>
-</blockquote>
-<h5 id="到这里，你只需要理解一句话，就是-Facebook-提供了一套解决方案，它利用-JavaScript-作为开发语言，可以同时来编写前端，移动终端，后台应用程序。"><a href="#到这里，你只需要理解一句话，就是-Facebook-提供了一套解决方案，它利用-JavaScript-作为开发语言，可以同时来编写前端，移动终端，后台应用程序。" class="headerlink" title="到这里，你只需要理解一句话，就是 Facebook 提供了一套解决方案，它利用 JavaScript 作为开发语言，可以同时来编写前端，移动终端，后台应用程序。"></a>到这里，你只需要理解一句话，就是 Facebook 提供了一套解决方案，它利用 JavaScript 作为开发语言，可以同时来编写前端，移动终端，后台应用程序。</h5><h4 id="为什么-React-Native-受到了如此大的关注，以及它的优越性到底在什么地方。"><a href="#为什么-React-Native-受到了如此大的关注，以及它的优越性到底在什么地方。" class="headerlink" title="为什么 React Native 受到了如此大的关注，以及它的优越性到底在什么地方。"></a>为什么 React Native 受到了如此大的关注，以及它的优越性到底在什么地方。</h4><h5 id="目前，一个成熟的互联网产品基本囊括了：移动终端和网页两种主要形态。"><a href="#目前，一个成熟的互联网产品基本囊括了：移动终端和网页两种主要形态。" class="headerlink" title="目前，一个成熟的互联网产品基本囊括了：移动终端和网页两种主要形态。"></a>目前，一个成熟的互联网产品基本囊括了：移动终端和网页两种主要形态。</h5><blockquote>
-<p>在移动终端 app 和网页的开发历程中，涉及了很多技术角色：</p>
-</blockquote>
-<ul>
-<li>前端开发（俗名叫做网站的）前端开发需要精通 html，css，javascript 这些基本的 web 语言知识。</li>
-<li>移动终端开发（android 和 iOS 开发）<ul>
-<li>Android 开发用 Java（这个词读 “扎瓦”，别读成了 “加瓦”，读成这样很 Low B 的）语言编写。</li>
-<li>iOS 开发用 Objective-C（现在新出了Swift，个人觉得语法更容易理解）编写。</li>
-</ul>
-</li>
-<li>后台开发（他们的程序大多没有界面，主要是为网页和 app 提供数据和保障服务的稳定性），每个角色各司其职，分别需要不同的技能。<ul>
-<li>后台开发，有的公司用 Java，有的公司用 C++，用啥的都有，能满足性能需要就可以了。</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>已经看崩溃了吧，对于一个非计算机专业的人，根本不会理解为什么要存在这么多语言，为什么这里要用 C 语言，那里要用 C++，有的地方要用 Python，而又有很大的一个人群对你高呼：“PHP 才是世界最好的语言”。</p>
-</blockquote>
-<h5 id="其实他们每种语言都有不同的使用场景，有的语言效率高，有的语言语法更简洁漂亮，有的是专为后台而生，有的是特定场景下的唯一选择。"><a href="#其实他们每种语言都有不同的使用场景，有的语言效率高，有的语言语法更简洁漂亮，有的是专为后台而生，有的是特定场景下的唯一选择。" class="headerlink" title="其实他们每种语言都有不同的使用场景，有的语言效率高，有的语言语法更简洁漂亮，有的是专为后台而生，有的是特定场景下的唯一选择。"></a>其实他们每种语言都有不同的使用场景，有的语言效率高，有的语言语法更简洁漂亮，有的是专为后台而生，有的是特定场景下的唯一选择。</h5><h5 id="随便类比，任何一个领域，都有很多不同的工具来满足不同的场景，是需求决定了当前状态。"><a href="#随便类比，任何一个领域，都有很多不同的工具来满足不同的场景，是需求决定了当前状态。" class="headerlink" title="随便类比，任何一个领域，都有很多不同的工具来满足不同的场景，是需求决定了当前状态。"></a>随便类比，任何一个领域，都有很多不同的工具来满足不同的场景，是需求决定了当前状态。</h5><blockquote>
-<p>现在好了，React 整套解决方案完成了江湖统一，FaceBook 也号称这们技术是 “Learn Once，Write AnyWhere”，学习成本只有一次，却完成了所有开发角色的统一。</p>
-</blockquote>
-<h4 id="这意味着：app-将来都是可像网页一样热更新，随时发布。"><a href="#这意味着：app-将来都是可像网页一样热更新，随时发布。" class="headerlink" title="这意味着：app 将来都是可像网页一样热更新，随时发布。"></a>这意味着：app 将来都是可像网页一样热更新，随时发布。</h4><ul>
-<li>对于一名开发人员，将再也没有前端，终端，后台的区分，他所关注的就是做一整套应用程序，人力将得到最大幅度的整合与释放。</li>
-<li>代码复用将会是主旋律，因为是一种语言，大家重复造轮子的成本会越来越节省。</li>
-</ul>
-<blockquote>
-<p>目前，React Native 也还是有一些缺点的，比如他的 sdk 组件包 size 还比较大，crash 还比较多，在 ios 上支持的内容已经相当不错，android 还属于初级阶段，但是目前最新的版本也才是 0.16，相信再过一年， 一定会牛逼闪闪。</p>
-</blockquote>
-<div class="ds-share" data-thread-key="2016/04/26/React-Native-目前最火的前端技术/" data-title="React Native-目前最火的前端技术" data-images="http://7xstl7.com1.z0.glb.clouddn.com/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/ReactNative.jpg" data-content="React Native-目前最火的前端技术" data-url="http://lishichao.github.io/2016/04/26/React-Native-目前最火的前端技术/"><br><div class="ds-share-inline"><br>      <ul class="ds-share-icons-16"><br>      <li style="color:#999999;font-size:13px;margin-top:2px"><i class="fa fa-share-square-o" style="margin-right:5px;color:#666666">分享到</i></li><li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat" target="_blank" rel="external">微信</a></li><li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo" target="_blank" rel="external">微博</a></li><li> <a class="ds-qq" href="javascript:void(0);" data-service="qq" target="_blank" rel="external">QQ</a> </li><li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone" target="_blank" rel="external">QQ空间</a></li><li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt" target="_blank" rel="external">腾讯微博</a></li><li> <a class="ds-facebook" href="javascript:void(0);" data-service="facebook" target="_blank" rel="external">Facebook</a> </li> <li> <a class="ds-douban" href="javascript:void(0);" data-service="douban" target="_blank" rel="external">豆瓣网</a> </li><li> <a class="ds-huaban" href="javascript:void(0);" data-service="huaban" target="_blank" rel="external">花瓣网</a> </li></ul><br>      <div class="ds-share-icons-more"><br>      </div><br> </div>
-
-<p></p></div><p></p>
+<p><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/login_ui.jpg" alt=""></p>
+<h4 id="是否必须登录后才能使用APP？"><a href="#是否必须登录后才能使用APP？" class="headerlink" title="是否必须登录后才能使用APP？"></a>是否必须登录后才能使用APP？</h4><p>有的APP一上来就要求用户完成注册、登录等一系列动作，然后才能使用APP里的各项功能；而又有的APP则不要求用户马上完成注册、登录也可以使用大部分功能，甚至可以使用APP的核心功能。笔者简单地讨论了一下两种情况的优缺点、适用范围，如下所示。</p>
+<h5 id="登录后才可使用"><a href="#登录后才可使用" class="headerlink" title="登录后才可使用"></a>登录后才可使用</h5><h6 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h6><p>①登录后可以记录用户在使用过程中产生的数据。<br>②一定程度上避免爬虫，提高了APP的保密性，保障用户隐私。</p>
+<h6 id="缺点：对用户设立了门槛，可能造成用户放弃使用。"><a href="#缺点：对用户设立了门槛，可能造成用户放弃使用。" class="headerlink" title="缺点：对用户设立了门槛，可能造成用户放弃使用。"></a>缺点：对用户设立了门槛，可能造成用户放弃使用。</h6><h6 id="适用范围：大多数社交类APP，财务类APP等。"><a href="#适用范围：大多数社交类APP，财务类APP等。" class="headerlink" title="适用范围：大多数社交类APP，财务类APP等。"></a>适用范围：大多数社交类APP，财务类APP等。</h6><h6 id="例子：微信、QQ、探探，支付宝。"><a href="#例子：微信、QQ、探探，支付宝。" class="headerlink" title="例子：微信、QQ、探探，支付宝。"></a>例子：微信、QQ、探探，支付宝。</h6><p><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/tantan.png" alt=""></p>
+<h5 id="不登录可先使用"><a href="#不登录可先使用" class="headerlink" title="不登录可先使用"></a>不登录可先使用</h5><h6 id="优点：-1"><a href="#优点：-1" class="headerlink" title="优点："></a>优点：</h6><p>①降低了用户的使用门槛，减少用户直接卸载应用的概率。<br>②方便了只使用非核心功能的轻度用户，提高了用户的留存率。</p>
+<h6 id="缺点：无法记录用户在未注册状态下所产生的数据。"><a href="#缺点：无法记录用户在未注册状态下所产生的数据。" class="headerlink" title="缺点：无法记录用户在未注册状态下所产生的数据。"></a>缺点：无法记录用户在未注册状态下所产生的数据。</h6><h6 id="适用范围：工具类APP，媒体类APP等。"><a href="#适用范围：工具类APP，媒体类APP等。" class="headerlink" title="适用范围：工具类APP，媒体类APP等。"></a>适用范围：工具类APP，媒体类APP等。</h6><h6 id="例子：美图秀秀，知乎日报、微博。"><a href="#例子：美图秀秀，知乎日报、微博。" class="headerlink" title="例子：美图秀秀，知乎日报、微博。"></a>例子：美图秀秀，知乎日报、微博。</h6><p><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/example.png" alt=""></p>
+<h4 id="到底要给用户准备哪些登录方式？"><a href="#到底要给用户准备哪些登录方式？" class="headerlink" title="到底要给用户准备哪些登录方式？"></a>到底要给用户准备哪些登录方式？</h4><p>从曾经辉煌一时的网站时代过渡到如今的全民APP时代，留存下来的登录方式和新诞生的登录方式种类繁多，笔者主要就以下几种做讨论。</p>
+<h5 id="账号登录（邮箱、手机号码、自定义昵称"><a href="#账号登录（邮箱、手机号码、自定义昵称" class="headerlink" title="账号登录（邮箱、手机号码、自定义昵称"></a>账号登录（邮箱、手机号码、自定义昵称</h5><p>直接使用邮箱、手机号码等进行登录是最为传统的登录方式，<br>这类登录方式常常需要用户跳出APP进行验证操作。用户在APP里的操作尚可加以控制，一旦用户跳出APP，很容易就会被其他东西吸引了注意力而中断了操作。而且，还有其他不可控的因素，如进行邮箱验证时，邮件被屏蔽了、邮箱软件要升级升完忘了验证了，这些都有可能发生。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/login.png" alt=""></p>
+<h5 id="第三方账号登录（简书、大众点评"><a href="#第三方账号登录（简书、大众点评" class="headerlink" title="第三方账号登录（简书、大众点评)"></a>第三方账号登录（简书、大众点评)</h5><p>APP采用这种登录方式，可以有效降低注册的门槛从而提高了用户的转化率，避免了用户去重新注册账号而产生的记忆负担。但是，最好不要让用户使用第三方账号登录之后，还要求用户再注册一个账号，这种让用户先吃糖后吃翔的做法还是少做。</p>
+<p>第三方账号登录常常还会带来一个很严重的问题！因为长时间没有进行过登录操作，用户忘了自己到底是用哪个第三方账号注册的账号。笔者的女朋友因为某记单词APP更新，登录QQ账号后发现自己的背单词进度全部消失了，又登录微博账号，还是什么都没。结果呢，删了，换一个。这当然不是个例，第三方账号登录的接口提供的越多，这个问题越是突显。</p>
+<p>还有一种情况，接入的第三方停止了服务，会用户的大量丢失。所以，第三方账号登录的接口选择很重要。为了预防这类情况的发生，做好第三方账号登录的用户向传统的账号登录的导流很重要。当然，我们也可以将不同接口的账号相关联，这可以有效地解决上述两个问题。</p>
+<p>设计APP登录方式时，我们一定要想清楚使用第三方账号登录的根本目的是什么，到底是为了降低登录门槛还是为了利用社交渠道进行分享？亦或是其他的目的。在达到目的的同时，也一定要避开这其中的坑。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/edit.png" alt=""></p>
+<h5 id="游客登录（饿了么、不背单词）"><a href="#游客登录（饿了么、不背单词）" class="headerlink" title="游客登录（饿了么、不背单词）"></a>游客登录（饿了么、不背单词）</h5><p>游客登录，又叫随便看看，就是让用户在先体验后登录。在如今全民APP时代，一些不出名的APP若让用户一打开APP就要求注册、登录，势必会造成转化率底下。这时，网站时代盛行的游客登录就很好被运用在APP上。</p>
+<p>以饿了么（v5.8.5）为例，用户在打开饿了么时一般都是饿着的，如果此时你让他登录一下再看看想吃什么，就好比是到了饭店，服务员让你先注册个会员再点菜一样。饿了么让用户选择想要的美食，在结算填写收货电话时自动生成账号，这样做的好处有两个：①叫外卖一般都是需要留下联系电话，饿了么将登录环节与收货电话的验证相结合，转移了用户对登录的注意。②用户前期已经花了不少时间在挑选美食上了，这时只想赶紧吃到饭，除非因为不可抗力而中断了购买，要不然只可能一步步操作下去直至完成结算。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/login_2.png" alt=""></p>
+<h5 id="新型登录方式（手势登录、语音识别、指纹识别、人脸识别、虹膜识别）"><a href="#新型登录方式（手势登录、语音识别、指纹识别、人脸识别、虹膜识别）" class="headerlink" title="新型登录方式（手势登录、语音识别、指纹识别、人脸识别、虹膜识别）"></a>新型登录方式（手势登录、语音识别、指纹识别、人脸识别、虹膜识别）</h5><p>随着科技发展，越来越多的传感器被利用起来，如支付宝的手势登录、微信的声音锁、App Store的指纹购买等。这些新型登录方式的使用主要需要考虑两个方面：①技术是否够成熟，如利用声音、指纹、人脸等方式时，我们需要考虑技术的容错率是否达到理想状态，这很大程度上会影响用户的体验。②用户方面造成的无法登录，如果用户感冒声音改变，怎么解决这个问题？</p>
 
       
     </div>
@@ -484,7 +472,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/React-Native技术/" rel="tag">#React Native技术</a>
+            <a href="/tags/设计/" rel="tag">#设计</a>
           
         </div>
       
@@ -493,17 +481,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/23/主流APP基本骨架的快速搭建/" rel="next" title="主流APP基本骨架的快速搭建">
-                <i class="fa fa-chevron-left"></i> 主流APP基本骨架的快速搭建
+              <a href="/2016/05/03/Mac平台下的抓包神器-——-Charles/" rel="next" title="Mac平台下的抓包神器 —— Charles">
+                <i class="fa fa-chevron-left"></i> Mac平台下的抓包神器 —— Charles
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/04/27/发现优秀-APP-的一些途径/" rel="prev" title="发现优秀 APP 的一些途径">
-                发现优秀 APP 的一些途径 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -537,8 +521,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/04/26/React-Native-目前最火的前端技术/"
-           data-title="React Native-目前最火的前端技术" data-url="http://lishichao.github.io/2016/04/26/React-Native-目前最火的前端技术/">
+      <div class="ds-thread" data-thread-key="2016/05/03/浅谈APP登录的逻辑设计/"
+           data-title="浅谈APP登录的逻辑设计" data-url="http://lishichao.github.io/2016/05/03/浅谈APP登录的逻辑设计/">
       </div>
     
   </div>
@@ -701,7 +685,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#介绍"><span class="nav-number">2.</span> <span class="nav-text">介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#做为一名产品经理，你是否遇到过这样的窘境，"><span class="nav-number">2.1.</span> <span class="nav-text">做为一名产品经理，你是否遇到过这样的窘境，</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#React-Native-是-Facebook-推出的一个用-JavaScript-语言就能同时编写-ios，android，以及后台的一项技术。"><span class="nav-number">2.2.</span> <span class="nav-text">React Native 是 Facebook 推出的一个用 JavaScript 语言就能同时编写 ios，android，以及后台的一项技术。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#到这里，你只需要理解一句话，就是-Facebook-提供了一套解决方案，它利用-JavaScript-作为开发语言，可以同时来编写前端，移动终端，后台应用程序。"><span class="nav-number">2.3.</span> <span class="nav-text">到这里，你只需要理解一句话，就是 Facebook 提供了一套解决方案，它利用 JavaScript 作为开发语言，可以同时来编写前端，移动终端，后台应用程序。</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#为什么-React-Native-受到了如此大的关注，以及它的优越性到底在什么地方。"><span class="nav-number">3.</span> <span class="nav-text">为什么 React Native 受到了如此大的关注，以及它的优越性到底在什么地方。</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#目前，一个成熟的互联网产品基本囊括了：移动终端和网页两种主要形态。"><span class="nav-number">3.1.</span> <span class="nav-text">目前，一个成熟的互联网产品基本囊括了：移动终端和网页两种主要形态。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#其实他们每种语言都有不同的使用场景，有的语言效率高，有的语言语法更简洁漂亮，有的是专为后台而生，有的是特定场景下的唯一选择。"><span class="nav-number">3.2.</span> <span class="nav-text">其实他们每种语言都有不同的使用场景，有的语言效率高，有的语言语法更简洁漂亮，有的是专为后台而生，有的是特定场景下的唯一选择。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#随便类比，任何一个领域，都有很多不同的工具来满足不同的场景，是需求决定了当前状态。"><span class="nav-number">3.3.</span> <span class="nav-text">随便类比，任何一个领域，都有很多不同的工具来满足不同的场景，是需求决定了当前状态。</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#这意味着：app-将来都是可像网页一样热更新，随时发布。"><span class="nav-number">4.</span> <span class="nav-text">这意味着：app 将来都是可像网页一样热更新，随时发布。</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#是否必须登录后才能使用APP？"><span class="nav-number">2.</span> <span class="nav-text">是否必须登录后才能使用APP？</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#登录后才可使用"><span class="nav-number">2.1.</span> <span class="nav-text">登录后才可使用</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#优点："><span class="nav-number">2.1.1.</span> <span class="nav-text">优点：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#缺点：对用户设立了门槛，可能造成用户放弃使用。"><span class="nav-number">2.1.2.</span> <span class="nav-text">缺点：对用户设立了门槛，可能造成用户放弃使用。</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#适用范围：大多数社交类APP，财务类APP等。"><span class="nav-number">2.1.3.</span> <span class="nav-text">适用范围：大多数社交类APP，财务类APP等。</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#例子：微信、QQ、探探，支付宝。"><span class="nav-number">2.1.4.</span> <span class="nav-text">例子：微信、QQ、探探，支付宝。</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#不登录可先使用"><span class="nav-number">2.2.</span> <span class="nav-text">不登录可先使用</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#优点：-1"><span class="nav-number">2.2.1.</span> <span class="nav-text">优点：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#缺点：无法记录用户在未注册状态下所产生的数据。"><span class="nav-number">2.2.2.</span> <span class="nav-text">缺点：无法记录用户在未注册状态下所产生的数据。</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#适用范围：工具类APP，媒体类APP等。"><span class="nav-number">2.2.3.</span> <span class="nav-text">适用范围：工具类APP，媒体类APP等。</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#例子：美图秀秀，知乎日报、微博。"><span class="nav-number">2.2.4.</span> <span class="nav-text">例子：美图秀秀，知乎日报、微博。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#到底要给用户准备哪些登录方式？"><span class="nav-number">3.</span> <span class="nav-text">到底要给用户准备哪些登录方式？</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#账号登录（邮箱、手机号码、自定义昵称"><span class="nav-number">3.1.</span> <span class="nav-text">账号登录（邮箱、手机号码、自定义昵称</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第三方账号登录（简书、大众点评"><span class="nav-number">3.2.</span> <span class="nav-text">第三方账号登录（简书、大众点评)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#游客登录（饿了么、不背单词）"><span class="nav-number">3.3.</span> <span class="nav-text">游客登录（饿了么、不背单词）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#新型登录方式（手势登录、语音识别、指纹识别、人脸识别、虹膜识别）"><span class="nav-number">3.4.</span> <span class="nav-text">新型登录方式（手势登录、语音识别、指纹识别、人脸识别、虹膜识别）</span></a></li></ol></li></ol></div>
             
           </div>
         </section>

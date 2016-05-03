@@ -301,6 +301,155 @@
             
               
                 
+                <a class="post-title-link" href="/2016/05/03/浅谈APP登录的逻辑设计/" itemprop="url">
+                  浅谈APP登录的逻辑设计
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="fa fa-calendar-o" style="margin:2px"></span>
+            <time itemprop="dateCreated" datetime="2016-05-03T14:48:42+08:00" content="2016-05-03">
+              2016-05-03
+            </time>
+          </span>
+	
+	<span class="post-count">&nbsp; |&nbsp; 字数 2,612
+	</span>
+
+	<span class="post-count">&nbsp; |&nbsp; 阅读预计 10分钟</span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="fa fa-folder-o" style="margin:2px"></span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/design/" itemprop="url" rel="index">
+                    <span itemprop="name">design</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/03/浅谈APP登录的逻辑设计/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/03/浅谈APP登录的逻辑设计/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/05/03/浅谈APP登录的逻辑设计/" class="leancloud_visitors" data-flag-title="浅谈APP登录的逻辑设计">
+               &nbsp; | &nbsp;
+               <span class="fa fa-eye" style="margin:2px"></span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h4><blockquote>
+<p>大部分APP设计都无法回避的一个模块，就是登录。我们登录过太多的APP账号，它们有着各式各样的逻辑，然而这些差异背后的逻辑又是怎样的呢？那我们在进行APP登录的逻辑设计时，又需要基于哪些考虑来进行设计呢？</p>
+</blockquote>
+<p><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/login_ui.jpg" alt=""></p>
+<h4 id="是否必须登录后才能使用APP？"><a href="#是否必须登录后才能使用APP？" class="headerlink" title="是否必须登录后才能使用APP？"></a>是否必须登录后才能使用APP？</h4><p>有的APP一上来就要求用户完成注册、登录等一系列动作，然后才能使用APP里的各项功能；而又有的APP则不要求用户马上完成注册、登录也可以使用大部分功能，甚至可以使用APP的核心功能。笔者简单地讨论了一下两种情况的优缺点、适用范围，如下所示。</p>
+<h5 id="登录后才可使用"><a href="#登录后才可使用" class="headerlink" title="登录后才可使用"></a>登录后才可使用</h5><h6 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h6><p>①登录后可以记录用户在使用过程中产生的数据。<br>②一定程度上避免爬虫，提高了APP的保密性，保障用户隐私。</p>
+<h6 id="缺点：对用户设立了门槛，可能造成用户放弃使用。"><a href="#缺点：对用户设立了门槛，可能造成用户放弃使用。" class="headerlink" title="缺点：对用户设立了门槛，可能造成用户放弃使用。"></a>缺点：对用户设立了门槛，可能造成用户放弃使用。</h6><h6 id="适用范围：大多数社交类APP，财务类APP等。"><a href="#适用范围：大多数社交类APP，财务类APP等。" class="headerlink" title="适用范围：大多数社交类APP，财务类APP等。"></a>适用范围：大多数社交类APP，财务类APP等。</h6><h6 id="例子：微信、QQ、探探，支付宝。"><a href="#例子：微信、QQ、探探，支付宝。" class="headerlink" title="例子：微信、QQ、探探，支付宝。"></a>例子：微信、QQ、探探，支付宝。</h6><p><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/tantan.png" alt=""></p>
+<h5 id="不登录可先使用"><a href="#不登录可先使用" class="headerlink" title="不登录可先使用"></a>不登录可先使用</h5><h6 id="优点：-1"><a href="#优点：-1" class="headerlink" title="优点："></a>优点：</h6><p>①降低了用户的使用门槛，减少用户直接卸载应用的概率。<br>②方便了只使用非核心功能的轻度用户，提高了用户的留存率。</p>
+<h6 id="缺点：无法记录用户在未注册状态下所产生的数据。"><a href="#缺点：无法记录用户在未注册状态下所产生的数据。" class="headerlink" title="缺点：无法记录用户在未注册状态下所产生的数据。"></a>缺点：无法记录用户在未注册状态下所产生的数据。</h6><h6 id="适用范围：工具类APP，媒体类APP等。"><a href="#适用范围：工具类APP，媒体类APP等。" class="headerlink" title="适用范围：工具类APP，媒体类APP等。"></a>适用范围：工具类APP，媒体类APP等。</h6><h6 id="例子：美图秀秀，知乎日报、微博。"><a href="#例子：美图秀秀，知乎日报、微博。" class="headerlink" title="例子：美图秀秀，知乎日报、微博。"></a>例子：美图秀秀，知乎日报、微博。</h6><p><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/example.png" alt=""></p>
+<h4 id="到底要给用户准备哪些登录方式？"><a href="#到底要给用户准备哪些登录方式？" class="headerlink" title="到底要给用户准备哪些登录方式？"></a>到底要给用户准备哪些登录方式？</h4><p>从曾经辉煌一时的网站时代过渡到如今的全民APP时代，留存下来的登录方式和新诞生的登录方式种类繁多，笔者主要就以下几种做讨论。</p>
+<h5 id="账号登录（邮箱、手机号码、自定义昵称"><a href="#账号登录（邮箱、手机号码、自定义昵称" class="headerlink" title="账号登录（邮箱、手机号码、自定义昵称"></a>账号登录（邮箱、手机号码、自定义昵称</h5><p>直接使用邮箱、手机号码等进行登录是最为传统的登录方式，<br>这类登录方式常常需要用户跳出APP进行验证操作。用户在APP里的操作尚可加以控制，一旦用户跳出APP，很容易就会被其他东西吸引了注意力而中断了操作。而且，还有其他不可控的因素，如进行邮箱验证时，邮件被屏蔽了、邮箱软件要升级升完忘了验证了，这些都有可能发生。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/login.png" alt=""></p>
+<h5 id="第三方账号登录（简书、大众点评"><a href="#第三方账号登录（简书、大众点评" class="headerlink" title="第三方账号登录（简书、大众点评)"></a>第三方账号登录（简书、大众点评)</h5><p>APP采用这种登录方式，可以有效降低注册的门槛从而提高了用户的转化率，避免了用户去重新注册账号而产生的记忆负担。但是，最好不要让用户使用第三方账号登录之后，还要求用户再注册一个账号，这种让用户先吃糖后吃翔的做法还是少做。</p>
+<p>第三方账号登录常常还会带来一个很严重的问题！因为长时间没有进行过登录操作，用户忘了自己到底是用哪个第三方账号注册的账号。笔者的女朋友因为某记单词APP更新，登录QQ账号后发现自己的背单词进度全部消失了，又登录微博账号，还是什么都没。结果呢，删了，换一个。这当然不是个例，第三方账号登录的接口提供的越多，这个问题越是突显。</p>
+<p>还有一种情况，接入的第三方停止了服务，会用户的大量丢失。所以，第三方账号登录的接口选择很重要。为了预防这类情况的发生，做好第三方账号登录的用户向传统的账号登录的导流很重要。当然，我们也可以将不同接口的账号相关联，这可以有效地解决上述两个问题。</p>
+<p>设计APP登录方式时，我们一定要想清楚使用第三方账号登录的根本目的是什么，到底是为了降低登录门槛还是为了利用社交渠道进行分享？亦或是其他的目的。在达到目的的同时，也一定要避开这其中的坑。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/edit.png" alt=""></p>
+<h5 id="游客登录（饿了么、不背单词）"><a href="#游客登录（饿了么、不背单词）" class="headerlink" title="游客登录（饿了么、不背单词）"></a>游客登录（饿了么、不背单词）</h5><p>游客登录，又叫随便看看，就是让用户在先体验后登录。在如今全民APP时代，一些不出名的APP若让用户一打开APP就要求注册、登录，势必会造成转化率底下。这时，网站时代盛行的游客登录就很好被运用在APP上。</p>
+<p>以饿了么（v5.8.5）为例，用户在打开饿了么时一般都是饿着的，如果此时你让他登录一下再看看想吃什么，就好比是到了饭店，服务员让你先注册个会员再点菜一样。饿了么让用户选择想要的美食，在结算填写收货电话时自动生成账号，这样做的好处有两个：①叫外卖一般都是需要留下联系电话，饿了么将登录环节与收货电话的验证相结合，转移了用户对登录的注意。②用户前期已经花了不少时间在挑选美食上了，这时只想赶紧吃到饭，除非因为不可抗力而中断了购买，要不然只可能一步步操作下去直至完成结算。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/login_2.png" alt=""></p>
+<h5 id="新型登录方式（手势登录、语音识别、指纹识别、人脸识别、虹膜识别）"><a href="#新型登录方式（手势登录、语音识别、指纹识别、人脸识别、虹膜识别）" class="headerlink" title="新型登录方式（手势登录、语音识别、指纹识别、人脸识别、虹膜识别）"></a>新型登录方式（手势登录、语音识别、指纹识别、人脸识别、虹膜识别）</h5><p>随着科技发展，越来越多的传感器被利用起来，如支付宝的手势登录、微信的声音锁、App Store的指纹购买等。这些新型登录方式的使用主要需要考虑两个方面：①技术是否够成熟，如利用声音、指纹、人脸等方式时，我们需要考虑技术的容错率是否达到理想状态，这很大程度上会影响用户的体验。②用户方面造成的无法登录，如果用户感冒声音改变，怎么解决这个问题？</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <div>
+      
+    </div>
+
+<! -- 添加微信图标 -->
+    
+    
+    
+    
+
+    <footer class="post-footer">
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/05/03/Mac平台下的抓包神器-——-Charles/" itemprop="url">
                   Mac平台下的抓包神器 —— Charles
                 </a>
@@ -828,142 +977,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/04/23/主流APP基本骨架的快速搭建/" itemprop="url">
-                  主流APP基本骨架的快速搭建
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="fa fa-calendar-o" style="margin:2px"></span>
-            <time itemprop="dateCreated" datetime="2016-04-23T17:01:21+08:00" content="2016-04-23">
-              2016-04-23
-            </time>
-          </span>
-	
-	<span class="post-count">&nbsp; |&nbsp; 字数 8,951
-	</span>
-
-	<span class="post-count">&nbsp; |&nbsp; 阅读预计 51分钟</span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="fa fa-folder-o" style="margin:2px"></span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/iOS技术归纳/" itemprop="url" rel="index">
-                    <span itemprop="name">iOS技术归纳</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/04/23/主流APP基本骨架的快速搭建/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/23/主流APP基本骨架的快速搭建/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/04/23/主流APP基本骨架的快速搭建/" class="leancloud_visitors" data-flag-title="主流APP基本骨架的快速搭建">
-               &nbsp; | &nbsp;
-               <span class="fa fa-eye" style="margin:2px"></span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="开头语"><a href="#开头语" class="headerlink" title="开头语"></a>开头语</h3><ul>
-<li>在许多我们日常使用的应用中，我们会发现，他们的界面骨架（或者说样子）基本相同<ul>
-<li>像<strong><em>QQ</em></strong>、<strong><em>简书</em></strong>、<strong><em>微博</em></strong> 等。<br><img src="http://7xstl7.com1.z0.glb.clouddn.com/iOS%E6%8A%80%E6%9C%AF/app_1.png" alt="">
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/04/23/主流APP基本骨架的快速搭建/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <div>
-      
-    </div>
-
-<! -- 添加微信图标 -->
-    
-    
-    
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1009,7 +1022,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1017,7 +1030,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
