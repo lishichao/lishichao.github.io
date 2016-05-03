@@ -4,8 +4,28 @@
 
     
   <url>
+    <loc>http://lishichao.github.io/2016/04/18/iOS-%E6%94%AF%E4%BB%98-%E6%94%AF%E4%BB%98%E5%AE%9D%E3%80%81%E9%93%B6%E8%81%94%E3%80%81%E5%BE%AE%E4%BF%A1/</loc>
+    <lastmod>2016-05-03T06:31:53.000Z</lastmod>
+    <data>
+        <display>
+        <title>iOS 支付 [支付宝、银联、微信]</title>
+        <pubTime>2016-04-18T09:19:20.000Z</pubTime>
+        
+        <tag>iOS技术</tag>
+         
+         
+           
+             
+              <breadCrumb title="iOS技术归纳" url="http://lishichao.github.io/categories/iOS%E6%8A%80%E6%9C%AF%E5%BD%92%E7%BA%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lishichao.github.io/2016/05/03/Mac%E5%B9%B3%E5%8F%B0%E4%B8%8B%E7%9A%84%E6%8A%93%E5%8C%85%E7%A5%9E%E5%99%A8-%E2%80%94%E2%80%94-Charles/</loc>
-    <lastmod>2016-05-03T06:24:40.000Z</lastmod>
+    <lastmod>2016-05-03T06:31:02.000Z</lastmod>
     <data>
         <display>
         <title>Mac平台下的抓包神器 —— Charles</title>
@@ -158,26 +178,6 @@
          
          
            
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lishichao.github.io/2016/04/18/iOS-%E6%94%AF%E4%BB%98-%E6%94%AF%E4%BB%98%E5%AE%9D%E3%80%81%E9%93%B6%E8%81%94%E3%80%81%E5%BE%AE%E4%BF%A1/</loc>
-    <lastmod>2016-04-23T02:37:45.000Z</lastmod>
-    <data>
-        <display>
-        <title>iOS 支付 [支付宝、银联、微信]</title>
-        <pubTime>2016-04-18T09:19:20.000Z</pubTime>
-        
-        <tag>iOS技术</tag>
-         
-         
-           
-             
-              <breadCrumb title="iOS技术归纳" url="http://lishichao.github.io/categories/iOS%E6%8A%80%E6%9C%AF%E5%BD%92%E7%BA%B3/"/>
-          
         </display>
     </data>
     </url>
