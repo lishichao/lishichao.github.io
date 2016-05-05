@@ -99,7 +99,7 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/789819-fd66194e1f05beb4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/789819-18cf757f019dfe80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/789819-d111a15df5370751.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2016-05-05T10:41:56.000Z">
+<meta property="og:updated_time" content="2016-05-05T10:51:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="通过自定义 URL Scheme 让其他引用启动本应用">
 <meta name="twitter:description" content="iPhone / iOS SDK 最酷的特性之一就是应用将其自身”绑定”到一个自定义 URL scheme 上，该 scheme 用于从浏览器或其他应用中启动本应用。">
@@ -325,7 +325,7 @@
             </time>
           </span>
 	
-	<span class="post-count">&nbsp; |&nbsp; 字数 2,768
+	<span class="post-count">&nbsp; |&nbsp; 字数 2,771
 	</span>
 
 	<span class="post-count">&nbsp; |&nbsp; 阅读预计 14分钟</span>
@@ -387,13 +387,17 @@
 <p><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/scheme_title.png" alt=""><br><a id="more"></a></p>
 <h4 id="注册自定义-URL-Scheme"><a href="#注册自定义-URL-Scheme" class="headerlink" title="注册自定义 URL Scheme"></a>注册自定义 URL Scheme</h4><p>注册自定义 URL Scheme 的第一步是创建 URL Scheme — 在 Xcode Project Navigator 中找到并点击工程 info.plist 文件。当该文件显示在右边窗口，在列表上点击鼠标右键，选择 Add Row:</p>
 <ul>
-<li><p>向下滚动弹出的列表并选择 URL types。<br><img src="http://upload-images.jianshu.io/upload_images/789819-fa9782e8f432283a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-</li>
-<li><p>点击左边剪头打开列表，可以看到 Item 0，一个字典实体。展开 Item 0，可以看到 URL Identifier，一个字符串对象。该字符串是你自定义的 URL scheme 的名字。建议采用反转域名的方法保证该名字的唯一性，比如 com.yourCompany.yourApp。<br><img src="http://upload-images.jianshu.io/upload_images/789819-e3bcadf29d9d85cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-</li>
-<li><p>点击 Item 0 新增一行，从下拉列表中选择 URL Schemes，敲击键盘回车键完成插入。<br><img src="http://upload-images.jianshu.io/upload_images/789819-fe7e6a3b60b261ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-</li>
+<li>向下滚动弹出的列表并选择 URL types。</li>
 </ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/789819-fa9782e8f432283a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<ul>
+<li>点击左边剪头打开列表，可以看到 Item 0，一个字典实体。展开 Item 0，可以看到 URL Identifier，一个字符串对象。该字符串是你自定义的 URL scheme 的名字。建议采用反转域名的方法保证该名字的唯一性，比如 com.yourCompany.yourApp。</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/789819-e3bcadf29d9d85cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<ul>
+<li>点击 Item 0 新增一行，从下拉列表中选择 URL Schemes，敲击键盘回车键完成插入。 </li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/789819-fe7e6a3b60b261ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <blockquote>
 <p>注意: URL Schemes 是一个数组，允许应用定义多个 URL schemes。 </p>
 </blockquote>
@@ -403,23 +407,28 @@
 </ul>
 <p>此时，整个定义如下图：<br><img src="http://upload-images.jianshu.io/upload_images/789819-b0d0d0244fcbff2d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <ul>
-<li>虽然我赞同 Xcode 使用描述性的名字的目的，不过看到创建的实际的 key 也是非常有用的。这里有一个方便的技巧，右键点击 plist 并选择 Show Raw Keys/Values，就能看到以下效果：<br><img src="http://upload-images.jianshu.io/upload_images/789819-ac55e8a5755fe463.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
+<li>虽然我赞同 Xcode 使用描述性的名字的目的，不过看到创建的实际的 key 也是非常有用的。这里有一个方便的技巧，右键点击 plist 并选择 Show Raw Keys/Values，就能看到以下效果： </li>
 </ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/789819-ac55e8a5755fe463.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <h4 id="另一种有用的输出格式，XML，因为可以非常容易的看到字典和原始数组及其包括的实体的结构。"><a href="#另一种有用的输出格式，XML，因为可以非常容易的看到字典和原始数组及其包括的实体的结构。" class="headerlink" title="另一种有用的输出格式，XML，因为可以非常容易的看到字典和原始数组及其包括的实体的结构。"></a>另一种有用的输出格式，XML，因为可以非常容易的看到字典和原始数组及其包括的实体的结构。</h4><ul>
-<li><p>点击 plist 并选择 Open As – Source Code:<br><img src="http://upload-images.jianshu.io/upload_images/789819-0af3348de0315dd5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-</li>
-<li><p>从 Safari 中调用自定义 URL Scheme<br>定义了 URL scheme，我们可以运行一个快速测试来验证应用是否如我们所期望的被调用。在这之前，我创建了一个准 UI 以辨别带有自定义 URL 的应用。该应用只有一个 UILabel，带有文本 “App With Custom URL”。<br><img src="http://upload-images.jianshu.io/upload_images/789819-fd66194e1f05beb4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-</li>
-<li><p>使用模拟器调用应用的步骤：</p>
-</li>
+<li>点击 plist 并选择 Open As – Source Code: </li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/789819-0af3348de0315dd5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<ul>
+<li>从 Safari 中调用自定义 URL Scheme<br>定义了 URL scheme，我们可以运行一个快速测试来验证应用是否如我们所期望的被调用。在这之前，我创建了一个准 UI 以辨别带有自定义 URL 的应用。该应用只有一个 UILabel，带有文本 “App With Custom URL”。 </li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/789819-fd66194e1f05beb4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<ul>
+<li>使用模拟器调用应用的步骤：</li>
 </ul>
 <ol>
 <li>在 Xcode 中运行应用</li>
 <li>一旦应用被安装，自定义 URL scheme 就会被注册</li>
 <li>通过模拟器的硬件菜单中选择 Home 来关闭应用</li>
 <li>启动 Safari</li>
-<li>在浏览器地址栏输入之前定义的 URL scheme(如下)<br><img src="http://upload-images.jianshu.io/upload_images/789819-18cf757f019dfe80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li>
+<li>在浏览器地址栏输入之前定义的 URL scheme(如下) </li>
 </ol>
+<p><img src="http://upload-images.jianshu.io/upload_images/789819-18cf757f019dfe80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p>此时 Safari 将会关闭，应用会被带回到前台。祝贺你刚刚使用自定义 URL scheme 调用了一个 iPhone 应用。</p>
 <h4 id="从另一个-iPhone-应用中调用自定义-URL-Scheme"><a href="#从另一个-iPhone-应用中调用自定义-URL-Scheme" class="headerlink" title="从另一个 iPhone 应用中调用自定义 URL Scheme"></a>从另一个 iPhone 应用中调用自定义 URL Scheme</h4><p>让我们看看如何从另一个应用中调用自定义 URL scheme。我又创建了一个非常简单的 iPhone 应用，它只有一个 UILabel 和一个 UIButton — 前者显示了一段信息，告诉你这个应用将要通过自定义 URL scheme 来调用另一个应用，按钮则开始这个行为。<br><img src="http://upload-images.jianshu.io/upload_images/789819-d111a15df5370751.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p>buttonPressed 方法中的代码处理 URL 调用：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">- (void)buttonPressed:(UIButton *)button </span><br><span class="line">&#123; </span><br><span class="line">  NSString *customURL = @<span class="string">"iOSDevTips://"</span>; </span><br><span class="line"> </span><br><span class="line">  <span class="keyword">if</span> ([[UIApplication sharedApplication] </span><br><span class="line">    canOpenURL:[NSURL URLWithString:customURL]]) </span><br><span class="line">  &#123; </span><br><span class="line">    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:customURL]]; </span><br><span class="line">  &#125; </span><br><span class="line">  <span class="keyword">else</span> </span><br><span class="line">  &#123; </span><br><span class="line">    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@<span class="string">"URL error"</span> </span><br><span class="line">                          message:[NSString stringWithFormat: </span><br><span class="line"><span class="meta">                            @"No custom URL defined for %@", customURL] </span></span><br><span class="line">                          delegate:self cancelButtonTitle:@<span class="string">"Ok"</span> </span><br><span class="line">                          otherButtonTitles:nil]; </span><br><span class="line">    [alert show]; </span><br><span class="line">  &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
