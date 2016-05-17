@@ -1,0 +1,1049 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="iOS技术," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Amin_iOS·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/uploads/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="开发过程中遇到的一些问题
+网上查阅整理的一些问题
+供大家参考，方便大家查阅">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS 知识-常用小技巧大杂烩">
+<meta property="og:url" content="http://lishichao.github.io/2016/05/17/iOS-知识-常用小技巧大杂烩/index.html">
+<meta property="og:site_name" content="Amin_iOS·Blog">
+<meta property="og:description" content="开发过程中遇到的一些问题
+网上查阅整理的一些问题
+供大家参考，方便大家查阅">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/techo.jpg">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/nav_hide.gif">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/learn.png">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/buton_timer.gif">
+<meta property="og:updated_time" content="2016-05-17T03:52:33.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="iOS 知识-常用小技巧大杂烩">
+<meta name="twitter:description" content="开发过程中遇到的一些问题
+网上查阅整理的一些问题
+供大家参考，方便大家查阅">
+<meta name="twitter:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/techo.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> iOS 知识-常用小技巧大杂烩 | Amin_iOS·Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Amin_iOS·Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">从这里，开启梦想之门！</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbook">
+          <a href="/guestbook" rel="section">
+            
+              <i class="menu-item-icon fa fa-commenting fa-fw"></i> <br />
+            
+            留言
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'SpFc6UCUJ1z1Hz2YFnz7','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                iOS 知识-常用小技巧大杂烩
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="fa fa-calendar-o" style="margin:2px"></span>
+            <time itemprop="dateCreated" datetime="2016-05-17T10:53:09+08:00" content="2016-05-17">
+              2016-05-17
+            </time>
+          </span>
+	
+	<span class="post-count">&nbsp; |&nbsp; 字数 14,581
+	</span>
+
+	<span class="post-count">&nbsp; |&nbsp; 阅读预计 83分钟</span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="fa fa-folder-o" style="margin:2px"></span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/iOS技术归纳/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS技术归纳</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/17/iOS-知识-常用小技巧大杂烩/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/17/iOS-知识-常用小技巧大杂烩/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/05/17/iOS-知识-常用小技巧大杂烩/" class="leancloud_visitors" data-flag-title="iOS 知识-常用小技巧大杂烩">
+               &nbsp; | &nbsp;
+               <span class="fa fa-eye" style="margin:2px"></span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>开发过程中遇到的一些问题</p>
+<p>网上查阅整理的一些问题</p>
+<p>供大家参考，方便大家查阅</p>
+</blockquote>
+<p><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/techo.jpg" alt=""><br><a id="more"></a></p>
+<p><strong>1. 打印View所有子视图</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">po [[self view]recursiveDescription]</span><br></pre></td></tr></table></figure>
+<p><strong>2. layoutSubviews调用的调用时机</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">* 当视图第一次显示的时候会被调用</span><br><span class="line">* 当这个视图显示到屏幕上了,点击按钮</span><br><span class="line">* 添加子视图也会调用这个方法</span><br><span class="line">* 当本视图的大小发生改变的时候是会调用的</span><br><span class="line">* 当子视图的frame发生改变的时候是会调用的</span><br><span class="line">* 当删除子视图的时候是会调用的</span><br></pre></td></tr></table></figure>
+<p><strong>3. NSString过滤特殊字符</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 定义一个特殊字符的集合</span><br><span class="line">NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:</span><br><span class="line"><span class="meta">@"@／：；（）¥「」＂、[]&#123;&#125;#%-*+=_\\|~＜＞$€^•'@#$%^&amp;*()_+'\""];</span></span><br><span class="line">// 过滤字符串的特殊字符</span><br><span class="line">NSString *newString = [trimString stringByTrimmingCharactersInSet:set];</span><br></pre></td></tr></table></figure>
+<p><strong>4. TransForm属性</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//平移按钮</span><br><span class="line">CGAffineTransform transForm = self.buttonView.transform;</span><br><span class="line">self.buttonView.transform = CGAffineTransformTranslate(transForm, <span class="number">10</span>, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">//旋转按钮</span><br><span class="line">CGAffineTransform transForm = self.buttonView.transform;</span><br><span class="line">self.buttonView.transform = CGAffineTransformRotate(transForm, M_PI_4);</span><br><span class="line"></span><br><span class="line">//缩放按钮</span><br><span class="line">self.buttonView.transform = CGAffineTransformScale(transForm, <span class="number">1.2</span>, <span class="number">1.2</span>);</span><br><span class="line"></span><br><span class="line">//初始化复位</span><br><span class="line">self.buttonView.transform = CGAffineTransformIdentity;</span><br></pre></td></tr></table></figure>
+<p><strong>5. 去掉分割线多余15像素</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">首先在viewDidLoad方法加入以下代码：</span><br><span class="line"> <span class="keyword">if</span> ([self.tableView respondsToSelector:@selector(setSeparatorInset:)]) &#123;</span><br><span class="line">        [self.tableView setSeparatorInset:UIEdgeInsetsZero];    </span><br><span class="line">&#125;   </span><br><span class="line"> <span class="keyword">if</span> ([self.tableView respondsToSelector:@selector(setLayoutMargins:)]) &#123;        </span><br><span class="line">        [self.tableView setLayoutMargins:UIEdgeInsetsZero];</span><br><span class="line">&#125;</span><br><span class="line">然后在重写willDisplayCell方法</span><br><span class="line">- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell </span><br><span class="line">forRowAtIndexPath:(NSIndexPath *)indexPath&#123;   </span><br><span class="line">    <span class="keyword">if</span> ([cell respondsToSelector:@selector(setSeparatorInset:)]) &#123;       </span><br><span class="line">             [cell setSeparatorInset:UIEdgeInsetsZero];    </span><br><span class="line">    &#125;    </span><br><span class="line">    <span class="keyword">if</span> ([cell respondsToSelector:@selector(setLayoutMargins:)]) &#123;        </span><br><span class="line">             [cell setLayoutMargins:UIEdgeInsetsZero];    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>6. 计算方法耗时时间间隔</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// 获取时间间隔</span><br><span class="line"><span class="comment">#define TICK   CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();</span></span><br><span class="line"><span class="comment">#define TOCK   NSLog(@"Time: %f", CFAbsoluteTimeGetCurrent() - start)</span></span><br></pre></td></tr></table></figure>
+<p><strong>7. Color颜色宏定义</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 随机颜色</span><br><span class="line"><span class="comment">#define RANDOM_COLOR [UIColor colorWithRed:arc4random_uniform(256) / 255.0 green:arc4random_uniform(256) / 255.0 blue:arc4random_uniform(256) / 255.0 alpha:1]</span></span><br><span class="line">// 颜色(RGB)</span><br><span class="line"><span class="comment">#define RGBCOLOR(r, g, b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]</span></span><br><span class="line">// 利用这种方法设置颜色和透明值，可不影响子视图背景色</span><br><span class="line"><span class="comment">#define RGBACOLOR(r, g, b, a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]</span></span><br></pre></td></tr></table></figure>
+<p><strong>8. Alert提示宏定义</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#define Alert(_S_, ...) [[[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:(_S_), ##__VA_ARGS__] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil] show]</span></span><br></pre></td></tr></table></figure>
+<p><strong>9. 让iOS应用直接退出</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">- (void)exitApplication &#123;</span><br><span class="line">    AppDelegate *app = [UIApplication sharedApplication].delegate;</span><br><span class="line">    UIWindow *window = app.window;</span><br><span class="line"></span><br><span class="line">    [UIView animateWithDuration:<span class="number">1.0</span>f animations:^&#123;</span><br><span class="line">        window.alpha = <span class="number">0</span>;</span><br><span class="line">    &#125; completion:^(BOOL finished) &#123;</span><br><span class="line">        exit(<span class="number">0</span>);</span><br><span class="line">    &#125;];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>10. NSArray 快速求总和 最大值 最小值 和 平均值</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">NSArray *array = [NSArray arrayWithObjects:@<span class="string">"2.0"</span>, @<span class="string">"2.3"</span>, @<span class="string">"3.0"</span>, @<span class="string">"4.0"</span>, @<span class="string">"10"</span>, nil];</span><br><span class="line">CGFloat sum = [[array valueForKeyPath:@<span class="string">"@sum.floatValue"</span>] floatValue];</span><br><span class="line">CGFloat avg = [[array valueForKeyPath:@<span class="string">"@avg.floatValue"</span>] floatValue];</span><br><span class="line">CGFloat max =[[array valueForKeyPath:@<span class="string">"@max.floatValue"</span>] floatValue];</span><br><span class="line">CGFloat min =[[array valueForKeyPath:@<span class="string">"@min.floatValue"</span>] floatValue];</span><br><span class="line">NSLog(@<span class="string">"%f\n%f\n%f\n%f"</span>,sum,avg,max,min);</span><br></pre></td></tr></table></figure>
+<p><strong>10. 修改Label中不同文字颜色</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">- (void)touchesEnded:(NSSet&lt;UITouch *&gt; *)touches withEvent:(UIEvent *)event</span><br><span class="line">&#123;</span><br><span class="line">    [self editStringColor:self.label.text editStr:@<span class="string">"好"</span> color:[UIColor blueColor]];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (void)editStringColor:(NSString *)string editStr:(NSString *)editStr color:(UIColor *)color &#123;</span><br><span class="line">    // string为整体字符串, editStr为需要修改的字符串</span><br><span class="line">    NSRange range = [string rangeOfString:editStr];</span><br><span class="line"></span><br><span class="line">    NSMutableAttributedString *attribute = [[NSMutableAttributedString alloc] initWithString:string];</span><br><span class="line"></span><br><span class="line">    // 设置属性修改字体颜色UIColor与大小UIFont</span><br><span class="line">    [attribute addAttributes:@&#123;NSForegroundColorAttributeName:color&#125; range:range];</span><br><span class="line"></span><br><span class="line">    self.label.attributedText = attribute;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>11. 播放声音</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#import&lt;AVFoundation/AVFoundation.h&gt;</span></span><br><span class="line"> //  <span class="number">1.</span>获取音效资源的路径</span><br><span class="line"> NSString *path = [[NSBundle mainBundle]pathForResource:@<span class="string">"pour_milk"</span> ofType:@<span class="string">"wav"</span>];</span><br><span class="line"> //  <span class="number">2.</span>将路劲转化为url</span><br><span class="line"> NSURL *tempUrl = [NSURL fileURLWithPath:path];</span><br><span class="line"> //  <span class="number">3.</span>用转化成的url创建一个播放器</span><br><span class="line"> NSError *error = nil;</span><br><span class="line"> AVAudioPlayer *play = [[AVAudioPlayer alloc]initWithContentsOfURL:tempUrl error:&amp;error];</span><br><span class="line"> self.player = play;</span><br><span class="line"> //  <span class="number">4.</span>播放</span><br><span class="line"> [play play];</span><br></pre></td></tr></table></figure>
+<p><strong>12. 检测是否IPad Pro</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">- (BOOL)isIpadPro</span><br><span class="line">&#123;   </span><br><span class="line">  UIScreen *Screen = [UIScreen mainScreen];   </span><br><span class="line">  CGFloat width = Screen.nativeBounds.size.width/Screen.nativeScale;  </span><br><span class="line">  CGFloat height = Screen.nativeBounds.size.height/Screen.nativeScale;         </span><br><span class="line">  BOOL isIpad =[[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad;   </span><br><span class="line">  BOOL hasIPadProWidth = fabs(width - <span class="number">1024.</span>f) &lt; DBL_EPSILON;    </span><br><span class="line">  BOOL hasIPadProHeight = fabs(height - <span class="number">1366.</span>f) &lt; DBL_EPSILON;  </span><br><span class="line">  <span class="keyword">return</span> isIpad &amp;&amp; hasIPadProHeight &amp;&amp; hasIPadProWidth;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>13. 修改Tabbar Item的属性</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">// 修改标题位置</span><br><span class="line">self.tabBarItem.titlePositionAdjustment = UIOffsetMake(<span class="number">0</span>, <span class="number">-10</span>);</span><br><span class="line">// 修改图片位置</span><br><span class="line">self.tabBarItem.imageInsets = UIEdgeInsetsMake(<span class="number">-3</span>, <span class="number">0</span>, <span class="number">3</span>, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">// 批量修改属性</span><br><span class="line"><span class="keyword">for</span> (UIBarItem *item <span class="keyword">in</span> self.tabBarController.tabBar.items) &#123;</span><br><span class="line">    [item setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:</span><br><span class="line">             [UIFont fontWithName:@<span class="string">"Helvetica"</span> size:<span class="number">19.0</span>], NSFontAttributeName, nil]</span><br><span class="line">                        forState:UIControlStateNormal];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 设置选中和未选中字体颜色</span><br><span class="line">[[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];</span><br><span class="line"></span><br><span class="line">//未选中字体颜色</span><br><span class="line">[[UITabBarItem appearance] setTitleTextAttributes:@&#123;NSForegroundColorAttributeName:[UIColor greenColor]&#125; forState:UIControlStateNormal];</span><br><span class="line"></span><br><span class="line">//选中字体颜色</span><br><span class="line">[[UITabBarItem appearance] setTitleTextAttributes:@&#123;NSForegroundColorAttributeName:[UIColor cyanColor]&#125; forState:UIControlStateSelected];</span><br></pre></td></tr></table></figure>
+<p><strong>14. NULL - nil - Nil - NSNULL的区别</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">* nil是OC的，空对象，地址指向空（<span class="number">0</span>）的对象。对象的字面零值</span><br><span class="line"></span><br><span class="line">* Nil是Objective-C类的字面零值</span><br><span class="line"></span><br><span class="line">* NULL是C的，空地址，地址的数值是<span class="number">0</span>，是个长整数</span><br><span class="line"></span><br><span class="line">* NSNull用于解决向NSArray和NSDictionary等集合中添加空值的问题</span><br></pre></td></tr></table></figure>
+<p><strong>15. 去掉BackBarButtonItem的文字</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(<span class="number">0</span>, <span class="number">-60</span>)</span><br><span class="line">                                                         forBarMetrics:UIBarMetricsDefault];</span><br></pre></td></tr></table></figure>
+<p><strong>16. 控件不能交互的一些原因</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>，控件的userInteractionEnabled = NO</span><br><span class="line"><span class="number">2</span>，透明度小于等于<span class="number">0.01</span>，aplpha</span><br><span class="line"><span class="number">3</span>，控件被隐藏的时候，hidden = YES</span><br><span class="line"><span class="number">4</span>，子视图的位置超出了父视图的有效范围，子视图无法交互，设置了。</span><br><span class="line"><span class="number">5</span>，需要交互的视图，被其他视图盖住（其他视图开启了用户交互）。</span><br><span class="line"><span class="number">12</span>，修改UITextField中Placeholder的文字颜色</span><br><span class="line"></span><br><span class="line">[text setValue:[UIColor redColor] forKeyPath:@<span class="string">"_placeholderLabel.textColor"</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>17. 视图的生命周期</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>、 alloc 创建对象，分配空间</span><br><span class="line"><span class="number">2</span>、 init (initWithNibName) 初始化对象，初始化数据</span><br><span class="line"><span class="number">3</span>、 loadView 从nib载入视图 ，除非你没有使用xib文件创建视图</span><br><span class="line"><span class="number">4</span>、 viewDidLoad 载入完成，可以进行自定义数据以及动态创建其他控件</span><br><span class="line"><span class="number">5</span>、 viewWillAppear视图将出现在屏幕之前，马上这个视图就会被展现在屏幕上了</span><br><span class="line"><span class="number">6</span>、 viewDidAppear 视图已在屏幕上渲染完成</span><br><span class="line"></span><br><span class="line"><span class="number">1</span>、viewWillDisappear 视图将被从屏幕上移除之前执行</span><br><span class="line"><span class="number">2</span>、viewDidDisappear 视图已经被从屏幕上移除，用户看不到这个视图了</span><br><span class="line"><span class="number">3</span>、dealloc 视图被销毁，此处需要对你在init和viewDidLoad中创建的对象进行释放.</span><br><span class="line"></span><br><span class="line">viewVillUnload－ 当内存过低，即将释放时调用；</span><br><span class="line">viewDidUnload－当内存过低，释放一些不需要的视图时调用。</span><br></pre></td></tr></table></figure>
+<p><strong>18.应用程序的生命周期</strong> </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>，启动但还没进入状态保存 ：</span><br><span class="line">- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions </span><br><span class="line"></span><br><span class="line"><span class="number">2</span>，基本完成程序准备开始运行：</span><br><span class="line">- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions</span><br><span class="line"></span><br><span class="line"><span class="number">3</span>，当应用程序将要入非活动状态执行，应用程序不接收消息或事件，比如来电话了：</span><br><span class="line">- (void)applicationWillResignActive:(UIApplication *)application </span><br><span class="line"></span><br><span class="line"><span class="number">4</span>，当应用程序入活动状态执行，这个刚好跟上面那个方法相反：</span><br><span class="line">- (void)applicationDidBecomeActive:(UIApplication *)application   </span><br><span class="line"></span><br><span class="line"><span class="number">5</span>，当程序被推送到后台的时候调用。所以要设置后台继续运行，则在这个函数里面设置即可：</span><br><span class="line">- (void)applicationDidEnterBackground:(UIApplication *)application  </span><br><span class="line"></span><br><span class="line"><span class="number">6</span>，当程序从后台将要重新回到前台时候调用，这个刚好跟上面的那个方法相反：</span><br><span class="line">- (void)applicationWillEnterForeground:(UIApplication *)application  </span><br><span class="line"></span><br><span class="line"><span class="number">7</span>，当程序将要退出是被调用，通常是用来保存数据和一些退出前的清理工作：</span><br><span class="line">- (void)applicationWillTerminate:(UIApplication *)application</span><br></pre></td></tr></table></figure>
+<p><strong>19. 判断view是不是指定视图的子视图</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> BOOL isView =  [textView isDescendantOfView:self.view];</span><br><span class="line"><span class="number">16</span>，判断对象是否遵循了某协议</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> ([self.selectedController conformsToProtocol:@protocol(RefreshPtotocol)]) &#123;</span><br><span class="line">    [self.selectedController performSelector:@selector(onTriggerRefresh)];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>20. 页面强制横屏</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#pragma mark - 强制横屏代码</span></span><br><span class="line">- (BOOL)shouldAutorotate&#123;    </span><br><span class="line">    //是否支持转屏       </span><br><span class="line">    <span class="keyword">return</span> NO;</span><br><span class="line">&#125;</span><br><span class="line">- (UIInterfaceOrientationMask)supportedInterfaceOrientations&#123;    </span><br><span class="line">    //支持哪些转屏方向    </span><br><span class="line">    <span class="keyword">return</span> UIInterfaceOrientationMaskLandscape;</span><br><span class="line">&#125;</span><br><span class="line">- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation&#123;               </span><br><span class="line">    <span class="keyword">return</span> UIInterfaceOrientationLandscapeRight;</span><br><span class="line">&#125;</span><br><span class="line">- (BOOL)prefersStatusBarHidden&#123;   </span><br><span class="line">    <span class="keyword">return</span> NO;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>21. 系统键盘通知消息</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>、UIKeyboardWillShowNotification-将要弹出键盘</span><br><span class="line"><span class="number">2</span>、UIKeyboardDidShowNotification-显示键盘</span><br><span class="line"><span class="number">3</span>、UIKeyboardWillHideNotification-将要隐藏键盘</span><br><span class="line"><span class="number">4</span>、UIKeyboardDidHideNotification-键盘已经隐藏</span><br><span class="line"><span class="number">5</span>、UIKeyboardWillChangeFrameNotification-键盘将要改变frame</span><br><span class="line"><span class="number">6</span>、UIKeyboardDidChangeFrameNotification-键盘已经改变frame</span><br></pre></td></tr></table></figure>
+<p><strong>22. 关闭navigationController的滑动返回手势</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.navigationController.interactivePopGestureRecognizer.enabled = NO;</span><br></pre></td></tr></table></figure>
+<p><strong>23. 设置状态栏背景为任意的颜色</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">- (void)setStatusColor</span><br><span class="line">&#123;</span><br><span class="line">    UIView *statusBarView = [[UIView alloc] initWithFrame:CGRectMake(<span class="number">0</span>, <span class="number">0</span>,[UIScreen mainScreen].bounds.size.width, <span class="number">20</span>)];</span><br><span class="line">    statusBarView.backgroundColor = [UIColor orangeColor];</span><br><span class="line">    [self.view addSubview:statusBarView];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>24. 让Xcode的控制台支持LLDB类型的打印</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">打开终端输入三条命令:</span><br><span class="line">    touch ~/.lldbinit</span><br><span class="line">    echo display @import UIKit &gt;&gt; ~/.lldbinit</span><br><span class="line">    echo target stop-hook add -o \"target stop-hook disable\" &gt;&gt; ~/.lldbinit</span><br><span class="line">下次重新运行项目，然后就不报错了。</span><br></pre></td></tr></table></figure>
+<p><strong>25. Label行间距</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">-（void）test&#123;</span><br><span class="line">    NSMutableAttributedString *attributedString =    </span><br><span class="line">   [[NSMutableAttributedString alloc] initWithString:self.contentLabel.text];</span><br><span class="line">    NSMutableParagraphStyle *paragraphStyle =  [[NSMutableParagraphStyle alloc] init];  </span><br><span class="line">   [paragraphStyle setLineSpacing:<span class="number">3</span>];</span><br><span class="line"></span><br><span class="line">    //调整行间距       </span><br><span class="line">   [attributedString addAttribute:NSParagraphStyleAttributeName </span><br><span class="line">                         value:paragraphStyle </span><br><span class="line">                         range:NSMakeRange(<span class="number">0</span>, [self.contentLabel.text length])];</span><br><span class="line">     self.contentLabel.attributedText = attributedString;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>26. UIImageView填充模式</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@"UIViewContentModeScaleToFill",      // 拉伸自适应填满整个视图  </span></span><br><span class="line"><span class="meta">@"UIViewContentModeScaleAspectFit",   // 自适应比例大小显示  </span></span><br><span class="line"><span class="meta">@"UIViewContentModeScaleAspectFill",  // 原始大小显示  </span></span><br><span class="line"><span class="meta">@"UIViewContentModeRedraw",           // 尺寸改变时重绘  </span></span><br><span class="line"><span class="meta">@"UIViewContentModeCenter",           // 中间  </span></span><br><span class="line"><span class="meta">@"UIViewContentModeTop",              // 顶部  </span></span><br><span class="line"><span class="meta">@"UIViewContentModeBottom",           // 底部  </span></span><br><span class="line"><span class="meta">@"UIViewContentModeLeft",             // 中间贴左  </span></span><br><span class="line"><span class="meta">@"UIViewContentModeRight",            // 中间贴右  </span></span><br><span class="line"><span class="meta">@"UIViewContentModeTopLeft",          // 贴左上  </span></span><br><span class="line"><span class="meta">@"UIViewContentModeTopRight",         // 贴右上  </span></span><br><span class="line"><span class="meta">@"UIViewContentModeBottomLeft",       // 贴左下  </span></span><br><span class="line"><span class="meta">@"UIViewContentModeBottomRight",      // 贴右下</span></span><br></pre></td></tr></table></figure>
+<p><strong>27. 宏定义检测block是否可用</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#define BLOCK_EXEC(block, ...) if (block) &#123; block(__VA_ARGS__); &#125;;   </span></span><br><span class="line">// 宏定义之前的用法</span><br><span class="line"> <span class="keyword">if</span> (completionBlock)   &#123;   </span><br><span class="line">    completionBlock(arg1, arg2); </span><br><span class="line">  &#125;    </span><br><span class="line">// 宏定义之后的用法</span><br><span class="line"> BLOCK_EXEC(completionBlock, arg1, arg2);</span><br></pre></td></tr></table></figure>
+<p><strong>28. Debug栏打印时自动把Unicode编码转化成汉字</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 有时候我们在xcode中打印中文,会打印出Unicode编码,还需要自己去一些在线网站转换,有了插件就方便多了。</span><br><span class="line"> DXXcodeConsoleUnicodePlugin 插件</span><br></pre></td></tr></table></figure>
+<p><strong>29. 设置状态栏文字样式颜色</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[[UIApplication sharedApplication] setStatusBarHidden:NO];</span><br><span class="line">[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];</span><br></pre></td></tr></table></figure>
+<p><strong>30. 自动生成模型代码的插件</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 可自动生成模型的代码，省去写模型代码的时间</span><br><span class="line">ESJsonFormat-<span class="keyword">for</span>-Xcode</span><br></pre></td></tr></table></figure>
+<p><strong>31. iOS中的一些手势</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">轻击手势（TapGestureRecognizer）</span><br><span class="line">轻扫手势（SwipeGestureRecognizer）</span><br><span class="line">长按手势（LongPressGestureRecognizer）</span><br><span class="line">拖动手势（PanGestureRecognizer）</span><br><span class="line">捏合手势（PinchGestureRecognizer）</span><br><span class="line">旋转手势（RotationGestureRecognizer）</span><br></pre></td></tr></table></figure>
+<p><strong>32. iOS 开发中一些相关的路径</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">模拟器的位置:</span><br><span class="line">/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs </span><br><span class="line"></span><br><span class="line">文档安装位置:</span><br><span class="line">/Applications/Xcode.app/Contents/Developer/Documentation/DocSets</span><br><span class="line"></span><br><span class="line">插件保存路径:</span><br><span class="line">~/Library/ApplicationSupport/Developer/Shared/Xcode/Plug-ins</span><br><span class="line"></span><br><span class="line">自定义代码段的保存路径:</span><br><span class="line">~/Library/Developer/Xcode/UserData/CodeSnippets/ </span><br><span class="line">如果找不到CodeSnippets文件夹，可以自己新建一个CodeSnippets文件夹。</span><br><span class="line"></span><br><span class="line">证书路径</span><br><span class="line">~/Library/MobileDevice/Provisioning Profiles</span><br></pre></td></tr></table></figure>
+<p><strong>33. 获取 iOS 路径的方法</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">获取家目录路径的函数</span><br><span class="line">NSString *homeDir = NSHomeDirectory();</span><br><span class="line"></span><br><span class="line">获取Documents目录路径的方法</span><br><span class="line">NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);</span><br><span class="line">NSString *docDir = [paths objectAtIndex:<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">获取Documents目录路径的方法</span><br><span class="line">NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);</span><br><span class="line">NSString *cachesDir = [paths objectAtIndex:<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">获取tmp目录路径的方法：</span><br><span class="line">NSString *tmpDir = NSTemporaryDirectory();</span><br></pre></td></tr></table></figure>
+<p><strong>34. 字符串相关操作</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">去除所有的空格</span><br><span class="line">[str stringByReplacingOccurrencesOfString:@<span class="string">" "</span> withString:@<span class="string">""</span>]</span><br><span class="line"></span><br><span class="line">去除首尾的空格</span><br><span class="line">[str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];</span><br><span class="line"></span><br><span class="line">- (NSString *)uppercaseString; 全部字符转为大写字母</span><br><span class="line">- (NSString *)lowercaseString 全部字符转为小写字母</span><br></pre></td></tr></table></figure>
+<p><strong>35. CocoaPods pod install/pod update更新慢的问题</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pod install --verbose --no-repo-update </span><br><span class="line">pod update --verbose --no-repo-update</span><br><span class="line">如果不加后面的参数，默认会升级CocoaPods的spec仓库，加一个参数可以省略这一步，然后速度就会提升不少。</span><br></pre></td></tr></table></figure>
+<p><strong>36. MRC和ARC混编设置方式</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">在XCode中targets的build phases选项下Compile Sources下选择 不需要arc编译的文件</span><br><span class="line">双击输入 -fno-objc-arc 即可</span><br><span class="line"></span><br><span class="line">MRC工程中也可以使用ARC的类，方法如下：</span><br><span class="line">在XCode中targets的build phases选项下Compile Sources下选择要使用arc编译的文件</span><br><span class="line">双击输入 -fobjc-arc 即可</span><br></pre></td></tr></table></figure>
+<p><strong>37. 把tableview里cell的小对勾的颜色改成别的颜色</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">_mTableView.tintColor = [UIColor redColor];</span><br></pre></td></tr></table></figure>
+<p><strong>38. 调整tableview的separaLine线的位置</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tableView.separatorInset = UIEdgeInsetsMake(<span class="number">0</span>, <span class="number">100</span>, <span class="number">0</span>, <span class="number">0</span>);</span><br></pre></td></tr></table></figure>
+<p><strong>39. 设置滑动的时候隐藏navigationbar</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">navigationController.hidesBarsOnSwipe = Yes</span><br></pre></td></tr></table></figure>
+<p><strong>40. 自动处理键盘事件，实现输入框防遮挡的插件</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">IQKeyboardManager</span><br><span class="line">https://github.com/hackiftekhar/IQKeyboardManager</span><br></pre></td></tr></table></figure>
+<p><strong>41. Quartz2D相关</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">图形上下是一个CGContextRef类型的数据。</span><br><span class="line">图形上下文包含：</span><br><span class="line"><span class="number">1</span>，绘图路径（各种各样图形）</span><br><span class="line"><span class="number">2</span>，绘图状态（颜色，线宽，样式，旋转，缩放，平移）</span><br><span class="line"><span class="number">3</span>，输出目标（绘制到什么地方去？UIView、图片）</span><br><span class="line"></span><br><span class="line"><span class="number">1</span>，获取当前图形上下文</span><br><span class="line">CGContextRef ctx = UIGraphicsGetCurrentContext();</span><br><span class="line"><span class="number">2</span>，添加线条</span><br><span class="line">CGContextMoveToPoint(ctx, <span class="number">20</span>, <span class="number">20</span>);</span><br><span class="line"><span class="number">3</span>，渲染</span><br><span class="line">CGContextStrokePath(ctx);</span><br><span class="line">CGContextFillPath(ctx);</span><br><span class="line"><span class="number">4</span>，关闭路径</span><br><span class="line">CGContextClosePath(ctx);</span><br><span class="line"><span class="number">5</span>，画矩形</span><br><span class="line">CGContextAddRect(ctx, CGRectMake(<span class="number">20</span>, <span class="number">20</span>, <span class="number">100</span>, <span class="number">120</span>));</span><br><span class="line"><span class="number">6</span>，设置线条颜色</span><br><span class="line">[[UIColor redColor] setStroke];</span><br><span class="line"><span class="number">7</span>， 设置线条宽度</span><br><span class="line">CGContextSetLineWidth(ctx, <span class="number">20</span>);</span><br><span class="line"><span class="number">8</span>，设置头尾样式</span><br><span class="line">CGContextSetLineCap(ctx, kCGLineCapSquare);</span><br><span class="line"><span class="number">9</span>，设置转折点样式</span><br><span class="line">CGContextSetLineJoin(ctx, kCGLineJoinBevel);</span><br><span class="line"><span class="number">10</span>，画圆</span><br><span class="line">CGContextAddEllipseInRect(ctx, CGRectMake(<span class="number">30</span>, <span class="number">50</span>, <span class="number">100</span>, <span class="number">100</span>));</span><br><span class="line"><span class="number">11</span>，指定圆心</span><br><span class="line">CGContextAddArc(ctx, <span class="number">100</span>, <span class="number">100</span>, <span class="number">50</span>, <span class="number">0</span>, M_PI * <span class="number">2</span>, <span class="number">1</span>);</span><br><span class="line"><span class="number">12</span>，获取图片上下文</span><br><span class="line">UIGraphicsGetImageFromCurrentImageContext();</span><br><span class="line"><span class="number">13</span>，保存图形上下文</span><br><span class="line">CGContextSaveGState(ctx)</span><br><span class="line"><span class="number">14</span>，恢复图形上下文</span><br><span class="line">CGContextRestoreGState(ctx)</span><br></pre></td></tr></table></figure>
+<p><strong>42. 屏幕截图</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// <span class="number">1.</span> 开启一个与图片相关的图形上下文</span><br><span class="line">UIGraphicsBeginImageContextWithOptions(self.view.bounds.size,NO,<span class="number">0.0</span>);</span><br><span class="line"></span><br><span class="line">// <span class="number">2.</span> 获取当前图形上下文</span><br><span class="line">CGContextRef ctx = UIGraphicsGetCurrentContext();</span><br><span class="line"></span><br><span class="line">// <span class="number">3.</span> 获取需要截取的view的layer</span><br><span class="line">[self.view.layer renderInContext:ctx];</span><br><span class="line"></span><br><span class="line">// <span class="number">4.</span> 从当前上下文中获取图片</span><br><span class="line">UIImage *image = UIGraphicsGetImageFromCurrentImageContext();</span><br><span class="line"></span><br><span class="line">// <span class="number">5.</span> 关闭图形上下文</span><br><span class="line">UIGraphicsEndImageContext();</span><br><span class="line"></span><br><span class="line">// <span class="number">6.</span> 把图片保存到相册</span><br><span class="line">UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);</span><br></pre></td></tr></table></figure>
+<p><strong>43. 隐藏导航栏上的返回字体</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//Swift</span><br><span class="line">UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(<span class="number">0</span>, <span class="number">-60</span>), forBarMetrics: .Default)</span><br><span class="line">//OC</span><br><span class="line">[[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(<span class="number">0</span>, <span class="number">-60</span>) forBarMetrics:UIBarMetricsDefault];</span><br></pre></td></tr></table></figure>
+<p><strong>44. 解决tableview的分割线短一截</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">-(void)viewDidLayoutSubviews&#123;</span><br><span class="line"><span class="keyword">if</span> ([self.tableView respondsToSelector:@selector(setSeparatorInset:)])</span><br><span class="line">&#123; </span><br><span class="line">[self.tableView setSeparatorInset:UIEdgeInsetsMake(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)];</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> ([self.tableView respondsToSelector:@selector(setLayoutMargins:)]) </span><br><span class="line">&#123;</span><br><span class="line">[self.tableView setLayoutMargins:UIEdgeInsetsMake(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)]; </span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath&#123;</span><br><span class="line"><span class="keyword">if</span> ([cell respondsToSelector:@selector(setSeparatorInset:)]) </span><br><span class="line">&#123;</span><br><span class="line">[cell setSeparatorInset:UIEdgeInsetsZero]; </span><br><span class="line">&#125; </span><br><span class="line"><span class="keyword">if</span> ([cell respondsToSelector:@selector(setLayoutMargins:)]) </span><br><span class="line">&#123;</span><br><span class="line">[cell setLayoutMargins:UIEdgeInsetsZero]; </span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>45. 动态隐藏NavigationBar</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//<span class="number">1.</span>当我们的手离开屏幕时候隐藏</span><br><span class="line">- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset</span><br><span class="line">&#123; </span><br><span class="line"><span class="keyword">if</span>(velocity.y &gt; <span class="number">0</span>) </span><br><span class="line">&#123;</span><br><span class="line">[self.navigationController setNavigationBarHidden:YES animated:YES];</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">[self.navigationController setNavigationBarHidden:NO animated:YES]; </span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">velocity.y这个量，在上滑和下滑时，变化极小（小数），但是因为方向不同，有正负之分，这就很好处理了。</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">//<span class="number">2.</span>在滑动过程中隐藏</span><br><span class="line">//像safari</span><br><span class="line">(<span class="number">1</span>) </span><br><span class="line">self.navigationController.hidesBarsOnSwipe = YES;</span><br><span class="line">(<span class="number">2</span>)</span><br><span class="line">- (void)scrollViewDidScroll:(UIScrollView *)scrollView</span><br><span class="line">&#123;</span><br><span class="line"> CGFloat offsetY = scrollView.contentOffset.y + __tableView.contentInset.top;</span><br><span class="line"> CGFloat panTranslationY = [scrollView.panGestureRecognizer translationInView:self.tableView].y;</span><br><span class="line"> <span class="keyword">if</span> (offsetY &gt; <span class="number">64</span>) &#123;</span><br><span class="line"> <span class="keyword">if</span> (panTranslationY &gt; <span class="number">0</span>) </span><br><span class="line">&#123; </span><br><span class="line">//下滑趋势，显示 </span><br><span class="line">[self.navigationController setNavigationBarHidden:NO animated:YES];</span><br><span class="line">&#125; <span class="keyword">else</span> &#123; </span><br><span class="line">//上滑趋势，隐藏 </span><br><span class="line">[self.navigationController setNavigationBarHidden:YES animated:YES]; </span><br><span class="line">&#125;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">[self.navigationController setNavigationBarHidden:NO animated:YES]; </span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">这里的offsetY &gt; <span class="number">64</span>只是为了在视图滑过navigationBar的高度之后才开始处理，防止影响展示效果。panTranslationY是scrollView的pan手势的手指位置的y值，可能不是太好，因为panTranslationY这个值在较小幅度上下滑动时，可能都为正或都为负，这就使得这一方式不太灵敏.</span><br></pre></td></tr></table></figure>
+<p><strong>效果图</strong></p>
+<p><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/nav_hide.gif" alt=""></p>
+<p><strong> 46. 设置导航栏透明</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//方法一:设置透明度</span><br><span class="line">[[[self.navigationController.navigationBar subviews]objectAtIndex:<span class="number">0</span>] setAlpha:<span class="number">0.1</span>];</span><br><span class="line">//方法二:设置背景图片</span><br><span class="line">/**</span><br><span class="line"> * 设置导航栏,使其透明</span><br><span class="line"> *</span><br><span class="line">*/</span><br><span class="line">- (void)setNavigationBarColor:(UIColor *)color targetController:(UIViewController *)targetViewController&#123;</span><br><span class="line">//导航条的颜色 以及隐藏导航条的颜色targetViewController.navigationController.navigationBar.shadowImage = [[UIImage alloc]init]; </span><br><span class="line">CGRect rect=CGRectMake(<span class="number">0.0</span>f, <span class="number">0.0</span>f, <span class="number">1.0</span>f, <span class="number">1.0</span>f); UIGraphicsBeginImageContext(rect.size);</span><br><span class="line">CGContextRef context = UIGraphicsGetCurrentContext(); CGContextSetFillColorWithColor(context, [color CGColor]); CGContextFillRect(context, rect); </span><br><span class="line">UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext(); UIGraphicsEndImageContext(); [targetViewController.navigationController.navigationBar setBackgroundImage:theImage forBarMetrics:UIBarMetricsDefault];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>47. 设置字体和行间距</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">//设置字体和行间距 </span><br><span class="line">UILabel * lable = [[UILabel alloc]initWithFrame:CGRectMake(<span class="number">50</span>, <span class="number">100</span>, <span class="number">300</span>, <span class="number">200</span>)]; </span><br><span class="line">lable.text = @<span class="string">"大家好,我是Frank_chun,在这里我们一起学习新的知识,总结我们遇到的那些坑,共同的学习,共同的进步,共同的努力,只为美好的明天!!!有问题一起相互的探讨--438637472!!!"</span>; </span><br><span class="line">lable.numberOfLines = <span class="number">0</span>;</span><br><span class="line">lable.font = [UIFont systemFontOfSize:<span class="number">12</span>];</span><br><span class="line">lable.backgroundColor = [UIColor grayColor]; </span><br><span class="line">[self.view addSubview:lable]; </span><br><span class="line">//设置每个字体之间的间距 </span><br><span class="line">//NSKernAttributeName 这个对象所对应的值是一个NSNumber对象(包含小数),作用是修改默认字体之间的距离调整,值为<span class="number">0</span>的话表示字距调整是禁用的; NSMutableAttributedString * str = [[NSMutableAttributedString alloc]initWithString:lable.text attributes:@&#123;NSKernAttributeName:@(<span class="number">5.0</span>)&#125;];</span><br><span class="line">//设置某写字体的颜色</span><br><span class="line">//NSForegroundColorAttributeName 设置字体颜色</span><br><span class="line">NSRange blueRange = NSMakeRange([[str string] rangeOfString:@<span class="string">"Frank_chun"</span>].location, [[str string] rangeOfString:@<span class="string">"Frank_chun"</span>].length); </span><br><span class="line">[str addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:blueRange]; </span><br><span class="line">NSRange blueRange1 = NSMakeRange([[str string] rangeOfString:@<span class="string">"438637472"</span>].location, [[str string] rangeOfString:@<span class="string">"438637472"</span>].length);</span><br><span class="line">[str addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:blueRange1];</span><br><span class="line">//设置每行之间的间距 </span><br><span class="line">//NSParagraphStyleAttributeName 设置段落的样式</span><br><span class="line">NSMutableParagraphStyle * par = [[NSMutableParagraphStyle alloc]init];</span><br><span class="line">[par setLineSpacing:<span class="number">20</span>];</span><br><span class="line">//为某一范围内文字添加某个属性</span><br><span class="line">//NSMakeRange表示所要的范围,从<span class="number">0</span>到整个文本的长度</span><br><span class="line">[str addAttribute:NSParagraphStyleAttributeName value:par range:NSMakeRange(<span class="number">0</span>, lable.text.length)]; [lable setAttributedText:str];</span><br></pre></td></tr></table></figure>
+<p><strong>效果图</strong></p>
+<p><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/learn.png" alt=""></p>
+<p><strong>48. 点击button倒计时</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">//第一种方法</span><br><span class="line">//点击button倒计时</span><br><span class="line"><span class="comment">#import "ViewController.h"</span></span><br><span class="line"><span class="meta">@interface ViewController ()</span></span><br><span class="line"><span class="meta">@property (nonatomic, strong) UIButton * timeButton;</span></span><br><span class="line"><span class="meta">@property (nonatomic, strong) NSTimer * timer;</span></span><br><span class="line"><span class="meta">@property (nonatomic, strong)UIButton * btn;</span></span><br><span class="line"><span class="meta">@end@implementation ViewController</span></span><br><span class="line">&#123; </span><br><span class="line">NSInteger _time;</span><br><span class="line">&#125;</span><br><span class="line">- (void)viewDidLoad &#123;</span><br><span class="line">[super viewDidLoad]; </span><br><span class="line">_time = <span class="number">5</span>; </span><br><span class="line">self.btn = [UIButton buttonWithType:UIButtonTypeCustom]; _btn.backgroundColor = [UIColor orangeColor];</span><br><span class="line">[_btn setTitle:@<span class="string">"获取验证码"</span> forState:UIControlStateNormal]; _btn.titleLabel.font = [UIFont systemFontOfSize:<span class="number">15</span>];</span><br><span class="line">[_timeButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];</span><br><span class="line">[_btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];</span><br><span class="line">[self refreshButtonWidth]; </span><br><span class="line">[self.view addSubview:self.btn];</span><br><span class="line">&#125;</span><br><span class="line">- (void)refreshButtonWidth&#123; </span><br><span class="line">CGFloat width = <span class="number">0</span>; </span><br><span class="line"><span class="keyword">if</span> (_btn.enabled)&#123;</span><br><span class="line"> width = <span class="number">100</span>; </span><br><span class="line">&#125; <span class="keyword">else</span> &#123; </span><br><span class="line">width = <span class="number">200</span>;</span><br><span class="line">&#125; </span><br><span class="line">_btn.center = CGPointMake(self.view.frame.size.width/<span class="number">2</span>, <span class="number">200</span>);</span><br><span class="line">_btn.bounds = CGRectMake(<span class="number">0</span>, <span class="number">0</span>, width, <span class="number">40</span>); </span><br><span class="line">//每次刷新，保证区域正确</span><br><span class="line">[_btn setBackgroundImage:[self imageWithColor:[UIColor orangeColor] andSize:_btn.frame.size] forState:UIControlStateNormal];</span><br><span class="line">[_btn setBackgroundImage:[self imageWithColor:[UIColor lightGrayColor] andSize:_btn.frame.size] forState:UIControlStateDisabled];</span><br><span class="line">&#125;</span><br><span class="line">- (UIImage *)imageWithColor:(UIColor *)color andSize:(CGSize)aSize&#123;</span><br><span class="line"> CGRect rect = CGRectMake(<span class="number">0.0</span>f, <span class="number">0.0</span>f, aSize.width, aSize.height); UIGraphicsBeginImageContext(rect.size);</span><br><span class="line"> CGContextRef context = UIGraphicsGetCurrentContext(); CGContextSetFillColorWithColor(context, [color CGColor]); CGContextFillRect(context, rect);</span><br><span class="line"> UIImage *image = UIGraphicsGetImageFromCurrentImageContext(); UIGraphicsEndImageContext();</span><br><span class="line"><span class="keyword">return</span> image;</span><br><span class="line">&#125;</span><br><span class="line">- (void)btnAction:(UIButton *)sender&#123;</span><br><span class="line">sender.enabled = NO;</span><br><span class="line">[self refreshButtonWidth];</span><br><span class="line">[sender setTitle:[NSString stringWithFormat:@<span class="string">"获取验证码(%zi)"</span>, _time] forState:UIControlStateNormal]; </span><br><span class="line">_timer = [NSTimer scheduledTimerWithTimeInterval:<span class="number">0.1</span> target:self selector:@selector(timeDown) userInfo:nil repeats:YES];</span><br><span class="line">&#125;</span><br><span class="line">- (void)timeDown&#123; </span><br><span class="line">_time --;</span><br><span class="line"> <span class="keyword">if</span> (_time == <span class="number">0</span>) &#123;</span><br><span class="line"> [_btn setTitle:@<span class="string">"重新获取"</span> forState:UIControlStateNormal]; _btn.enabled = YES; </span><br><span class="line">[self refreshButtonWidth]; </span><br><span class="line">[_timer invalidate]; </span><br><span class="line">_timer = nil; </span><br><span class="line">_time = <span class="number">5</span> ; </span><br><span class="line"><span class="keyword">return</span>; </span><br><span class="line">&#125; </span><br><span class="line">[_btn setTitle:[NSString stringWithFormat:@<span class="string">"获取验证码(%zi)"</span>, _time] forState:UIControlStateNormal];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">//第二种方法</span><br><span class="line"><span class="comment">#pragma mark -点击发送验证码</span></span><br><span class="line">- (void)sendMessage:(UIButton *)btn&#123;</span><br><span class="line"><span class="keyword">if</span> (self.phoneField.text.length == <span class="number">0</span>) &#123; </span><br><span class="line">[self remindMessage:@<span class="string">"请输入正确的手机号"</span>];</span><br><span class="line">&#125;<span class="keyword">else</span>&#123; </span><br><span class="line">__block int timeout=<span class="number">60</span>; </span><br><span class="line">//倒计时时间 </span><br><span class="line">dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, <span class="number">0</span>); dispatch_source_t _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, <span class="number">0</span>, <span class="number">0</span>,queue); dispatch_source_set_timer(_timer,dispatch_walltime(NULL, <span class="number">0</span>),<span class="number">1.0</span>*NSEC_PER_SEC, <span class="number">0</span>);</span><br><span class="line"> //每秒执行 </span><br><span class="line">dispatch_source_set_event_handler(_timer, ^&#123; </span><br><span class="line"><span class="keyword">if</span>(timeout&lt;=<span class="number">0</span>)&#123; </span><br><span class="line">//倒计时结束，关闭 </span><br><span class="line">dispatch_source_cancel(_timer); dispatch_async(dispatch_get_main_queue(), ^&#123; </span><br><span class="line">// 设置界面的按钮显示 根据自己需求设置 </span><br><span class="line">[btn setTitle:@<span class="string">"发送验证码"</span> forState:UIControlStateNormal]; btn.userInteractionEnabled = YES; </span><br><span class="line">&#125;); </span><br><span class="line">&#125;<span class="keyword">else</span>&#123; </span><br><span class="line">int seconds = timeout % <span class="number">60</span>;</span><br><span class="line">NSString *strTime = [NSString stringWithFormat:@<span class="string">"%d"</span>, seconds];</span><br><span class="line"><span class="keyword">if</span> ([strTime isEqualToString:@<span class="string">"0"</span>]) &#123;</span><br><span class="line"> strTime = [NSString stringWithFormat:@<span class="string">"%d"</span>,<span class="number">60</span>];</span><br><span class="line"> &#125; </span><br><span class="line">dispatch_async(dispatch_get_main_queue(), ^&#123; </span><br><span class="line">//设置界面的按钮显示 根据自己需求设置 </span><br><span class="line">//NSLog(@<span class="string">"____%@"</span>,strTime);</span><br><span class="line">[UIView beginAnimations:nil context:nil];</span><br><span class="line">[UIView setAnimationDuration:<span class="number">1</span>]; </span><br><span class="line">[btn setTitle:[NSString stringWithFormat:@<span class="string">"%@秒后重新发送"</span>,strTime] forState:UIControlStateNormal];</span><br><span class="line">[UIView commitAnimations]; </span><br><span class="line">btn.userInteractionEnabled = NO;</span><br><span class="line"> &#125;);</span><br><span class="line"> timeout--;</span><br><span class="line"> &#125; </span><br><span class="line">&#125;); </span><br><span class="line">dispatch_resume(_timer);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>效果图</strong></p>
+<p><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/buton_timer.gif" alt=""></p>
+<p><strong>49. UITextField默认占位符是居中显示,让其居上显示</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">textField.contentVerticalAlignment = UIControlContentVerticalAlignmentTop;</span><br></pre></td></tr></table></figure>
+<p><strong>50. 解决同时按两个按钮进两个view的问题</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[button setExclusiveTouch:YES];</span><br></pre></td></tr></table></figure>
+<p><strong>51. 图片拉伸</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">UIImage* img=[UIImage imageNamed:@<span class="string">"2.png"</span>];//原图</span><br><span class="line">UIEdgeInsets edge=UIEdgeInsetsMake(<span class="number">0</span>, <span class="number">10</span>, <span class="number">0</span>,<span class="number">10</span>);</span><br><span class="line">//UIImageResizingModeStretch：拉伸模式，通过拉伸UIEdgeInsets指定的矩形区域来填充图片</span><br><span class="line">//UIImageResizingModeTile：平铺模式，通过重复显示UIEdgeInsets指定的矩形区域来填充图</span><br><span class="line">img= [img resizableImageWithCapInsets:edge resizingMode:UIImageResizingModeStretch];</span><br><span class="line">self.imageView.image=img;</span><br></pre></td></tr></table></figure>
+<p><strong>52. 修改textFieldplaceholder字体颜色和大小</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">textField.placeholder = @<span class="string">"username is in here!"</span>;  </span><br><span class="line">[textField setValue:[UIColor redColor] forKeyPath:@<span class="string">"_placeholderLabel.textColor"</span>];  </span><br><span class="line">[textField setValue:[UIFont boldSystemFontOfSize:<span class="number">16</span>] forKeyPath:@<span class="string">"_placeholderLabel.font"</span>];</span><br></pre></td></tr></table></figure>
+<p><strong>53. 修改状态栏字体颜色</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">只能设置两种颜色，黑色和白色，系统默认黑色</span><br><span class="line">设置为白色方法：</span><br><span class="line">（<span class="number">1</span>）在plist里面添加Status bar style，值为UIStatusBarStyleLightContent（白色）或UIStatusBarStyleDefault（黑 色）</span><br><span class="line">（<span class="number">2</span>）在Info.plist中设置UIViewControllerBasedStatusBarAppearance 为NO</span><br></pre></td></tr></table></figure>
+<p><strong>54. 去掉导航栏下边的黑线</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];</span><br><span class="line">self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];</span><br></pre></td></tr></table></figure>
+<p><strong>55. 修改pagecontrol颜色</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">_pageControl.currentPageIndicatorTintColor=SFQRedColor;</span><br><span class="line">_pageControl.pageIndicatorTintColor=SFQGrayColor;</span><br></pre></td></tr></table></figure>
+<p><strong>56. 去掉UITableView的section的粘性，使其不会悬停</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">//有时候使用UITableView所实现的列表，会使用到section，但是又不希望它粘在最顶上而是跟随滚动而消失或者出现</span><br><span class="line">- (void)scrollViewDidScroll:(UIScrollView *)scrollView &#123;  </span><br><span class="line">    <span class="keyword">if</span> (scrollView == _tableView) &#123;  </span><br><span class="line">        CGFloat sectionHeaderHeight = <span class="number">36</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (scrollView.contentOffset.y &lt;= sectionHeaderHeight &amp;&amp; scrollView.contentOffset.y &gt;= <span class="number">0</span>) &#123;  </span><br><span class="line">            scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>);  </span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (scrollView.contentOffset.y &gt;= sectionHeaderHeight) &#123;  </span><br><span class="line">            scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>);  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>57. 通过2D仿射函数实现小的动画效果(变大缩小) –可用于自定义pageControl中</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[UIView animateWithDuration:<span class="number">0.3</span> animations:^&#123;</span><br><span class="line">       imageView.transform = CGAffineTransformMakeScale(<span class="number">2</span>, <span class="number">2</span>);</span><br><span class="line">       &#125; completion:^(BOOL finished) &#123;</span><br><span class="line">       imageView.transform = CGAffineTransformMakeScale(<span class="number">1.0</span>, <span class="number">1.0</span>);</span><br><span class="line">       &#125;];</span><br></pre></td></tr></table></figure>
+<p><strong>58. UIImage与字符串互转</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//图片转字符串  </span><br><span class="line">-(NSString *)UIImageToBase64Str:(UIImage *) image  </span><br><span class="line">&#123;  </span><br><span class="line">    NSData *data = UIImageJPEGRepresentation(image, <span class="number">1.0</span>f);  </span><br><span class="line">    NSString *encodedImageStr = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];  </span><br><span class="line">    <span class="keyword">return</span> encodedImageStr;  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//字符串转图片  </span><br><span class="line">-(UIImage *)Base64StrToUIImage:(NSString *)_encodedImageStr  </span><br><span class="line">&#123;  </span><br><span class="line">    NSData *_decodedImageData   = [[NSData alloc] initWithBase64Encoding:_encodedImageStr];  </span><br><span class="line">    UIImage *_decodedImage      = [UIImage imageWithData:_decodedImageData];  </span><br><span class="line">    <span class="keyword">return</span> _decodedImage;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>59. 判断NSString中是否包含中文</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-(BOOL)isChinese:(NSString *)str&#123;</span><br><span class="line">    NSString *match=@<span class="string">"(^[\u4e00-\u9fa5]+$)"</span>;</span><br><span class="line">    NSPredicate *predicate = [NSPredicate predicateWithFormat:@<span class="string">"SELF matches %@"</span>, match];</span><br><span class="line">    <span class="keyword">return</span> [predicate evaluateWithObject:str];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>60. NSDate与NSString的相互转化</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">-(NSString *)dateToString:(NSDate *)date &#123;</span><br><span class="line">  // 初始化时间格式控制器</span><br><span class="line">  NSDateFormatter *matter = [[NSDateFormatter alloc] init];</span><br><span class="line">  // 设置设计格式</span><br><span class="line">  [matter setDateFormat:@<span class="string">"yyyy-MM-dd hh:mm:ss zzz"</span>];</span><br><span class="line">  // 进行转换</span><br><span class="line">  NSString *dateStr = [matter stringFromDate:date];</span><br><span class="line">  <span class="keyword">return</span> dateStr;</span><br><span class="line">&#125;</span><br><span class="line">-(NSDate *)stringToDate:(NSString *)dateStr &#123;</span><br><span class="line"></span><br><span class="line">  // 初始化时间格式控制器</span><br><span class="line">  NSDateFormatter *matter = [[NSDateFormatter alloc] init];</span><br><span class="line">  // 设置设计格式</span><br><span class="line">  [matter setDateFormat:@<span class="string">"yyyy-MM-dd hh:mm:ss zzz"</span>];</span><br><span class="line">  // 进行转换</span><br><span class="line">  NSDate *date = [matter dateFromString:dateStr];</span><br><span class="line">  <span class="keyword">return</span> date;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>以上整理只为自己和大家方便查看，iOS中小技巧不计其数<br>如果大家有不错的代码和技巧，也可留言或私信我，然后加上，<br>持续更新中。。。。欢迎大家光临<a href="http://lishcihao.com" target="_blank" rel="external">我的博客</a></p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+
+    <div>
+      
+        
+<div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center">
+  <div style="margin: 10px">坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton", disable="enable", onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}", style="cursor: pointer; border: 0; outline: 0; border-radius: 100%; padding: 0; margin: 0; letter-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none">
+    <span onmouseover="this.style.color='rgb(236,96,0)';this.style.background='rgb(204,204,204)'" onMouseOut="this.style.color='#fff';this.style.background='rgb(236,96,0)'" style="display: inline-block; width: 75px; height: 75px; border-radius: 100%; line-height: 81px; color: #fff; font: 400 35px/75px 'microsofty'; background: rgb(236,96,0)">赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechat-reward.png" alt="李世超 WeChat Pay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>微信打赏</p>
+      </div>
+    
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay-reward.png" alt="李世超 Alipay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>支付宝打赏</p>
+      </div>
+    
+  </div>
+</div>
+
+      
+    </div>
+
+<! -- 添加微信图标 -->
+    
+    
+
+    <div style="padding: 10px 0; margin: 0px auto; width: 90%; text-align: center">
+
+    <span style="padding: 10px; margin: 0px">
+    
+    欢迎大家关注：Amin_iOS的微信公众号
+    
+    </span>
+
+    
+    <a href="http://i2.piimg.com/c3957b482e32ec3f.jpg" title=“Amin_iOS的微信公众号" class="fancybox" rel="article0">
+    <img src="http://i2.piimg.com/c3957b482e32ec3f.jpg" title="Amin_iOS的微信公众号" height="160px" width="160px">
+    </a>
+    
+
+    </div>
+
+    
+    
+
+    <footer class="post-footer">
+
+      
+        <div class="post-tags">
+          
+            <a href="/tags/iOS技术/" rel="tag">#iOS技术</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/10/iOS-Hybrid-框架-——PhoneGap/" rel="next" title="iOS Hybrid 框架 ——PhoneGap">
+                <i class="fa fa-chevron-left"></i> iOS Hybrid 框架 ——PhoneGap
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/17/iOS-知识-常用小技巧大杂烩/"
+           data-title="iOS 知识-常用小技巧大杂烩" data-url="http://lishichao.github.io/2016/05/17/iOS-知识-常用小技巧大杂烩/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://i4.piimg.com/5daa87b3f5ce23a2.jpg"
+               alt="李世超" />
+          <p class="site-author-name" itemprop="name">李世超</p>
+          <p class="site-description motion-element" itemprop="description">嗨，我是李世超 (@Amin_iOS)，一名移动端的Development And Management，现居广州。正在修行，探求创意之源，记录自己学习的点滴。</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">13</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/lishichao706" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/users/ab8e592732ea/latest_articles" target="_blank">
+                  
+                    <i class="fa fa-pinterest"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/lishichao" target="_blank">
+                  
+                    <i class="fa fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/Amin_706" target="_blank">
+                  
+                    <i class="fa fa-twitter"></i>
+                  
+                  twitter
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        <div class="links-of-blogroll motion-element">
+          
+            <div class="links-of-blogroll-title">我的链接</div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://i2.piimg.com/c3957b482e32ec3f.jpg" target="_blank">微信公众号</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://blog.cocoachina.com/304267" target="_blank">CocoaChina</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://blog.csdn.net/lishichao706" target="_blank">CSDN</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.zhihu.com/people/amin706" target="_blank">知乎</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://zhuanlan.zhihu.com/lishichao" target="_blank">知乎专栏</a>
+                </li>
+              
+            </ul>
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2010 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">李世超</span>
+</div>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+
+<span id="busuanzi_container_site_uv">
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+</span>
+
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"lishichao706"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("JDa3L42Y5MiAqtYFX35OrssM-gzGzoHsz", "lOQmfvDtuB60v4dhjjy7wbKv");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>
