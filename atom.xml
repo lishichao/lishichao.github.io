@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lishichao.github.io/"/>
-  <updated>2016-05-17T03:52:33.000Z</updated>
+  <updated>2016-05-20T10:23:07.000Z</updated>
   <id>http://lishichao.github.io/</id>
   
   <author>
@@ -14,6 +14,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>iOS 教你如何修改微信运动步数</title>
+    <link href="http://lishichao.github.io/2016/05/20/iOS-%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9%E5%BE%AE%E4%BF%A1%E8%BF%90%E5%8A%A8%E6%AD%A5%E6%95%B0/"/>
+    <id>http://lishichao.github.io/2016/05/20/iOS-教你如何修改微信运动步数/</id>
+    <published>2016-05-20T09:57:04.000Z</published>
+    <updated>2016-05-20T10:23:07.000Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;说明: 相信喜欢逆向工程的小伙伴已经对微信自动抢红包插件有所耳闻了,或者可以说,已经被广泛的传播了,但笔者发现,其实只有两篇是原创的,其余均为疯狂转载.看了下网上对于微信的”喜爱”目前只有抢红包这块,所以为大家带来另一个实用性技能—修改微信运动参数,妈妈在也不用担心我把手机绑在狗腿上了😄!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/nixiang_title.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h4 id=&quot;正文&quot;&gt;&lt;a href=&quot;#正文&quot; class=&quot;headerlink&quot; title=&quot;正文&quot;&gt;&lt;/a&gt;正文&lt;/h4&gt;&lt;p&gt;言归正传,本文只针对于初识逆向工程的热爱着,大神勿喷,交流讨论可以加&lt;strong&gt;笔者QQ群&lt;/strong&gt;: 124216675.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;硬件工具&lt;/strong&gt;:最好是有一台越狱后的iPhone手机,没有也没有关系,后续补充非越狱环境开发,&lt;strong&gt;本文针对于Theos下Tweak编码&lt;/strong&gt;&amp;lt;本文使用的测试机iPhone 5c和一台没用上的iPhone 5s, ps:别问为什么没用上还提, 因为写到这里,控制不住装逼的念头,好了不开玩笑了!&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;软件工具&lt;/strong&gt;:已经有高(hao)人为我们写好了开发工具的配置和安装,只是一个软件的安装所以本人没必要踩在前辈的肩膀上继续深造, 教程地址, 稍等,我们还需要安装一个查看微信头文件的宝物:class-dump, 当然了,使用它的前提是需要进行砸壳后的app才可以正确导出头文件,至于怎么砸壳,谷歌肯定能帮到你,&lt;strong&gt;目前能谷歌到的我们不做深究,只谈目前没有公开的&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&quot;硬件软件已经准备就绪&quot;&gt;&lt;a href=&quot;#硬件软件已经准备就绪&quot; class=&quot;headerlink&quot; title=&quot;硬件软件已经准备就绪&quot;&gt;&lt;/a&gt;硬件软件已经准备就绪&lt;/h4&gt;&lt;h5 id=&quot;思考功能怎么实现&quot;&gt;&lt;a href=&quot;#思考功能怎么实现&quot; class=&quot;headerlink&quot; title=&quot;思考功能怎么实现:&quot;&gt;&lt;/a&gt;思考功能怎么实现:&lt;/h5&gt;&lt;p&gt;在我们的iOS系统本身, 有一个运动与健康,这里记录了我们每天的步数行为等等, 那么微信运动排行榜在对好友们的步数进行排榜的时候肯定需要去取数据, 那么从哪取呢?毋庸置疑,去运动与健康取,如果我们能在微信取数据的时候进行动态劫持,伪造一个假数据传给微信,那么是不是就大功告成了呢? 答案: if(YES){NSLog(@”是的”);}&lt;/p&gt;
+&lt;h5 id=&quot;观察微信头文件&quot;&gt;&lt;a href=&quot;#观察微信头文件&quot; class=&quot;headerlink&quot; title=&quot;观察微信头文件&quot;&gt;&lt;/a&gt;观察微信头文件&lt;/h5&gt;&lt;p&gt;&lt;strong&gt;使用 class-dump -H WeChat.app -o WeChatHead命令导出微信头文件&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;真的是巨多无比,几千个.h&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/nixiang_1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我们发现在WCDeviceStepObject这个类里面有几个很显眼的属性m7StepCount,hkStepCount 等.   如下:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/nixiang_2.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;关键字”stepCount”的中文是”步数”,那么这个是不是我们要劫持并修改的参数呢? 多说无益,试试就知道了&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;创建一个Tweak工程, 如下:&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/nixiang_3.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;编写Tweak.xm文件, 如下:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/nixiang4.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;上图我们返回”98800” 步数以做测试,&lt;/p&gt;
+&lt;p&gt;make并install Tweak工程后在测试机查看结果&lt;/p&gt;
+&lt;p&gt;大功告成, 排行榜的封面以后都由你来控制了, 你可以打出”广告招租,5元包月” “走丢了”等文字娱乐眼球.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;以上代码只是简述,完整源代码将放在笔者的GitHub中, &lt;a href=&quot;https://github.com/lishichao/WeChat_Sport&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub地址&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;总结: 逆向开发资料较少, 很多问题都需要自己去解决,只要是你坐住了板凳去研究它,  终会有所回报!&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;说明: 相信喜欢逆向工程的小伙伴已经对微信自动抢红包插件有所耳闻了,或者可以说,已经被广泛的传播了,但笔者发现,其实只有两篇是原创的,其余均为疯狂转载.看了下网上对于微信的”喜爱”目前只有抢红包这块,所以为大家带来另一个实用性技能—修改微信运动参数,妈妈在也不用担心我把手机绑在狗腿上了😄!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/nixiang_title.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="逆向工程" scheme="http://lishichao.github.io/categories/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+      <category term="逆向工程" scheme="http://lishichao.github.io/tags/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>iOS 知识-常用小技巧大杂烩</title>
