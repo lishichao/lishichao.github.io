@@ -82,24 +82,18 @@
 
 
 
-<meta name="description" content="果然是苹果打个哈欠，iOS行业内就得起一次风暴呀。自从5月初Apple明文规定所有开发者在6月1号以后提交新版本需要支持IPV6-Only的网络，大家便开始热火朝天的研究如何支持IPV6，以及应用中哪些模块目前不支持IPV6。
-
-一、IPV6-Only支持是啥？首先IPV6，是对IPV4地址空间的扩充。目前当我们用iOS设备连接上Wifi、4G、3G等网络时，设备被分配的地址均是IPV4地址，但">
+<meta name="description" content="果然是苹果打个哈欠，iOS行业内就得起一次风暴呀。自从5月初Apple明文规定所有开发者在6月1号以后提交新版本需要支持IPV6-Only的网络，大家便开始热火朝天的研究如何支持IPV6，以及应用中哪些模块目前不支持IPV6。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS应用支持IPV6，就那点事儿">
 <meta property="og:url" content="http://lishichao.github.io/2016/05/30/iOS应用支持IPV6，就那点事儿/index.html">
 <meta property="og:site_name" content="Amin_iOS·Blog">
-<meta property="og:description" content="果然是苹果打个哈欠，iOS行业内就得起一次风暴呀。自从5月初Apple明文规定所有开发者在6月1号以后提交新版本需要支持IPV6-Only的网络，大家便开始热火朝天的研究如何支持IPV6，以及应用中哪些模块目前不支持IPV6。
-
-一、IPV6-Only支持是啥？首先IPV6，是对IPV4地址空间的扩充。目前当我们用iOS设备连接上Wifi、4G、3G等网络时，设备被分配的地址均是IPV4地址，但">
+<meta property="og:description" content="果然是苹果打个哈欠，iOS行业内就得起一次风暴呀。自从5月初Apple明文规定所有开发者在6月1号以后提交新版本需要支持IPV6-Only的网络，大家便开始热火朝天的研究如何支持IPV6，以及应用中哪些模块目前不支持IPV6。">
 <meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/ipv6_1.png">
 <meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/ipv6_2.png">
-<meta property="og:updated_time" content="2016-05-30T13:35:30.000Z">
+<meta property="og:updated_time" content="2016-05-30T13:36:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS应用支持IPV6，就那点事儿">
-<meta name="twitter:description" content="果然是苹果打个哈欠，iOS行业内就得起一次风暴呀。自从5月初Apple明文规定所有开发者在6月1号以后提交新版本需要支持IPV6-Only的网络，大家便开始热火朝天的研究如何支持IPV6，以及应用中哪些模块目前不支持IPV6。
-
-一、IPV6-Only支持是啥？首先IPV6，是对IPV4地址空间的扩充。目前当我们用iOS设备连接上Wifi、4G、3G等网络时，设备被分配的地址均是IPV4地址，但">
+<meta name="twitter:description" content="果然是苹果打个哈欠，iOS行业内就得起一次风暴呀。自从5月初Apple明文规定所有开发者在6月1号以后提交新版本需要支持IPV6-Only的网络，大家便开始热火朝天的研究如何支持IPV6，以及应用中哪些模块目前不支持IPV6。">
 <meta name="twitter:image" content="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/ipv6_1.png">
 
 
@@ -322,7 +316,7 @@
             </time>
           </span>
 	
-	<span class="post-count">&nbsp; |&nbsp; 字数 6,208
+	<span class="post-count">&nbsp; |&nbsp; 字数 6,213
 	</span>
 
 	<span class="post-count">&nbsp; |&nbsp; 阅读预计 32分钟</span>
@@ -379,7 +373,7 @@
 
       
         <blockquote>
-<p>果然是苹果打个哈欠，iOS行业内就得起一次风暴呀。自从5月初Apple明文规定所有开发者在6月1号以后提交新版本需要支持IPV6-Only的网络，大家便开始热火朝天的研究如何支持IPV6，以及应用中哪些模块目前不支持IPV6。</p>
+<p>果然是苹果打个哈欠，iOS行业内就得起一次风暴呀。自从5月初Apple明文规定所有开发者在6月1号以后提交新版本需要支持IPV6-Only的网络，大家便开始热火朝天的研究如何支持IPV6，以及应用中哪些模块目前不支持IPV6。<br><a id="more"></a></p>
 </blockquote>
 <h4 id="一、IPV6-Only支持是啥？"><a href="#一、IPV6-Only支持是啥？" class="headerlink" title="一、IPV6-Only支持是啥？"></a>一、IPV6-Only支持是啥？</h4><p>首先IPV6，是对IPV4地址空间的扩充。目前当我们用iOS设备连接上Wifi、4G、3G等网络时，设备被分配的地址均是IPV4地址，但是随着运营商和企业逐渐部署IPV6 DNS64/NAT64网络之后，设备被分配的地址会变成IPV6的地址，而这些网络就是所谓的IPV6-Only网络，并且仍然可以通过此网络去获取IPV4地址提供的内容。客户端向服务器端请求域名解析，首先通过DNS64 Server查询IPv6的地址，如果查询不到，再向DNS Server查询IPv4地址，通过DNS64 Server合成一个IPV6的地址，最终将一个IPV6的地址返回给客户端。如图所示：</p>
 <p><img src="http://7xstl7.com1.z0.glb.clouddn.com/%E6%8A%80%E6%9C%AF/ipv6_1.png" alt=""></p>
