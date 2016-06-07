@@ -317,7 +317,7 @@
             </time>
           </span>
 	
-	<span class="post-count">&nbsp; |&nbsp; 字数 1,003
+	<span class="post-count">&nbsp; |&nbsp; 字数 1,007
 	</span>
 
 	<span class="post-count">&nbsp; |&nbsp; 阅读预计 5分钟</span>
@@ -374,42 +374,16 @@
 
       
         
-          
-            <h4 id="ipv6-测试环境搭建ok"><a href="#ipv6-测试环境搭建ok" class="headerlink" title="ipv6 测试环境搭建ok"></a>ipv6 测试环境搭建ok</h4><blockquote>
+          <h4 id="ipv6-测试环境搭建ok"><a href="#ipv6-测试环境搭建ok" class="headerlink" title="ipv6 测试环境搭建ok"></a>ipv6 测试环境搭建ok</h4><blockquote>
 <p>1.微信聊天失败 </p>
 <p>2.qq 聊天ok</p>
 <p>(这两点证明ipv6 搭建是OK的)</p>
 </blockquote>
-<h4 id="需要换的SDK"><a href="#需要换的SDK" class="headerlink" title="需要换的SDK"></a>需要换的SDK</h4><ul>
-<li><p>微信支付 5次均超时(去年8月集成的SDk,官方的支持ipv6,可以换)</p>
-</li>
-<li><p>支付宝调用支付宝客户端支付 5次均超时,支付宝支付有问题 (去年8月集成的SDK)</p>
-</li>
-<li><p>第三方登录: 微博官方说需要适配ipv6,我们用老版本直接微博登陆ok(去年8月集成),qq登录ok ,微信登录不行</p>
-</li>
-<li><p>分享:微信失败,朋友圈失败,QQ/QQ空间,微博均是成功的</p>
-</li>
-</ul>
-<blockquote>
-<p>总之:第三方登录和第三方分享就微信不行,qq 微博是ok 的(换友盟或者shareSDk 即可解决)</p>
-</blockquote>
-<ul>
-<li><p>友盟需要更换</p>
-</li>
-<li><p>支付宝支付在ipv6 下支付失败,微信支付在ipv6 下支付失败,他们的SDk都不支持ipv6  ,希望苹果审核不要去真的付款</p>
-</li>
-<li><p>环信聊天需要换  环信服务器无法登录,无法聊天</p>
-</li>
-<li><p>AFNetwork 居然不用换,3.0以前的版本,加载数据正常</p>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];</span><br><span class="line">[mgr POST:urlstr parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) &#123;</span><br><span class="line"><span class="keyword">if</span> (sucess) &#123;</span><br><span class="line">sucess(responseObject);</span><br><span class="line">&#125;</span><br><span class="line">&#125; failure:^(AFHTTPRequestOperation *operation, NSError *error) &#123;</span><br><span class="line"><span class="keyword">if</span> (failur) &#123;</span><br><span class="line">failur(error);</span><br><span class="line">&#125;</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
-<ul>
-<li>ASI居然不用换<strong>(下面代码很垃圾,直接使用ASI 无封装,展示只是说明下)</strong></li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">__weak typeof (request) w_requset = request;</span><br><span class="line">[request setCompletionBlock:^&#123;</span><br><span class="line">//<span class="number">1.</span>得到响应，转化为字典，</span><br><span class="line">NSData* response = [ w_requset responseData];</span><br><span class="line">NSDictionary* dict = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableLeaves error:nil];</span><br><span class="line">ECLog(@<span class="string">"%@"</span>,dict);</span><br><span class="line">BOOL success = [dict[@<span class="string">"success"</span>] boolValue];</span><br><span class="line"><span class="keyword">if</span> (!success) &#123;</span><br><span class="line">ECLog(@<span class="string">"响应失败：%@"</span>,dict[@<span class="string">"msg"</span>]);</span><br><span class="line">[MBProgressHUD showError:dict[@<span class="string">"msg"</span>]];</span><br><span class="line"><span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line">ECLog(@<span class="string">"响应成功"</span>);</span><br><span class="line">[QTUserInfo sharedQTUserInfo].passWD = self.passwd.text;</span><br><span class="line">[[QTUserInfo sharedQTUserInfo] writeUserInfoToDefault];</span><br><span class="line">[self.navigationController popViewControllerAnimated:YES];</span><br><span class="line">&#125;];</span><br><span class="line">[request setFailedBlock:^&#123;</span><br><span class="line">ECLog(@<span class="string">"发送请求失败"</span>);</span><br><span class="line">[MBProgressHUD showError:@<span class="string">"网络连接失败"</span>];</span><br><span class="line">&#125;];</span><br><span class="line">[request setTimeOutSeconds:<span class="number">10</span>];</span><br><span class="line">[request startAsynchronous];</span><br></pre></td></tr></table></figure>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/06/07/适配IPV6需要替换的第三方SDK/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
