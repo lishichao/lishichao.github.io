@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lishichao.github.io/"/>
-  <updated>2016-06-14T02:46:50.000Z</updated>
+  <updated>2016-06-14T03:22:38.000Z</updated>
   <id>http://lishichao.github.io/</id>
   
   <author>
@@ -14,6 +14,130 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>苹果WWDC2016全球开发者大会演讲</title>
+    <link href="http://lishichao.github.io/2016/06/14/%E8%8B%B9%E6%9E%9CWWDC2016%E5%85%A8%E7%90%83%E5%BC%80%E5%8F%91%E8%80%85%E5%A4%A7%E4%BC%9A%E6%BC%94%E8%AE%B2/"/>
+    <id>http://lishichao.github.io/2016/06/14/苹果WWDC2016全球开发者大会演讲/</id>
+    <published>2016-06-14T02:59:36.000Z</published>
+    <updated>2016-06-14T03:22:38.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841824320629.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;北京时间6月14日凌晨一点，第27届苹果全球开发者大会（简称WWDC 2016）在比尔·格雷厄姆市政礼堂正式拉开大幕。在开幕首日主题演讲中，iOS10、MacOS（OS X）10.12、全新watchOS以及tvOS四大平台软件将悉数登场亮相，此外全新MacBook Air/Pro等硬件新品是否会在今晚一同登场同样是个大看点。按照以往的惯例，苹果将在开幕主题演讲结束之后不久，便提供iOS10、macOS（OS X）、watchOS以及tvOS的首个开发者预览版（Beta）固件更新下载，开发者可在第一时间尝鲜。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h4 id=&quot;以下为图文直播&quot;&gt;&lt;a href=&quot;#以下为图文直播&quot; class=&quot;headerlink&quot; title=&quot;以下为图文直播&quot;&gt;&lt;/a&gt;以下为图文直播&lt;/h4&gt;&lt;p&gt;WWDC 2016开场主题演讲到此结束，感谢各位的收看，敬请关注后续报道。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465844863594496.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;[上午3:02:56] 库克回顾今晚的内容：watchOS, tvOS, macOS, iOS。库克将iOS 10称为“集所有发布版本之大成”，他表示，“苹果坚信技术应该更加人性化，并丰富人们的体验”，无论它是在手腕上、桌面上、手掌里、甚至家庭中，在你们的帮助下，四大平台将带来更多的可能。苹果称，技术的本质应该是提升、并丰富人类的生活，无论是哪个平台皆是如此。&lt;/p&gt;
+&lt;p&gt;[上午3:01:21] 库克称，iOS10是今天所有公布的新平台软件之母，也就是说，其他平台的设计大多是从iOS10中引申和演变出来的。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465844711770795.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;[上午2:59:29] 苹果正在现场播放一段视频，展示不同用户第一次尝试编程时的感动。&lt;/p&gt;
+&lt;p&gt;[上午2:57:05] 和iOS 10一样，Swift Playground将免费提供，今天提供开发者预览版，7月份提供公测版，秋季推出正式版。库克称将改变大家对于代码枯燥、晦涩难懂的传统印象。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465844316504126.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:55:09] 苹果称通常开发者大会都是无聊的代码展示，但是通过Swift Playground，苹果希望孩子们也能轻松使用Swift编写出Facebook级别的应用程序！这款教育软件将于今天开始开发者预览，下月开始公测，同样是秋季发布。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465844286587300.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:52:17] Swift Playground提供了大量的生动代码演示实例，提供全新的专用编程键盘；&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465844118526725.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;[上午2:50:06] 一款教育类应用，它将又一次改变人们学习编程的体验，充分利用了Swift编程语言和iPad机能，界面非常简洁鲜艳，面向青少年。这项功能将给学习编程提供一种全新的方式；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465844033429599.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;输入代码时会有各种提示&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465844027784279.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465844021446524.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;这里有各种“课程”与“挑战”&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465843976286393.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;[上午2:48:53] 库克重新登场，主要介绍Swift Playground；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465843839914987.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;[上午2:47:55]  iOS 10开发者预览版将于今天面向开发者开放，7月份开始公测，今年秋季免费升级。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465843771488246.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465843766534120.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;[上午2:46:34] 苹果这里还使用了一项名为差分隐私的全新技术来保护个人隐私。&lt;/p&gt;
+&lt;p&gt;[上午2:44:26] 虽然增加了大量的新功能，但苹果称所有功能背后，他们更加重视个人隐私的保护，通过端到端的加密，设备实时处理等技术来保护用户隐私。iOS 10更加重视对隐私的保护，“在数据的性能分析方面，我们让它在你的设备上处理，让数据个人数据在你的掌控之中”。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465843659836823.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465843602579958.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:43:09] iPad上的Safari也支持独立的分屏功能；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465843481627012.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;[上午2:42:10] iOS10新增Live Photo编辑功能！&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465843481627012.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:40:01] 提供独立的程序抽屉以在iMessage中进行调用，可发送的消息不再局限于文本，也可以发送视频、图片、音乐、各种动图、支付信息，也可以添加各种动态效果；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465843347100823.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465843343737752.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:38:00] 支持在iMessage中使用Apple Music播放，同时iMessage正式向第三方应用开放；&lt;/p&gt;
+&lt;p&gt;[上午2:37:02] 支持发送手写信息；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465843223389711.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:36:02] iMessage支持使用触控板来发送信息，Apple Watch新增的触控板同样可以进行类似操作；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465843157599236.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:33:27] 气泡提示加入更多的动态效果，用户可自由控制，也可以改成模糊效果，让对方进行擦除以显示；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842973957516.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842970857227.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:32:01] iOS10可以自动识别可以被emoji表情替换的词语，点击即可自动替换成emoji表情！&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842837627697.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:30:02] iMessage增加丰富链接功能，可以直接包含视频和图片，可以直接调用播放，eMoji表情放大3倍，更容易点按&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842834197388.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:28:59] 联系人功能加强，提供VoIP API，社交软件的联系方式可以直接添加到自带联系人中；&lt;/p&gt;
+&lt;p&gt;[上午2:26:23] 支持语音邮件功能，苹果也为中国用户打造了骚扰电话的自动识别功能；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842654256808.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:24:03] home应用提供场景化功能，也可以在锁屏状态下使用3D Touch呼出面板，快速调整智能家居设备；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842601341895.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:23:06] 统一的智能家居管理应用来了，一个APP管理所有智能硬件；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842595133667.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:21:16] Apple News提供突发新闻推送以及新闻订阅功能；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842587217567.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:19:23] 终于提供单独的音乐下载管理面板，底部多了浏览功能，提供全新的歌词面板显示；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842582799784.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:17:21] Apple Music全面改版，界面更加简洁；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842575599596.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:15:34] 苹果地图也正式向第三方应用开放，比如在CarPlay中，地图可以直接显示在仪表盘中；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842566243305.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:14:34] 首先是更加清晰的导航界面，支持实时交通信息显示，支持长路途搜索功能；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842560272454.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:12:57] 艾迪·柯尔重新登场介绍iOS10的其他特性；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842552983958.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:11:23] 支持自动将相同类型图片创建视频，用户切换音乐之后，视频也会自动适应并给出相应的剪辑；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842544691612.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:06:31] 相册应用现在加入智能脸部识别和场景识别，支持高级搜索功能，也将自动整合元素相近的照片，提供一个记忆功能面板，可以提供基于地图或不同身份的整合显示；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842539120382.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:05:29] Siri提供智能规划、日程安排、当前地址定位等多种功能；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841864350923.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:05:09] 支持直接通过Siri发送微信，可以用Siri进行图片搜索，创建健身目标，实现移动支付，Siri也加入了人工智能功能，可以更好的区分识别自然语言；&lt;/p&gt;
+&lt;p&gt;[上午2:02:09] Siri正式向第三方应用开放，支持使用Siri来查看搜索微信消息，使用滴滴出行打车等。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841875399506.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午2:01:22] 插件功能异常强大，使用3D Touch打开之后，可以进行播放视频等操作；&lt;/p&gt;
+&lt;p&gt;[上午1:58:01] 全新控制中心更加简洁，提供独立的音乐播放面板，负一屏幕提供可定制化的插件功能，同样支持3D Touch交互；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841886733577.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841891882917.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:56:43] 现在锁屏下的通知信息展示更加丰富，另外通过3D Touch，你还可以直接展开更丰富内容；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841905778548.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:55:10] 注重用户体验上的提升，首先上对于锁屏的改变；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841910882919.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:54:17] iOS10来了！将提供十项新特性&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841914560639.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:53:49] macOS版Siri同时在Dock栏以及顶部出现，它可以在Finder中搜索文件，可以处理邮件，使用iCloud Drive，播放音乐，从网上查找内容，控制音乐视频播放等等，还可以进行图片搜索，可以使用Siri进行语音回复，甚至可以使用Siri进行网页上的Apple Pay支付。&lt;/p&gt;
+&lt;p&gt;[上午1:50:42] macOS上的Siri功能果然到来了！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841942695786.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:50:23] 支持将Safari标签移动到任意APP中，支持画中画功能；&lt;/p&gt;
+&lt;p&gt;[上午1:48:01] 支持网页版Apple Pay功能，可使用iPhone上的Touch ID来确认并完成验证支付；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841949516829.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841954954437.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:47:23] iCloud Drive也可以在Mac上使用，所有文件在macOS和iOS之间共享，支持自动将旧文件移动到iCloud上，从而释放macOS的空间；&lt;/p&gt;
+&lt;p&gt;[上午1:45:10] macOS Sierra支持通用剪切板功能，可以在macOS以及iOS上共享剪切板中的内容，支持复制、粘贴操作；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841967255875.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:43:45] macOS Sierra提供自动锁定功能，如果你佩戴了Apple Watch靠近即可自动解锁；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841976720424.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:41:01] 费德里吉登场，OS X正式改名为macOS，全称为macOS Sierra；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841980719439.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842010375980.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:40:41] 今年晚些时候免费提供更新；&lt;/p&gt;
+&lt;p&gt;[上午1:39:48] 支持自动下载功能，在iPhone上下载APP，相应的tvOS版APP会自动安装到电视上；&lt;/p&gt;
+&lt;p&gt;[上午1:39:19] Apple TV新增直播频道，tvOS提供深色模式；&lt;/p&gt;
+&lt;p&gt;[上午1:37:39] 提供全新的iPhone端遥控应用，支持Siri语音控制，可以直接让Siri帮你查找节目，新增YouTube搜索功能；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842018755547.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:35:49] 艾迪·柯尔称，电视的未来是应用，现在Apple TV可提供超过1300个视频频道，6000个原生APP；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842023807018.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:34:14] 艾迪·柯尔登场介绍tvOS；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842049612733.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:33:18] watchOS 3将在今天正式提供开发者预览版供体验；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842056772127.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:31:51] watchOS 3开放了众多API，可以让健身应用在后台运行，支持调用内部的扬声器，播放视频等等；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842064243245.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:31:11] watchOS 3上，用户可以在Apple Watch上使用Apple Pay支付；&lt;/p&gt;
+&lt;p&gt;[上午1:28:25] 苹果也通过几个应用展示了Apple Watch针对残疾人的用途，watchOS 3提供一个全新的呼吸应用，你可以设置时间，通过触觉反馈来引导你进行深呼吸，以平静和放松下来；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842074327039.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:26:31] 支持滑动分享健身成果，其他用户看到后可以迅速回复，给你鼓励和支持；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842086958977.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:24:56] watchOS 3提供全新的健身应用；&lt;/p&gt;
+&lt;p&gt;[上午1:23:41] 直接按住侧键提供SOS求教功能，在美国就会拨打911；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842094442717.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:22:45] 通过键盘面板，用户可以直接输入中文或英文。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842101525379.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:21:41] 第三方应用也可添加Dock面板。&lt;/p&gt;
+&lt;p&gt;[上午1:20:38] 全新的提醒事项和查找我的朋友应用，全新交互界面。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842108440039.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:19:38] 侧键功能现在被称为“Dock”按键，按压即可在多个板块之间快速切换。&lt;/p&gt;
+&lt;p&gt;[上午1:17:57] watchOS 3新增一个名为Numerals的表盘，可以直接展示你的健身信息。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842124288444.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:17:23] 全新的动态效果米奇表盘。&lt;/p&gt;
+&lt;p&gt;[上午1:15:34] 采用全新的交互界面设计，误触的几率更低，提供Scibble功能，可以让你直接输入字母。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842132390095.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:14:19] 从底部上滑可以打开一个类似iPhone的控制中心。&lt;/p&gt;
+&lt;p&gt;[上午1:13:01] 侧键按压现在直接打开Dock而不是联系人。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842161914958.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:11:44] 苹果首先对比了watchOS 2和OS 3的运行速度，开启应用无需等待，速度更快。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842166715644.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:11:04] watchOS 3来了！&lt;/p&gt;
+&lt;p&gt;[上午1:09:33] 库克也提到APP Store并不是指单一iOS的应用市场，今天将同时介绍watchOS、tvOS、OS X、iOs，否认了macOS的叫法。&lt;/p&gt;
+&lt;p&gt;[上午1:07:32] 苹果共向开发者支付了500亿美元。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842176561487.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:06:54] 苹果应用商店共有200万款应用，下载量超过1300亿次。&lt;/p&gt;
+&lt;p&gt;[上午1:04:48] 库克介绍了苹果开发者的情况，现在共有1300万注册开发者，尽在去年就增加了200万，现场与会者来自74个不同国家和地区，其中72%开发者首次参与。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842184484426.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:02:24] 库克首先谈到了日前的奥兰多枪击案件并表达了最深切的同情，现场默哀。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842195271942.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午1:00:29] WWDC2016正式开始！蒂姆·库克登台。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842202962784.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午12:58:03] 苹果WWDC2016主题演讲马上开始，现场要求将手机调至静音状态。&lt;/p&gt;
+&lt;p&gt;[上午12:42:13] 还有不到20分钟。&lt;/p&gt;
+&lt;p&gt;[上午12:36:50] WWDC2016现场，苹果几位高管陆续抵达，包括克雷格·费德里吉、杰夫·威廉姆斯、艾迪·柯尔、乔纳森·艾维、菲利普·席勒等。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842289465125.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842295787953.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午12:29:32] 根据苹果WWDC的官方信息显示，本次开幕主题演讲将持续2个小时左右，请大家合理安排时间，不要耽误明天的学习和工作啊。&lt;/p&gt;
+&lt;p&gt;[上午12:21:15] 现场已经基本就坐完毕，距离发布会开始还有不到40分钟。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842308980229.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午12:14:01] 靠近舞台的位置布置了比往年更多的VIP席位，看来会有更多厂商登场为苹果站台，应该也会有更多的合作事项公布，我们不妨特别关注下。&lt;/p&gt;
+&lt;p&gt;[上午12:08:23] 再来看看更大范围的现场图，舞台灯光蓝色比往年更重一些，这种深沉氛围似乎和往年的WWDC有些不同。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842321627094.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午12:06:19] 发布会内场。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842334271293.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[上午12:04:38] 已经进场，再次提醒发布会将于凌晨一点正式开始，还有大概55分钟。&lt;/p&gt;
+&lt;p&gt;[下午11:53:27] 现场的工作犬，专有工作证。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842343298854.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[下午11:43:53] 媒体签到区。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465842348889584.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[下午11:09:42] 媒体的入场证。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841730824837.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[下午11:07:39] 苹果也为与会者准备了各种各样的食物。&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841692992898.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[下午11:03:54] 微软今晚宣布将以262亿美元大手笔收购领英，后者当即宣布取消原定的WWDC2016直播活动，个中原委实在耐人寻味。详情：&lt;a href=&quot;http://www.cocoachina.com/apple/20160614/16682.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《LinkedIn被微软收购 扭头取消苹果WWDC大会直播》&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841658955273.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[下午10:35:41] 到场的与会者应该有将近3000人，队伍排的相当长，不少媒体都派出了专人提前排队；&lt;/p&gt;
+&lt;p&gt;[下午10:30:41] 今年的WWDC2016，到处都是下面这种代码风；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841630316579.jpeg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[下午10:25:09] 由于日前发生的枪击案，苹果也在比尔·格雷厄姆市政礼堂入口处加强了安检；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841596216472.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[下午10:20:06] 尽管距离开幕演讲还有2个多小时，但现场已经排起了长队；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841586417369.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;[下午9:20:50] 为了悼念日前在美国佛罗里达州奥兰多市枪击案中遇害的民众，WWDC2016的举办地比尔·格雷厄姆市政礼堂已经降下半旗；&lt;br&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841571427111.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20160614/1465841824320629.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;北京时间6月14日凌晨一点，第27届苹果全球开发者大会（简称WWDC 2016）在比尔·格雷厄姆市政礼堂正式拉开大幕。在开幕首日主题演讲中，iOS10、MacOS（OS X）10.12、全新watchOS以及tvOS四大平台软件将悉数登场亮相，此外全新MacBook Air/Pro等硬件新品是否会在今晚一同登场同样是个大看点。按照以往的惯例，苹果将在开幕主题演讲结束之后不久，便提供iOS10、macOS（OS X）、watchOS以及tvOS的首个开发者预览版（Beta）固件更新下载，开发者可在第一时间尝鲜。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://lishichao.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="随笔" scheme="http://lishichao.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>《魔兽》首映观影团开组，来 T、来奶、来 DPS</title>

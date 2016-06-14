@@ -1,0 +1,1081 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="随笔," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Amin_iOS·Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/uploads/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="北京时间6月14日凌晨一点，第27届苹果全球开发者大会（简称WWDC 2016）在比尔·格雷厄姆市政礼堂正式拉开大幕。在开幕首日主题演讲中，iOS10、MacOS（OS X）10.12、全新watchOS以及tvOS四大平台软件将悉数登场亮相，此外全新MacBook Air/Pro等硬件新品是否会在今晚一同登场同样是个大看点。按照以往的惯例，苹果将在开幕主题演讲结束之后不久，便提供iOS10、">
+<meta property="og:type" content="article">
+<meta property="og:title" content="苹果WWDC2016全球开发者大会演讲">
+<meta property="og:url" content="http://lishichao.github.io/2016/06/14/苹果WWDC2016全球开发者大会演讲/index.html">
+<meta property="og:site_name" content="Amin_iOS·Blog">
+<meta property="og:description" content="北京时间6月14日凌晨一点，第27届苹果全球开发者大会（简称WWDC 2016）在比尔·格雷厄姆市政礼堂正式拉开大幕。在开幕首日主题演讲中，iOS10、MacOS（OS X）10.12、全新watchOS以及tvOS四大平台软件将悉数登场亮相，此外全新MacBook Air/Pro等硬件新品是否会在今晚一同登场同样是个大看点。按照以往的惯例，苹果将在开幕主题演讲结束之后不久，便提供iOS10、">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841824320629.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465844863594496.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465844711770795.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465844316504126.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465844286587300.gif">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465844118526725.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465844033429599.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465844027784279.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465844021446524.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465843976286393.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465843839914987.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465843771488246.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465843766534120.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465843659836823.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465843602579958.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465843481627012.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465843481627012.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465843347100823.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465843343737752.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465843223389711.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465843157599236.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842973957516.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842970857227.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842837627697.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842834197388.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842654256808.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842601341895.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842595133667.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842587217567.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842582799784.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842575599596.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842566243305.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842560272454.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842552983958.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842544691612.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842539120382.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841864350923.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841875399506.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841886733577.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841891882917.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841905778548.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841910882919.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841914560639.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841942695786.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841949516829.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841954954437.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841967255875.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841976720424.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841980719439.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842010375980.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842018755547.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842023807018.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842049612733.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842056772127.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842064243245.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842074327039.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842086958977.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842094442717.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842101525379.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842108440039.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842124288444.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842132390095.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842161914958.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842166715644.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842176561487.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842184484426.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842195271942.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842202962784.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842289465125.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842295787953.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842308980229.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842321627094.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842334271293.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842343298854.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465842348889584.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841730824837.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841692992898.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841658955273.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841630316579.jpeg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841596216472.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841586417369.jpg">
+<meta property="og:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841571427111.jpg">
+<meta property="og:updated_time" content="2016-06-14T03:22:38.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="苹果WWDC2016全球开发者大会演讲">
+<meta name="twitter:description" content="北京时间6月14日凌晨一点，第27届苹果全球开发者大会（简称WWDC 2016）在比尔·格雷厄姆市政礼堂正式拉开大幕。在开幕首日主题演讲中，iOS10、MacOS（OS X）10.12、全新watchOS以及tvOS四大平台软件将悉数登场亮相，此外全新MacBook Air/Pro等硬件新品是否会在今晚一同登场同样是个大看点。按照以往的惯例，苹果将在开幕主题演讲结束之后不久，便提供iOS10、">
+<meta name="twitter:image" content="http://cc.cocimg.com/api/uploads/20160614/1465841824320629.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 苹果WWDC2016全球开发者大会演讲 | Amin_iOS·Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Amin_iOS·Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">从这里，开启梦想之门！</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbook">
+          <a href="/guestbook" rel="section">
+            
+              <i class="menu-item-icon fa fa-commenting fa-fw"></i> <br />
+            
+            留言
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'SpFc6UCUJ1z1Hz2YFnz7','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                苹果WWDC2016全球开发者大会演讲
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="fa fa-calendar-o" style="margin:2px"></span>
+            <time itemprop="dateCreated" datetime="2016-06-14T10:59:36+08:00" content="2016-06-14">
+              2016-06-14
+            </time>
+          </span>
+	
+	<span class="post-count">&nbsp; |&nbsp; 字数 4,940
+	</span>
+
+	<span class="post-count">&nbsp; |&nbsp; 阅读预计 21分钟</span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="fa fa-folder-o" style="margin:2px"></span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">随笔</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/06/14/苹果WWDC2016全球开发者大会演讲/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/14/苹果WWDC2016全球开发者大会演讲/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/06/14/苹果WWDC2016全球开发者大会演讲/" class="leancloud_visitors" data-flag-title="苹果WWDC2016全球开发者大会演讲">
+               &nbsp; | &nbsp;
+               <span class="fa fa-eye" style="margin:2px"></span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://cc.cocimg.com/api/uploads/20160614/1465841824320629.jpg" alt=""></p>
+<blockquote>
+<p>北京时间6月14日凌晨一点，第27届苹果全球开发者大会（简称WWDC 2016）在比尔·格雷厄姆市政礼堂正式拉开大幕。在开幕首日主题演讲中，iOS10、MacOS（OS X）10.12、全新watchOS以及tvOS四大平台软件将悉数登场亮相，此外全新MacBook Air/Pro等硬件新品是否会在今晚一同登场同样是个大看点。按照以往的惯例，苹果将在开幕主题演讲结束之后不久，便提供iOS10、macOS（OS X）、watchOS以及tvOS的首个开发者预览版（Beta）固件更新下载，开发者可在第一时间尝鲜。</p>
+</blockquote>
+<a id="more"></a>
+<h4 id="以下为图文直播"><a href="#以下为图文直播" class="headerlink" title="以下为图文直播"></a>以下为图文直播</h4><p>WWDC 2016开场主题演讲到此结束，感谢各位的收看，敬请关注后续报道。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465844863594496.jpg" alt=""><br>[上午3:02:56] 库克回顾今晚的内容：watchOS, tvOS, macOS, iOS。库克将iOS 10称为“集所有发布版本之大成”，他表示，“苹果坚信技术应该更加人性化，并丰富人们的体验”，无论它是在手腕上、桌面上、手掌里、甚至家庭中，在你们的帮助下，四大平台将带来更多的可能。苹果称，技术的本质应该是提升、并丰富人类的生活，无论是哪个平台皆是如此。</p>
+<p>[上午3:01:21] 库克称，iOS10是今天所有公布的新平台软件之母，也就是说，其他平台的设计大多是从iOS10中引申和演变出来的。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465844711770795.jpg" alt=""><br>[上午2:59:29] 苹果正在现场播放一段视频，展示不同用户第一次尝试编程时的感动。</p>
+<p>[上午2:57:05] 和iOS 10一样，Swift Playground将免费提供，今天提供开发者预览版，7月份提供公测版，秋季推出正式版。库克称将改变大家对于代码枯燥、晦涩难懂的传统印象。</p>
+<p><img src="http://cc.cocimg.com/api/uploads/20160614/1465844316504126.jpg" alt=""></p>
+<p>[上午2:55:09] 苹果称通常开发者大会都是无聊的代码展示，但是通过Swift Playground，苹果希望孩子们也能轻松使用Swift编写出Facebook级别的应用程序！这款教育软件将于今天开始开发者预览，下月开始公测，同样是秋季发布。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465844286587300.gif" alt=""></p>
+<p>[上午2:52:17] Swift Playground提供了大量的生动代码演示实例，提供全新的专用编程键盘；</p>
+<p><img src="http://cc.cocimg.com/api/uploads/20160614/1465844118526725.jpg" alt=""><br>[上午2:50:06] 一款教育类应用，它将又一次改变人们学习编程的体验，充分利用了Swift编程语言和iPad机能，界面非常简洁鲜艳，面向青少年。这项功能将给学习编程提供一种全新的方式；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465844033429599.jpg" alt=""><br>输入代码时会有各种提示<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465844027784279.jpg" alt=""><br><img src="http://cc.cocimg.com/api/uploads/20160614/1465844021446524.jpg" alt=""><br>这里有各种“课程”与“挑战”<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465843976286393.jpg" alt=""><br>[上午2:48:53] 库克重新登场，主要介绍Swift Playground；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465843839914987.jpg" alt=""><br>[上午2:47:55]  iOS 10开发者预览版将于今天面向开发者开放，7月份开始公测，今年秋季免费升级。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465843771488246.jpg" alt=""><br><img src="http://cc.cocimg.com/api/uploads/20160614/1465843766534120.jpg" alt=""><br>[上午2:46:34] 苹果这里还使用了一项名为差分隐私的全新技术来保护个人隐私。</p>
+<p>[上午2:44:26] 虽然增加了大量的新功能，但苹果称所有功能背后，他们更加重视个人隐私的保护，通过端到端的加密，设备实时处理等技术来保护用户隐私。iOS 10更加重视对隐私的保护，“在数据的性能分析方面，我们让它在你的设备上处理，让数据个人数据在你的掌控之中”。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465843659836823.jpg" alt=""><br><img src="http://cc.cocimg.com/api/uploads/20160614/1465843602579958.jpg" alt=""></p>
+<p>[上午2:43:09] iPad上的Safari也支持独立的分屏功能；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465843481627012.jpg" alt=""><br>[上午2:42:10] iOS10新增Live Photo编辑功能！<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465843481627012.jpg" alt=""></p>
+<p>[上午2:40:01] 提供独立的程序抽屉以在iMessage中进行调用，可发送的消息不再局限于文本，也可以发送视频、图片、音乐、各种动图、支付信息，也可以添加各种动态效果；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465843347100823.jpg" alt=""><br><img src="http://cc.cocimg.com/api/uploads/20160614/1465843343737752.jpg" alt=""></p>
+<p>[上午2:38:00] 支持在iMessage中使用Apple Music播放，同时iMessage正式向第三方应用开放；</p>
+<p>[上午2:37:02] 支持发送手写信息；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465843223389711.jpg" alt=""></p>
+<p>[上午2:36:02] iMessage支持使用触控板来发送信息，Apple Watch新增的触控板同样可以进行类似操作；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465843157599236.jpg" alt=""></p>
+<p>[上午2:33:27] 气泡提示加入更多的动态效果，用户可自由控制，也可以改成模糊效果，让对方进行擦除以显示；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842973957516.jpg" alt=""><br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842970857227.jpg" alt=""></p>
+<p>[上午2:32:01] iOS10可以自动识别可以被emoji表情替换的词语，点击即可自动替换成emoji表情！<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842837627697.jpg" alt=""></p>
+<p>[上午2:30:02] iMessage增加丰富链接功能，可以直接包含视频和图片，可以直接调用播放，eMoji表情放大3倍，更容易点按<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842834197388.jpg" alt=""></p>
+<p>[上午2:28:59] 联系人功能加强，提供VoIP API，社交软件的联系方式可以直接添加到自带联系人中；</p>
+<p>[上午2:26:23] 支持语音邮件功能，苹果也为中国用户打造了骚扰电话的自动识别功能；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842654256808.jpg" alt=""></p>
+<p>[上午2:24:03] home应用提供场景化功能，也可以在锁屏状态下使用3D Touch呼出面板，快速调整智能家居设备；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842601341895.jpg" alt=""></p>
+<p>[上午2:23:06] 统一的智能家居管理应用来了，一个APP管理所有智能硬件；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842595133667.jpg" alt=""></p>
+<p>[上午2:21:16] Apple News提供突发新闻推送以及新闻订阅功能；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842587217567.jpg" alt=""></p>
+<p>[上午2:19:23] 终于提供单独的音乐下载管理面板，底部多了浏览功能，提供全新的歌词面板显示；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842582799784.jpg" alt=""></p>
+<p>[上午2:17:21] Apple Music全面改版，界面更加简洁；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842575599596.jpg" alt=""></p>
+<p>[上午2:15:34] 苹果地图也正式向第三方应用开放，比如在CarPlay中，地图可以直接显示在仪表盘中；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842566243305.jpg" alt=""></p>
+<p>[上午2:14:34] 首先是更加清晰的导航界面，支持实时交通信息显示，支持长路途搜索功能；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842560272454.jpg" alt=""></p>
+<p>[上午2:12:57] 艾迪·柯尔重新登场介绍iOS10的其他特性；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842552983958.jpg" alt=""></p>
+<p>[上午2:11:23] 支持自动将相同类型图片创建视频，用户切换音乐之后，视频也会自动适应并给出相应的剪辑；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842544691612.jpg" alt=""></p>
+<p>[上午2:06:31] 相册应用现在加入智能脸部识别和场景识别，支持高级搜索功能，也将自动整合元素相近的照片，提供一个记忆功能面板，可以提供基于地图或不同身份的整合显示；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842539120382.jpg" alt=""></p>
+<p>[上午2:05:29] Siri提供智能规划、日程安排、当前地址定位等多种功能；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841864350923.jpg" alt=""></p>
+<p>[上午2:05:09] 支持直接通过Siri发送微信，可以用Siri进行图片搜索，创建健身目标，实现移动支付，Siri也加入了人工智能功能，可以更好的区分识别自然语言；</p>
+<p>[上午2:02:09] Siri正式向第三方应用开放，支持使用Siri来查看搜索微信消息，使用滴滴出行打车等。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841875399506.jpg" alt=""></p>
+<p>[上午2:01:22] 插件功能异常强大，使用3D Touch打开之后，可以进行播放视频等操作；</p>
+<p>[上午1:58:01] 全新控制中心更加简洁，提供独立的音乐播放面板，负一屏幕提供可定制化的插件功能，同样支持3D Touch交互；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841886733577.jpg" alt=""><br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841891882917.jpg" alt=""></p>
+<p>[上午1:56:43] 现在锁屏下的通知信息展示更加丰富，另外通过3D Touch，你还可以直接展开更丰富内容；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841905778548.jpg" alt=""></p>
+<p>[上午1:55:10] 注重用户体验上的提升，首先上对于锁屏的改变；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841910882919.jpg" alt=""></p>
+<p>[上午1:54:17] iOS10来了！将提供十项新特性<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841914560639.jpg" alt=""></p>
+<p>[上午1:53:49] macOS版Siri同时在Dock栏以及顶部出现，它可以在Finder中搜索文件，可以处理邮件，使用iCloud Drive，播放音乐，从网上查找内容，控制音乐视频播放等等，还可以进行图片搜索，可以使用Siri进行语音回复，甚至可以使用Siri进行网页上的Apple Pay支付。</p>
+<p>[上午1:50:42] macOS上的Siri功能果然到来了！</p>
+<p><img src="http://cc.cocimg.com/api/uploads/20160614/1465841942695786.jpg" alt=""></p>
+<p>[上午1:50:23] 支持将Safari标签移动到任意APP中，支持画中画功能；</p>
+<p>[上午1:48:01] 支持网页版Apple Pay功能，可使用iPhone上的Touch ID来确认并完成验证支付；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841949516829.jpg" alt=""><br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841954954437.jpg" alt=""></p>
+<p>[上午1:47:23] iCloud Drive也可以在Mac上使用，所有文件在macOS和iOS之间共享，支持自动将旧文件移动到iCloud上，从而释放macOS的空间；</p>
+<p>[上午1:45:10] macOS Sierra支持通用剪切板功能，可以在macOS以及iOS上共享剪切板中的内容，支持复制、粘贴操作；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841967255875.jpg" alt=""></p>
+<p>[上午1:43:45] macOS Sierra提供自动锁定功能，如果你佩戴了Apple Watch靠近即可自动解锁；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841976720424.jpg" alt=""></p>
+<p>[上午1:41:01] 费德里吉登场，OS X正式改名为macOS，全称为macOS Sierra；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841980719439.jpg" alt=""><br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842010375980.jpg" alt=""></p>
+<p>[上午1:40:41] 今年晚些时候免费提供更新；</p>
+<p>[上午1:39:48] 支持自动下载功能，在iPhone上下载APP，相应的tvOS版APP会自动安装到电视上；</p>
+<p>[上午1:39:19] Apple TV新增直播频道，tvOS提供深色模式；</p>
+<p>[上午1:37:39] 提供全新的iPhone端遥控应用，支持Siri语音控制，可以直接让Siri帮你查找节目，新增YouTube搜索功能；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842018755547.jpg" alt=""></p>
+<p>[上午1:35:49] 艾迪·柯尔称，电视的未来是应用，现在Apple TV可提供超过1300个视频频道，6000个原生APP；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842023807018.jpg" alt=""></p>
+<p>[上午1:34:14] 艾迪·柯尔登场介绍tvOS；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842049612733.jpg" alt=""></p>
+<p>[上午1:33:18] watchOS 3将在今天正式提供开发者预览版供体验；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842056772127.jpg" alt=""></p>
+<p>[上午1:31:51] watchOS 3开放了众多API，可以让健身应用在后台运行，支持调用内部的扬声器，播放视频等等；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842064243245.jpg" alt=""></p>
+<p>[上午1:31:11] watchOS 3上，用户可以在Apple Watch上使用Apple Pay支付；</p>
+<p>[上午1:28:25] 苹果也通过几个应用展示了Apple Watch针对残疾人的用途，watchOS 3提供一个全新的呼吸应用，你可以设置时间，通过触觉反馈来引导你进行深呼吸，以平静和放松下来；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842074327039.jpg" alt=""></p>
+<p>[上午1:26:31] 支持滑动分享健身成果，其他用户看到后可以迅速回复，给你鼓励和支持；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842086958977.jpg" alt=""></p>
+<p>[上午1:24:56] watchOS 3提供全新的健身应用；</p>
+<p>[上午1:23:41] 直接按住侧键提供SOS求教功能，在美国就会拨打911；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842094442717.jpg" alt=""></p>
+<p>[上午1:22:45] 通过键盘面板，用户可以直接输入中文或英文。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842101525379.jpg" alt=""></p>
+<p>[上午1:21:41] 第三方应用也可添加Dock面板。</p>
+<p>[上午1:20:38] 全新的提醒事项和查找我的朋友应用，全新交互界面。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842108440039.jpg" alt=""></p>
+<p>[上午1:19:38] 侧键功能现在被称为“Dock”按键，按压即可在多个板块之间快速切换。</p>
+<p>[上午1:17:57] watchOS 3新增一个名为Numerals的表盘，可以直接展示你的健身信息。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842124288444.jpg" alt=""></p>
+<p>[上午1:17:23] 全新的动态效果米奇表盘。</p>
+<p>[上午1:15:34] 采用全新的交互界面设计，误触的几率更低，提供Scibble功能，可以让你直接输入字母。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842132390095.jpg" alt=""></p>
+<p>[上午1:14:19] 从底部上滑可以打开一个类似iPhone的控制中心。</p>
+<p>[上午1:13:01] 侧键按压现在直接打开Dock而不是联系人。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842161914958.jpg" alt=""></p>
+<p>[上午1:11:44] 苹果首先对比了watchOS 2和OS 3的运行速度，开启应用无需等待，速度更快。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842166715644.jpg" alt=""></p>
+<p>[上午1:11:04] watchOS 3来了！</p>
+<p>[上午1:09:33] 库克也提到APP Store并不是指单一iOS的应用市场，今天将同时介绍watchOS、tvOS、OS X、iOs，否认了macOS的叫法。</p>
+<p>[上午1:07:32] 苹果共向开发者支付了500亿美元。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842176561487.jpg" alt=""></p>
+<p>[上午1:06:54] 苹果应用商店共有200万款应用，下载量超过1300亿次。</p>
+<p>[上午1:04:48] 库克介绍了苹果开发者的情况，现在共有1300万注册开发者，尽在去年就增加了200万，现场与会者来自74个不同国家和地区，其中72%开发者首次参与。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842184484426.jpg" alt=""></p>
+<p>[上午1:02:24] 库克首先谈到了日前的奥兰多枪击案件并表达了最深切的同情，现场默哀。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842195271942.jpg" alt=""></p>
+<p>[上午1:00:29] WWDC2016正式开始！蒂姆·库克登台。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842202962784.jpg" alt=""></p>
+<p>[上午12:58:03] 苹果WWDC2016主题演讲马上开始，现场要求将手机调至静音状态。</p>
+<p>[上午12:42:13] 还有不到20分钟。</p>
+<p>[上午12:36:50] WWDC2016现场，苹果几位高管陆续抵达，包括克雷格·费德里吉、杰夫·威廉姆斯、艾迪·柯尔、乔纳森·艾维、菲利普·席勒等。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842289465125.jpg" alt=""><br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842295787953.jpg" alt=""></p>
+<p>[上午12:29:32] 根据苹果WWDC的官方信息显示，本次开幕主题演讲将持续2个小时左右，请大家合理安排时间，不要耽误明天的学习和工作啊。</p>
+<p>[上午12:21:15] 现场已经基本就坐完毕，距离发布会开始还有不到40分钟。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842308980229.jpg" alt=""></p>
+<p>[上午12:14:01] 靠近舞台的位置布置了比往年更多的VIP席位，看来会有更多厂商登场为苹果站台，应该也会有更多的合作事项公布，我们不妨特别关注下。</p>
+<p>[上午12:08:23] 再来看看更大范围的现场图，舞台灯光蓝色比往年更重一些，这种深沉氛围似乎和往年的WWDC有些不同。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842321627094.jpg" alt=""></p>
+<p>[上午12:06:19] 发布会内场。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842334271293.jpg" alt=""></p>
+<p>[上午12:04:38] 已经进场，再次提醒发布会将于凌晨一点正式开始，还有大概55分钟。</p>
+<p>[下午11:53:27] 现场的工作犬，专有工作证。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842343298854.jpg" alt=""></p>
+<p>[下午11:43:53] 媒体签到区。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465842348889584.jpg" alt=""></p>
+<p>[下午11:09:42] 媒体的入场证。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841730824837.jpg" alt=""></p>
+<p>[下午11:07:39] 苹果也为与会者准备了各种各样的食物。<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841692992898.jpg" alt=""></p>
+<p>[下午11:03:54] 微软今晚宣布将以262亿美元大手笔收购领英，后者当即宣布取消原定的WWDC2016直播活动，个中原委实在耐人寻味。详情：<a href="http://www.cocoachina.com/apple/20160614/16682.html" target="_blank" rel="external">《LinkedIn被微软收购 扭头取消苹果WWDC大会直播》</a><br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841658955273.jpg" alt=""></p>
+<p>[下午10:35:41] 到场的与会者应该有将近3000人，队伍排的相当长，不少媒体都派出了专人提前排队；</p>
+<p>[下午10:30:41] 今年的WWDC2016，到处都是下面这种代码风；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841630316579.jpeg" alt=""></p>
+<p>[下午10:25:09] 由于日前发生的枪击案，苹果也在比尔·格雷厄姆市政礼堂入口处加强了安检；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841596216472.jpg" alt=""></p>
+<p>[下午10:20:06] 尽管距离开幕演讲还有2个多小时，但现场已经排起了长队；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841586417369.jpg" alt=""></p>
+<p>[下午9:20:50] 为了悼念日前在美国佛罗里达州奥兰多市枪击案中遇害的民众，WWDC2016的举办地比尔·格雷厄姆市政礼堂已经降下半旗；<br><img src="http://cc.cocimg.com/api/uploads/20160614/1465841571427111.jpg" alt=""></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+
+    <div>
+      
+        
+<div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center">
+  <div style="margin: 10px">坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton", disable="enable", onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}", style="cursor: pointer; border: 0; outline: 0; border-radius: 100%; padding: 0; margin: 0; letter-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none">
+    <span onmouseover="this.style.color='rgb(236,96,0)';this.style.background='rgb(204,204,204)'" onMouseOut="this.style.color='#fff';this.style.background='rgb(236,96,0)'" style="display: inline-block; width: 75px; height: 75px; border-radius: 100%; line-height: 81px; color: #fff; font: 400 35px/75px 'microsofty'; background: rgb(236,96,0)">赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechat-reward.png" alt="李世超 WeChat Pay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>微信打赏</p>
+      </div>
+    
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay-reward.png" alt="李世超 Alipay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>支付宝打赏</p>
+      </div>
+    
+  </div>
+</div>
+
+      
+    </div>
+
+<! -- 添加微信图标 -->
+    
+    
+
+    <div style="padding: 10px 0; margin: 0px auto; width: 90%; text-align: center">
+
+    <span style="padding: 10px; margin: 0px">
+    
+    欢迎大家关注：Amin_iOS的微信公众号
+    
+    </span>
+
+    
+    <a href="http://i2.piimg.com/c3957b482e32ec3f.jpg" title=“Amin_iOS的微信公众号" class="fancybox" rel="article0">
+    <img src="http://i2.piimg.com/c3957b482e32ec3f.jpg" title="Amin_iOS的微信公众号" height="160px" width="160px">
+    </a>
+    
+
+    </div>
+
+    
+    
+
+    <footer class="post-footer">
+
+      
+        <div class="post-tags">
+          
+            <a href="/tags/随笔/" rel="tag">#随笔</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/06/14/《魔兽》首映观影团开组，来-T、来奶、来-DPS/" rel="next" title="《魔兽》首映观影团开组，来 T、来奶、来 DPS">
+                <i class="fa fa-chevron-left"></i> 《魔兽》首映观影团开组，来 T、来奶、来 DPS
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/06/14/苹果WWDC2016全球开发者大会演讲/"
+           data-title="苹果WWDC2016全球开发者大会演讲" data-url="http://lishichao.github.io/2016/06/14/苹果WWDC2016全球开发者大会演讲/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://i4.piimg.com/5daa87b3f5ce23a2.jpg"
+               alt="李世超" />
+          <p class="site-author-name" itemprop="name">李世超</p>
+          <p class="site-description motion-element" itemprop="description">嗨，我是李世超 (@Amin_iOS)，一名移动端的Development And Management，现居广州。正在修行，探求创意之源，记录自己学习的点滴。</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">19</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/lishichao706" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/users/ab8e592732ea/latest_articles" target="_blank">
+                  
+                    <i class="fa fa-pinterest"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/lishichao" target="_blank">
+                  
+                    <i class="fa fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/Amin_706" target="_blank">
+                  
+                    <i class="fa fa-twitter"></i>
+                  
+                  twitter
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        <div class="links-of-blogroll motion-element">
+          
+            <div class="links-of-blogroll-title">我的链接</div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://i2.piimg.com/c3957b482e32ec3f.jpg" target="_blank">微信公众号</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://blog.cocoachina.com/304267" target="_blank">CocoaChina</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://blog.csdn.net/lishichao706" target="_blank">CSDN</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.zhihu.com/people/amin706" target="_blank">知乎</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://zhuanlan.zhihu.com/lishichao" target="_blank">知乎专栏</a>
+                </li>
+              
+            </ul>
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#以下为图文直播"><span class="nav-number">1.</span> <span class="nav-text">以下为图文直播</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2010 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">李世超</span>
+</div>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+
+<span id="busuanzi_container_site_uv">
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+</span>
+
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"lishichao706"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("JDa3L42Y5MiAqtYFX35OrssM-gzGzoHsz", "lOQmfvDtuB60v4dhjjy7wbKv");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>
