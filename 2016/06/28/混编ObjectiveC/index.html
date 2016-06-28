@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="“李世超的博客, 程序员, 开发者, iOS开发者”" />
+  <meta name="keywords" content="iOS技术," />
 
 
 
@@ -82,15 +82,33 @@
 
 
 
-<meta name="description" content="嗨，我是李世超 (@Amin_iOS)，一名移动端的Development And Management，现居广州。正在修行，探求创意之源，记录自己学习的点滴。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Amin_iOS·Blog">
-<meta property="og:url" content="http://lishichao.github.io/index.html">
+<meta name="description" content="最近有点炒冷饭的嫌疑，不过确实以前没有Git Or Blog的习惯，所以很多工作上的技术分享就存留在了电脑的文档里，现在还是想重新整理一下，再分享出来。混编C++也是以前工作中需要用到的，于是被我炒冷饭翻了出来，不过确实有重新整理了一下
+
+为什么要使用C++混编
+需要使用工具库或者源码是C++的
+
+各个平台，各种语言，都会有很多开源的工具和库文件方便大家学习和使用，但如C与C++这版经典的语言">
+<meta property="og:type" content="article">
+<meta property="og:title" content="混编ObjectiveC++">
+<meta property="og:url" content="http://lishichao.github.io/2016/06/28/混编ObjectiveC/index.html">
 <meta property="og:site_name" content="Amin_iOS·Blog">
-<meta property="og:description" content="嗨，我是李世超 (@Amin_iOS)，一名移动端的Development And Management，现居广州。正在修行，探求创意之源，记录自己学习的点滴。">
+<meta property="og:description" content="最近有点炒冷饭的嫌疑，不过确实以前没有Git Or Blog的习惯，所以很多工作上的技术分享就存留在了电脑的文档里，现在还是想重新整理一下，再分享出来。混编C++也是以前工作中需要用到的，于是被我炒冷饭翻了出来，不过确实有重新整理了一下
+
+为什么要使用C++混编
+需要使用工具库或者源码是C++的
+
+各个平台，各种语言，都会有很多开源的工具和库文件方便大家学习和使用，但如C与C++这版经典的语言">
+<meta property="og:image" content="http://7xstl7.com1.z0.glb.clouddn.com/混编.png">
+<meta property="og:updated_time" content="2016-06-28T09:07:16.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Amin_iOS·Blog">
-<meta name="twitter:description" content="嗨，我是李世超 (@Amin_iOS)，一名移动端的Development And Management，现居广州。正在修行，探求创意之源，记录自己学习的点滴。">
+<meta name="twitter:title" content="混编ObjectiveC++">
+<meta name="twitter:description" content="最近有点炒冷饭的嫌疑，不过确实以前没有Git Or Blog的习惯，所以很多工作上的技术分享就存留在了电脑的文档里，现在还是想重新整理一下，再分享出来。混编C++也是以前工作中需要用到的，于是被我炒冷饭翻了出来，不过确实有重新整理了一下
+
+为什么要使用C++混编
+需要使用工具库或者源码是C++的
+
+各个平台，各种语言，都会有很多开源的工具和库文件方便大家学习和使用，但如C与C++这版经典的语言">
+<meta name="twitter:image" content="http://7xstl7.com1.z0.glb.clouddn.com/混编.png">
 
 
 
@@ -108,7 +126,7 @@
   };
 </script>
 
-  <title> Amin_iOS·Blog - 嗨，我是李世超 (@Amin_iOS)，一名移动端的Development And Management，现居广州。正在修行，探求创意之源，记录自己学习的点滴。 </title>
+  <title> 混编ObjectiveC++ | Amin_iOS·Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -129,9 +147,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -278,9 +294,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -300,10 +316,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/06/28/混编ObjectiveC/" itemprop="url">
-                  混编ObjectiveC++
-                </a>
+                混编ObjectiveC++
               
             
           </h1>
@@ -373,9 +386,7 @@
       
 
       
-        
-          
-            <p><img src="http://7xstl7.com1.z0.glb.clouddn.com/混编.png" alt=""></p>
+        <p><img src="http://7xstl7.com1.z0.glb.clouddn.com/混编.png" alt=""></p>
 <blockquote>
 <p>最近有点炒冷饭的嫌疑，不过确实以前没有Git Or Blog的习惯，所以很多工作上的技术分享就存留在了电脑的文档里，现在还是想重新整理一下，再分享出来。<br>混编C++也是以前工作中需要用到的，于是被我炒冷饭翻了出来，不过确实有重新整理了一下</p>
 </blockquote>
@@ -488,603 +499,126 @@
 </li>
 </ul>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
+
     <div>
       
-    </div>
+        
+<div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center">
+  <div style="margin: 10px">坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton", disable="enable", onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}", style="cursor: pointer; border: 0; outline: 0; border-radius: 100%; padding: 0; margin: 0; letter-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none">
+    <span onmouseover="this.style.color='rgb(236,96,0)';this.style.background='rgb(204,204,204)'" onMouseOut="this.style.color='#fff';this.style.background='rgb(236,96,0)'" style="display: inline-block; width: 75px; height: 75px; border-radius: 100%; line-height: 81px; color: #fff; font: 400 35px/75px 'microsofty'; background: rgb(236,96,0)">赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechat-reward.png" alt="李世超 WeChat Pay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>微信打赏</p>
+      </div>
+    
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay-reward.png" alt="李世超 Alipay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>支付宝打赏</p>
+      </div>
+    
+  </div>
+</div>
 
-
-    <div>
       
     </div>
 
 <! -- 添加微信图标 -->
     
     
+
+    <div style="padding: 10px 0; margin: 0px auto; width: 90%; text-align: center">
+
+    <span style="padding: 10px; margin: 0px">
+    
+    欢迎大家关注：Amin_iOS的微信公众号
+    
+    </span>
+
+    
+    <a href="http://i2.piimg.com/c3957b482e32ec3f.jpg" title=“Amin_iOS的微信公众号" class="fancybox" rel="article0">
+    <img src="http://i2.piimg.com/c3957b482e32ec3f.jpg" title="Amin_iOS的微信公众号" height="160px" width="160px">
+    </a>
+    
+
+    </div>
+
     
     
 
     <footer class="post-footer">
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/06/14/苹果WWDC2016全球开发者大会演讲/" itemprop="url">
-                  苹果WWDC2016全球开发者大会演讲
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="fa fa-calendar-o" style="margin:2px"></span>
-            <time itemprop="dateCreated" datetime="2016-06-14T10:59:36+08:00" content="2016-06-14">
-              2016-06-14
-            </time>
-          </span>
-	
-	<span class="post-count">&nbsp; |&nbsp; 字数 4,940
-	</span>
-
-	<span class="post-count">&nbsp; |&nbsp; 阅读预计 21分钟</span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="fa fa-folder-o" style="margin:2px"></span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/随笔/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
+            <a href="/tags/iOS技术/" rel="tag">#iOS技术</a>
           
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/06/14/苹果WWDC2016全球开发者大会演讲/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/14/苹果WWDC2016全球开发者大会演讲/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/06/14/苹果WWDC2016全球开发者大会演讲/" class="leancloud_visitors" data-flag-title="苹果WWDC2016全球开发者大会演讲">
-               &nbsp; | &nbsp;
-               <span class="fa fa-eye" style="margin:2px"></span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p><img src="http://cc.cocimg.com/api/uploads/20160614/1465841824320629.jpg" alt=""></p>
-<blockquote>
-<p>北京时间6月14日凌晨一点，第27届苹果全球开发者大会（简称WWDC 2016）在比尔·格雷厄姆市政礼堂正式拉开大幕。在开幕首日主题演讲中，iOS10、MacOS（OS X）10.12、全新watchOS以及tvOS四大平台软件将悉数登场亮相，此外全新MacBook Air/Pro等硬件新品是否会在今晚一同登场同样是个大看点。按照以往的惯例，苹果将在开幕主题演讲结束之后不久，便提供iOS10、macOS（OS X）、watchOS以及tvOS的首个开发者预览版（Beta）固件更新下载，开发者可在第一时间尝鲜。</p>
-</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/06/14/苹果WWDC2016全球开发者大会演讲/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/06/14/苹果WWDC2016全球开发者大会演讲/" rel="next" title="苹果WWDC2016全球开发者大会演讲">
+                <i class="fa fa-chevron-left"></i> 苹果WWDC2016全球开发者大会演讲
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-
-    <div>
-      
-    </div>
-
-<! -- 添加微信图标 -->
-    
-    
-    
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+          <div class="post-nav-prev post-nav-item">
             
-            
-              
-                
-                <a class="post-title-link" href="/2016/06/14/《魔兽》首映观影团开组，来-T、来奶、来-DPS/" itemprop="url">
-                  《魔兽》首映观影团开组，来 T、来奶、来 DPS
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="fa fa-calendar-o" style="margin:2px"></span>
-            <time itemprop="dateCreated" datetime="2016-06-14T10:35:47+08:00" content="2016-06-14">
-              2016-06-14
-            </time>
-          </span>
-	
-	<span class="post-count">&nbsp; |&nbsp; 字数 3,378
-	</span>
-
-	<span class="post-count">&nbsp; |&nbsp; 阅读预计 13分钟</span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="fa fa-folder-o" style="margin:2px"></span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/随笔/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/06/14/《魔兽》首映观影团开组，来-T、来奶、来-DPS/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/14/《魔兽》首映观影团开组，来-T、来奶、来-DPS/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/06/14/《魔兽》首映观影团开组，来-T、来奶、来-DPS/" class="leancloud_visitors" data-flag-title="《魔兽》首映观影团开组，来 T、来奶、来 DPS">
-               &nbsp; | &nbsp;
-               <span class="fa fa-eye" style="margin:2px"></span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p><img src="http://www.qidianlife.com/Singular/Public/Uploads/2016-06-13/575ebf5e72bee.png" alt=""></p>
-<blockquote>
-<p>开发了无数标杆级游戏，用一款《魔兽世界》就坚持了长达 10 年的盈利，密谋开发十年的游戏项目说砍就砍。在 PC 游戏玩家历史上，暴雪是一个金字招牌，它近乎以一个精神丰碑独立存在。</p>
-</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/06/14/《魔兽》首映观影团开组，来-T、来奶、来-DPS/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <div>
-      
-    </div>
-
-<! -- 添加微信图标 -->
-    
-    
-    
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/06/07/适配IPV6需要替换的第三方SDK/" itemprop="url">
-                  适配IPV6需要替换的第三方SDK
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="fa fa-calendar-o" style="margin:2px"></span>
-            <time itemprop="dateCreated" datetime="2016-06-07T11:16:57+08:00" content="2016-06-07">
-              2016-06-07
-            </time>
-          </span>
-	
-	<span class="post-count">&nbsp; |&nbsp; 字数 1,007
-	</span>
-
-	<span class="post-count">&nbsp; |&nbsp; 阅读预计 5分钟</span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="fa fa-folder-o" style="margin:2px"></span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/iOS技术归纳/" itemprop="url" rel="index">
-                    <span itemprop="name">iOS技术归纳</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/06/07/适配IPV6需要替换的第三方SDK/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/07/适配IPV6需要替换的第三方SDK/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/06/07/适配IPV6需要替换的第三方SDK/" class="leancloud_visitors" data-flag-title="适配IPV6需要替换的第三方SDK">
-               &nbsp; | &nbsp;
-               <span class="fa fa-eye" style="margin:2px"></span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
+    <div class="post-spread">
       
         
-          <h4 id="ipv6-测试环境搭建ok"><a href="#ipv6-测试环境搭建ok" class="headerlink" title="ipv6 测试环境搭建ok"></a>ipv6 测试环境搭建ok</h4><blockquote>
-<p>1.微信聊天失败 </p>
-<p>2.qq 聊天ok</p>
-<p>(这两点证明ipv6 搭建是OK的)</p>
-</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/06/07/适配IPV6需要替换的第三方SDK/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
       
     </div>
-
-    <div>
-      
-    </div>
-
-
-    <div>
-      
-    </div>
-
-<! -- 添加微信图标 -->
-    
-    
-    
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/30/iOS应用支持IPV6，就那点事儿/" itemprop="url">
-                  iOS应用支持IPV6，就那点事儿
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="fa fa-calendar-o" style="margin:2px"></span>
-            <time itemprop="dateCreated" datetime="2016-05-30T21:13:10+08:00" content="2016-05-30">
-              2016-05-30
-            </time>
-          </span>
-	
-	<span class="post-count">&nbsp; |&nbsp; 字数 6,212
-	</span>
-
-	<span class="post-count">&nbsp; |&nbsp; 阅读预计 32分钟</span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="fa fa-folder-o" style="margin:2px"></span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/iOS技术归纳/" itemprop="url" rel="index">
-                    <span itemprop="name">iOS技术归纳</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/05/30/iOS应用支持IPV6，就那点事儿/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/30/iOS应用支持IPV6，就那点事儿/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/05/30/iOS应用支持IPV6，就那点事儿/" class="leancloud_visitors" data-flag-title="iOS应用支持IPV6，就那点事儿">
-               &nbsp; | &nbsp;
-               <span class="fa fa-eye" style="margin:2px"></span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote>
-<p>果然是苹果打个哈欠，iOS行业内就得起一次风暴呀。自从5月初Apple明文规定所有开发者在6月1号以后提交新版本需要支持IPV6-Only的网络，大家便开始热火朝天的研究如何支持IPV6，以及应用中哪些模块目前不支持IPV6。</p>
-</blockquote>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/30/iOS应用支持IPV6，就那点事儿/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <div>
-      
-    </div>
-
-<! -- 添加微信图标 -->
-    
-    
-    
-    
-
-    <footer class="post-footer">
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
+  </div>
 
 
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/06/28/混编ObjectiveC/"
+           data-title="混编ObjectiveC++" data-url="http://lishichao.github.io/2016/06/28/混编ObjectiveC/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -1104,8 +638,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://i4.piimg.com/5daa87b3f5ce23a2.jpg"
@@ -1228,6 +771,17 @@
       </section>
 
       
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#为什么要使用C-混编"><span class="nav-number">1.</span> <span class="nav-text">为什么要使用C++混编</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#我们使用C-做逻辑的原因"><span class="nav-number">2.</span> <span class="nav-text">我们使用C++做逻辑的原因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其他混编情况可就没那么容易了"><span class="nav-number">3.</span> <span class="nav-text">其他混编情况可就没那么容易了</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ObjectiveC如何混编C"><span class="nav-number">4.</span> <span class="nav-text">ObjectiveC如何混编C++</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子：在一个OC环境里调用C"><span class="nav-number">5.</span> <span class="nav-text">例子：在一个OC环境里调用C++</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#头文件准备完毕，实现文件，我先不写逻辑，先跑一下看看会有什么问题？"><span class="nav-number">5.1.</span> <span class="nav-text">头文件准备完毕，实现文件，我先不写逻辑，先跑一下看看会有什么问题？</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子：在一个C-环境里调用OC"><span class="nav-number">6.</span> <span class="nav-text">例子：在一个C++环境里调用OC</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ObjectiveC-混编注意事项"><span class="nav-number">7.</span> <span class="nav-text">ObjectiveC++混编注意事项</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#小心你的内存"><span class="nav-number">8.</span> <span class="nav-text">小心你的内存</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#这个例子告诉我们什么？"><span class="nav-number">9.</span> <span class="nav-text">这个例子告诉我们什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#id的妙用"><span class="nav-number">10.</span> <span class="nav-text">id的妙用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#神奇的void"><span class="nav-number">11.</span> <span class="nav-text">神奇的void *</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
 
     </div>
   </aside>
@@ -1330,6 +884,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
