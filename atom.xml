@@ -90,9 +90,9 @@
     <link href="http://lishichao.github.io/2016/07/12/%E6%9C%80%E5%BF%AB%E8%AE%A9%E4%BD%A0%E4%B8%8A%E6%89%8BReactiveCocoa%E4%B9%8B%E5%9F%BA%E7%A1%80%E7%AF%87/"/>
     <id>http://lishichao.github.io/2016/07/12/最快让你上手ReactiveCocoa之基础篇/</id>
     <published>2016-07-12T08:54:37.000Z</published>
-    <updated>2016-07-22T05:50:58.000Z</updated>
+    <updated>2016-07-23T01:44:20.000Z</updated>
     
-    <content type="html">&lt;h4 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/jgCho/archive/2016/03/25/5319750.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;来自&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;h4 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/jgCho/archive/2016/03/25/5319750.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文来自&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20150122/1421907380939293.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;很多blog都说ReactiveCocoa好用，然后各种秀自己如何灵活运用ReactiveCocoa，但是感觉真正缺少的是一篇如何学习ReactiveCocoa的文章，小编看了很多篇都没看出怎么使用ReactiveCocoa,于是决定自己写一遍关于学习ReactiveCocoa的文章,本文主要针对如何从零开始学习ReactiveCocoa，这里非常感谢原创作者的分享。&lt;/p&gt;
@@ -286,7 +286,7 @@
     
     <summary type="html">
     
-      &lt;h4 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/jgCho/archive/2016/03/25/5319750.html&quot;&gt;来自&lt;/a&gt;&lt;/p&gt;
+      &lt;h4 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/jgCho/archive/2016/03/25/5319750.html&quot;&gt;原文来自&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20150122/1421907380939293.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;很多blog都说ReactiveCocoa好用，然后各种秀自己如何灵活运用ReactiveCocoa，但是感觉真正缺少的是一篇如何学习ReactiveCocoa的文章，小编看了很多篇都没看出怎么使用ReactiveCocoa,于是决定自己写一遍关于学习ReactiveCocoa的文章,本文主要针对如何从零开始学习ReactiveCocoa，这里非常感谢原创作者的分享。&lt;/p&gt;
@@ -306,9 +306,9 @@
     <link href="http://lishichao.github.io/2016/06/28/%E6%B7%B7%E7%BC%96ObjectiveC/"/>
     <id>http://lishichao.github.io/2016/06/28/混编ObjectiveC/</id>
     <published>2016-06-28T08:57:28.000Z</published>
-    <updated>2016-07-22T05:53:21.000Z</updated>
+    <updated>2016-07-23T01:45:47.000Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.tuicool.com/articles/j6Jv6z7&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;来自&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://awhisper.github.io/2016/05/01/混编ObjectiveC/?utm_source=tuicool&amp;amp;utm_medium=referral&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/混编.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;最近有点炒冷饭的嫌疑，不过确实以前没有Git Or Blog的习惯，所以很多工作上的技术分享就存留在了电脑的文档里，现在还是想重新整理一下，再分享出来。&lt;br&gt;混编C++也是以前工作中需要用到的，于是被我炒冷饭翻了出来，不过确实有重新整理了一下&lt;/p&gt;
@@ -426,7 +426,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;http://www.tuicool.com/articles/j6Jv6z7&quot;&gt;来自&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://awhisper.github.io/2016/05/01/混编ObjectiveC/?utm_source=tuicool&amp;amp;utm_medium=referral&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/混编.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;最近有点炒冷饭的嫌疑，不过确实以前没有Git Or Blog的习惯，所以很多工作上的技术分享就存留在了电脑的文档里，现在还是想重新整理一下，再分享出来。&lt;br&gt;混编C++也是以前工作中需要用到的，于是被我炒冷饭翻了出来，不过确实有重新整理了一下&lt;/p&gt;
@@ -1283,9 +1283,10 @@
     <link href="http://lishichao.github.io/2016/05/03/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/"/>
     <id>http://lishichao.github.io/2016/05/03/浅谈APP登录的逻辑设计/</id>
     <published>2016-05-03T06:48:42.000Z</published>
-    <updated>2016-05-03T07:36:01.000Z</updated>
+    <updated>2016-07-23T01:48:40.000Z</updated>
     
-    <content type="html">&lt;h4 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h4&gt;&lt;blockquote&gt;
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/ebb7aff76057&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;大部分APP设计都无法回避的一个模块，就是登录。我们登录过太多的APP账号，它们有着各式各样的逻辑，然而这些差异背后的逻辑又是怎样的呢？那我们在进行APP登录的逻辑设计时，又需要基于哪些考虑来进行设计呢？&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/login_ui.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1310,7 +1311,8 @@
     
     <summary type="html">
     
-      &lt;h4 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h4&gt;&lt;blockquote&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/ebb7aff76057&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;大部分APP设计都无法回避的一个模块，就是登录。我们登录过太多的APP账号，它们有着各式各样的逻辑，然而这些差异背后的逻辑又是怎样的呢？那我们在进行APP登录的逻辑设计时，又需要基于哪些考虑来进行设计呢？&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E6%B5%85%E8%B0%88APP%E7%99%BB%E5%BD%95%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/login_ui.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
@@ -1472,9 +1474,9 @@
     <link href="http://lishichao.github.io/2016/04/26/React-Native-%E7%9B%AE%E5%89%8D%E6%9C%80%E7%81%AB%E7%9A%84%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
     <id>http://lishichao.github.io/2016/04/26/React-Native-目前最火的前端技术/</id>
     <published>2016-04-26T09:32:49.000Z</published>
-    <updated>2016-07-22T06:00:12.000Z</updated>
+    <updated>2016-07-23T01:43:38.000Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;a href=&quot;http://36kr.com/p/5041233.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;来自&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://36kr.com/p/5041233.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;文章摘要&lt;/strong&gt;： 一名程序员只用这一门技术，就可以同时写出Android-App，iOS-App，以及后台应用程序。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1526,7 +1528,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;http://36kr.com/p/5041233.html&quot;&gt;来自&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://36kr.com/p/5041233.html&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;文章摘要&lt;/strong&gt;： 一名程序员只用这一门技术，就可以同时写出Android-App，iOS-App，以及后台应用程序。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1730,9 +1732,9 @@
     <link href="http://lishichao.github.io/2016/04/22/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/"/>
     <id>http://lishichao.github.io/2016/04/22/【设计谈】字体与排版/</id>
     <published>2016-04-22T09:55:47.000Z</published>
-    <updated>2016-07-22T06:01:45.000Z</updated>
+    <updated>2016-07-23T01:46:19.000Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/d139cb264be9&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;来自&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/d139cb264be9&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;无论你是做网页还是App设计，文字内容总是能占到整个版面将近80%的区域。因此理解字体与排版对UI设计师来说非常关键。你需要始终把内容的可读性放在首位去考虑和权衡你对字体与排版的选择。&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_1.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;字体的基础术语&quot;&gt;&lt;a href=&quot;#字体的基础术语&quot; class=&quot;headerlink&quot; title=&quot;字体的基础术语&quot;&gt;&lt;/a&gt;字体的基础术语&lt;/h3&gt;&lt;p&gt;了解字体设计的基础术语非常重要，这些术语在介绍字体设计的相关文章中经常出现。比如 x-height（X字高）指的是从字母的基准线开始往上到最矮字母的顶端的距离，当X字高的比例相对大一些的话就能增加易读性。&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_2.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;h3 id=&quot;衬线字与非衬线字&quot;&gt;&lt;a href=&quot;#衬线字与非衬线字&quot; class=&quot;headerlink&quot; title=&quot;衬线字与非衬线字&quot;&gt;&lt;/a&gt;衬线字与非衬线字&lt;/h3&gt;&lt;p&gt;在西方国家的字母体系，分成两大字族：serif（衬线字体）及sans serif（无衬线字体）。衬线字（下图中的宋体、Times New Roman）是指在字的笔画开始及结束的地方有额外的装饰，而且笔画的粗细会因直横的不同而有所不同。 相反的，无衬线字（下图中的思源黑体、Helvetica）就没有这些额外装饰，而且笔画粗细大致上是差不多。&lt;/p&gt;
@@ -1770,7 +1772,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/d139cb264be9&quot;&gt;来自&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/d139cb264be9&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;无论你是做网页还是App设计，文字内容总是能占到整个版面将近80%的区域。因此理解字体与排版对UI设计师来说非常关键。你需要始终把内容的可读性放在首位去考虑和权衡你对字体与排版的选择。&lt;br&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/%E8%AE%BE%E8%AE%A1/%E3%80%90%E8%AE%BE%E8%AE%A1%E8%B0%88%E3%80%91%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88/%E5%AD%97%E4%BD%93%E4%B8%8E%E6%8E%92%E7%89%88_1.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
     
     </summary>
