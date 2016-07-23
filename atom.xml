@@ -90,10 +90,10 @@
     <link href="http://lishichao.github.io/2016/07/12/%E6%9C%80%E5%BF%AB%E8%AE%A9%E4%BD%A0%E4%B8%8A%E6%89%8BReactiveCocoa%E4%B9%8B%E5%9F%BA%E7%A1%80%E7%AF%87/"/>
     <id>http://lishichao.github.io/2016/07/12/最快让你上手ReactiveCocoa之基础篇/</id>
     <published>2016-07-12T08:54:37.000Z</published>
-    <updated>2016-07-23T01:50:23.000Z</updated>
+    <updated>2016-07-23T01:51:19.000Z</updated>
     
-    <content type="html">&lt;h4 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/87ef6720a096&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20150122/1421907380939293.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/87ef6720a096&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20150122/1421907380939293.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;很多blog都说ReactiveCocoa好用，然后各种秀自己如何灵活运用ReactiveCocoa，但是感觉真正缺少的是一篇如何学习ReactiveCocoa的文章，小编看了很多篇都没看出怎么使用ReactiveCocoa,于是决定自己写一遍关于学习ReactiveCocoa的文章,本文主要针对如何从零开始学习ReactiveCocoa，这里非常感谢原创作者的分享。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -286,8 +286,8 @@
     
     <summary type="html">
     
-      &lt;h4 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/87ef6720a096&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20150122/1421907380939293.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/87ef6720a096&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20150122/1421907380939293.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;很多blog都说ReactiveCocoa好用，然后各种秀自己如何灵活运用ReactiveCocoa，但是感觉真正缺少的是一篇如何学习ReactiveCocoa的文章，小编看了很多篇都没看出怎么使用ReactiveCocoa,于是决定自己写一遍关于学习ReactiveCocoa的文章,本文主要针对如何从零开始学习ReactiveCocoa，这里非常感谢原创作者的分享。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -723,9 +723,10 @@
     <link href="http://lishichao.github.io/2016/05/30/iOS%E5%BA%94%E7%94%A8%E6%94%AF%E6%8C%81IPV6%EF%BC%8C%E5%B0%B1%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF/"/>
     <id>http://lishichao.github.io/2016/05/30/iOS应用支持IPV6，就那点事儿/</id>
     <published>2016-05-30T13:13:10.000Z</published>
-    <updated>2016-05-30T13:37:44.000Z</updated>
+    <updated>2016-07-23T01:52:24.000Z</updated>
     
-    <content type="html">&lt;blockquote&gt;
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/a6bab07c4062&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;果然是苹果打个哈欠，iOS行业内就得起一次风暴呀。自从5月初Apple明文规定所有开发者在6月1号以后提交新版本需要支持IPV6-Only的网络，大家便开始热火朝天的研究如何支持IPV6，以及应用中哪些模块目前不支持IPV6。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -784,7 +785,8 @@
     
     <summary type="html">
     
-      &lt;blockquote&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/a6bab07c4062&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
 &lt;p&gt;果然是苹果打个哈欠，iOS行业内就得起一次风暴呀。自从5月初Apple明文规定所有开发者在6月1号以后提交新版本需要支持IPV6-Only的网络，大家便开始热火朝天的研究如何支持IPV6，以及应用中哪些模块目前不支持IPV6。&lt;/p&gt;
 &lt;/blockquote&gt;
     
