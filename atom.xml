@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lishichao.github.io/"/>
-  <updated>2016-07-20T09:46:46.000Z</updated>
+  <updated>2016-08-22T04:06:10.000Z</updated>
   <id>http://lishichao.github.io/</id>
   
   <author>
@@ -14,6 +14,78 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>奇点v1.10新版本上线 这次我们为奇点添加了不少新功能</title>
+    <link href="http://lishichao.github.io/2016/08/22/%E5%A5%87%E7%82%B9v1-10%E6%96%B0%E7%89%88%E6%9C%AC%E4%B8%8A%E7%BA%BF-%E8%BF%99%E6%AC%A1%E6%88%91%E4%BB%AC%E4%B8%BA%E5%A5%87%E7%82%B9%E6%B7%BB%E5%8A%A0%E4%BA%86%E4%B8%8D%E5%B0%91%E6%96%B0%E5%8A%9F%E8%83%BD/"/>
+    <id>http://lishichao.github.io/2016/08/22/奇点v1-10新版本上线-这次我们为奇点添加了不少新功能/</id>
+    <published>2016-08-22T02:52:20.000Z</published>
+    <updated>2016-08-22T04:06:10.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;http://qidianlife.oss-cn-shanghai.aliyuncs.com/qidian_version/qidian.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一直想为编程开发、设计、运营推广、关注科技、关注热点，关注技术的开发者提供一个阅读、交流、分享的社区平台，今天我们版本的第二次更新功能更全面，界面体验的优化更流畅，可以在这里写篇博客来嘚瑟一下了😄！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;####奇点客户端带来的主要功能点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;看到好的文章、感兴趣的文章想收藏，复制文章链接即可一键收藏文章到自己的收藏夹，收藏夹支持创建分类、修改、删除等多个功能。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;好的文章想分享给我同行人，让更多的同行人解决你的问题、痛点，复制文章链接即可分享到技术圈，技术圈支持评论、回复、点赞等多个功能。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;技术的不断更新，科技的不断进步，我们永远要跟上更新的步伐，这里每天都会在技术、设计、运营推广、热门资讯、科技评测、产品等众多领域为你提供优质文章，文章支持收藏、分享、评论、点赞等多个功能。&lt;/li&gt;
+&lt;li&gt;知识的积累，能让我们厚积薄发，这个过程不仅为你提供了一笔财富，我们也在记录你学习分享的过程，这个过程你会积累到不少的奇币，我们提供的奇币商城可以为你兑换玲琅满目的商城好礼。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这次的更新来了，这次我们给奇点加了不少新功能，在优化的道路上，我们从来步履不停，奇点一直在朝着你所期待的方向小步快跑，感谢您的关注和支持！&lt;/p&gt;
+&lt;h4 id=&quot;我们这次更新的功能点如下&quot;&gt;&lt;a href=&quot;#我们这次更新的功能点如下&quot; class=&quot;headerlink&quot; title=&quot;我们这次更新的功能点如下&quot;&gt;&lt;/a&gt;我们这次更新的功能点如下&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;新增消息通知系统，及时查看通知消息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;http://qidianlife.oss-cn-shanghai.aliyuncs.com/qidian_version/%E6%96%B0%E5%A2%9E%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5%E7%B3%BB%E7%BB%9F.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;新增书签管理功能，感兴趣的内容一键收藏。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;http://qidianlife.oss-cn-shanghai.aliyuncs.com/qidian_version/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83%E6%96%B0%E5%A2%9E%E4%B9%A6%E7%AD%BE%E5%8A%9F%E8%83%BD.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;新增Today Widget功能，添加书签更方便。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;http://qidianlife.oss-cn-shanghai.aliyuncs.com/qidian_version/%E6%96%B0%E5%A2%9EToday%20Widget%E5%8A%9F%E8%83%BD.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;新增签到功能，签到得奇币，兑换商城好礼。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;http://qidianlife.oss-cn-shanghai.aliyuncs.com/qidian_version/%E6%96%B0%E5%A2%9E%E7%94%A8%E6%88%B7%E5%A5%87%E5%B8%81%E7%B3%BB%E7%BB%9F.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;新增等级功能，等级越高特权越多。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;http://qidianlife.oss-cn-shanghai.aliyuncs.com/qidian_version/%E6%96%B0%E5%A2%9E%E7%94%A8%E6%88%B7%E7%AD%89%E7%BA%A7%E7%B3%BB%E7%BB%9F.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;新增用户回复功能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;http://qidianlife.oss-cn-shanghai.aliyuncs.com/qidian_version/%E6%96%B0%E5%A2%9E%E7%94%A8%E6%88%B7%E5%9B%9E%E5%A4%8D%E5%8A%9F%E8%83%BD.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;新增邀请码功能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;http://qidianlife.oss-cn-shanghai.aliyuncs.com/qidian_version/%E6%96%B0%E5%A2%9E%E9%82%80%E8%AF%B7%E7%A0%81%E5%8A%9F%E8%83%BD.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;bug修复、性能优化。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;#####【悄悄告诉你】&lt;/p&gt;
+&lt;p&gt;后期的版本迭代更新，功能会更丰富，界面和性能会优化的更完善，喜欢奇点就给我们一个好评吧。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.qidianlife.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官网下载地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/wa-wa-yu-jian-hao-yin-le/id1116567758?l=zh&amp;amp;ls=1&amp;amp;mt=8&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;AppStore下载地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.qidianlife.com/Singular/index.php?m=App&amp;amp;c=OtherPush&amp;amp;a=index&amp;amp;id=1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;功能更新一览&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://qidianlife.oss-cn-shanghai.aliyuncs.com/qidian_version/qidian.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一直想为编程开发、设计、运营推广、关注科技、关注热点，关注技术的开发者提供一个阅读、交流、分享的社区平台，今天我们版本的第二次更新功能更全面，界面体验的优化更流畅，可以在这里写篇博客来嘚瑟一下了😄！&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>奇点iPhone版本正式上线</title>
