@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lishichao.github.io/"/>
-  <updated>2016-08-22T04:06:10.000Z</updated>
+  <updated>2016-08-22T04:09:20.000Z</updated>
   <id>http://lishichao.github.io/</id>
   
   <author>
@@ -16,19 +16,18 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>奇点v1.10新版本上线 这次我们为奇点添加了不少新功能</title>
+    <title>奇点v1.10新版本上线</title>
     <link href="http://lishichao.github.io/2016/08/22/%E5%A5%87%E7%82%B9v1-10%E6%96%B0%E7%89%88%E6%9C%AC%E4%B8%8A%E7%BA%BF-%E8%BF%99%E6%AC%A1%E6%88%91%E4%BB%AC%E4%B8%BA%E5%A5%87%E7%82%B9%E6%B7%BB%E5%8A%A0%E4%BA%86%E4%B8%8D%E5%B0%91%E6%96%B0%E5%8A%9F%E8%83%BD/"/>
     <id>http://lishichao.github.io/2016/08/22/奇点v1-10新版本上线-这次我们为奇点添加了不少新功能/</id>
     <published>2016-08-22T02:52:20.000Z</published>
-    <updated>2016-08-22T04:06:10.000Z</updated>
+    <updated>2016-08-22T04:09:20.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;http://qidianlife.oss-cn-shanghai.aliyuncs.com/qidian_version/qidian.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;一直想为编程开发、设计、运营推广、关注科技、关注热点，关注技术的开发者提供一个阅读、交流、分享的社区平台，今天我们版本的第二次更新功能更全面，界面体验的优化更流畅，可以在这里写篇博客来嘚瑟一下了😄！&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;####奇点客户端带来的主要功能点：&lt;/p&gt;
-&lt;ul&gt;
+&lt;h4 id=&quot;奇点客户端带来的主要功能点：&quot;&gt;&lt;a href=&quot;#奇点客户端带来的主要功能点：&quot; class=&quot;headerlink&quot; title=&quot;奇点客户端带来的主要功能点：&quot;&gt;&lt;/a&gt;奇点客户端带来的主要功能点：&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;看到好的文章、感兴趣的文章想收藏，复制文章链接即可一键收藏文章到自己的收藏夹，收藏夹支持创建分类、修改、删除等多个功能。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;好的文章想分享给我同行人，让更多的同行人解决你的问题、痛点，复制文章链接即可分享到技术圈，技术圈支持评论、回复、点赞等多个功能。&lt;/p&gt;
