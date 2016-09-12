@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lishichao.github.io/"/>
-  <updated>2016-09-12T06:13:26.000Z</updated>
+  <updated>2016-09-12T06:43:42.000Z</updated>
   <id>http://lishichao.github.io/</id>
   
   <author>
@@ -16,11 +16,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>奇点日报v1.10新版本上线</title>
+    <title>奇点启用新品牌『奇点日报』</title>
+    <link href="http://lishichao.github.io/2016/09/12/%E5%A5%87%E7%82%B9%E5%90%AF%E7%94%A8%E6%96%B0%E5%93%81%E7%89%8C%E3%80%8E%E5%A5%87%E7%82%B9%E6%97%A5%E6%8A%A5%E3%80%8F/"/>
+    <id>http://lishichao.github.io/2016/09/12/奇点启用新品牌『奇点日报』/</id>
+    <published>2016-09-12T06:24:43.000Z</published>
+    <updated>2016-09-12T06:43:42.000Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="奇点日报" scheme="http://lishichao.github.io/categories/%E5%A5%87%E7%82%B9%E6%97%A5%E6%8A%A5/"/>
+    
+    
+      <category term="奇点日报" scheme="http://lishichao.github.io/tags/%E5%A5%87%E7%82%B9%E6%97%A5%E6%8A%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>奇点v1.10新版本上线</title>
     <link href="http://lishichao.github.io/2016/08/22/%E5%A5%87%E7%82%B9v1-10%E6%96%B0%E7%89%88%E6%9C%AC%E4%B8%8A%E7%BA%BF-%E8%BF%99%E6%AC%A1%E6%88%91%E4%BB%AC%E4%B8%BA%E5%A5%87%E7%82%B9%E6%B7%BB%E5%8A%A0%E4%BA%86%E4%B8%8D%E5%B0%91%E6%96%B0%E5%8A%9F%E8%83%BD/"/>
     <id>http://lishichao.github.io/2016/08/22/奇点v1-10新版本上线-这次我们为奇点添加了不少新功能/</id>
     <published>2016-08-22T02:52:20.000Z</published>
-    <updated>2016-09-12T06:13:26.000Z</updated>
+    <updated>2016-09-12T06:43:15.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;http://qidianlife.oss-cn-shanghai.aliyuncs.com/qidian_version/qidian.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1588,53 +1608,6 @@
     
     
       <category term="iOS技术" scheme="http://lishichao.github.io/tags/iOS%E6%8A%80%E6%9C%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>谈一下我的博客</title>
-    <link href="http://lishichao.github.io/2016/04/13/%E8%B0%88%E4%B8%80%E4%B8%8B%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://lishichao.github.io/2016/04/13/谈一下我的博客/</id>
-    <published>2016-04-12T16:25:03.000Z</published>
-    <updated>2016-04-23T06:43:57.000Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/ui_title.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;博客终于上线啦&quot;&gt;&lt;a href=&quot;#博客终于上线啦&quot; class=&quot;headerlink&quot; title=&quot;博客终于上线啦&quot;&gt;&lt;/a&gt;博客终于上线啦&lt;/h3&gt;&lt;p&gt;一直想搭建一个属于自己的个人博客，最近几天抽出时间，今天终于正式上线。&lt;/p&gt;
-&lt;p&gt;我曾用过新浪博客，简书，LOFTER，OSChina，CSDN，累觉不爱，今天终于可以用这个逼格极高的程序猿写作方式来续写自己的故事，分享自己的技术文章了。&lt;/p&gt;
-&lt;p&gt;现在发觉搭建的个人博客令人思想更自由，可以记录一切，更不怕随着博客平台的更换而丢失。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;介绍下我的博客&quot;&gt;&lt;a href=&quot;#介绍下我的博客&quot; class=&quot;headerlink&quot; title=&quot;介绍下我的博客&quot;&gt;&lt;/a&gt;介绍下我的博客&lt;/h3&gt;&lt;p&gt;介绍博客之前，要先麻烦朋友记住一个名字：lishichao。为什么要记住它呢，因为域名是：lishichao.com啊！哈哈（冷）。&lt;/p&gt;
-&lt;p&gt;目前我的博客内容是同时挂载在两个地方GitHub、Coding以同时支持两个域名访问。&lt;/p&gt;
-&lt;p&gt;我的博客主要会包括&lt;strong&gt;技术&lt;/strong&gt;、&lt;strong&gt;艺术&lt;/strong&gt;和&lt;strong&gt;思考&lt;/strong&gt;。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;技术，有两种。一是自己工作中接触到的技术如iOS和设计相关的知识。另一种是自己认为很cool的技术，难道不是每个有追求的人都希望自己变得更cool吗？&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;艺术，讲不清，包含很多。比如美好的移动设计或工业设计，比如一组让人心静的摄影作品，比如一杯凛冽粗暴的伏特加。这些都是我心中的艺术。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;思考，同样讲不清。不过我可以肯定的是，我的博客里每个文字都会出自自己的思考。比如对大爷大妈手牵手的思考，比如对某水果台各类脑残剧和琅琊榜对比的思考，比如对Google和Apple之争的思考。太多了。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;我为什么要写作&quot;&gt;&lt;a href=&quot;#我为什么要写作&quot; class=&quot;headerlink&quot; title=&quot;我为什么要写作&quot;&gt;&lt;/a&gt;我为什么要写作&lt;/h3&gt;&lt;p&gt;我认为有两点。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;博客是程序员的简历之一。对程序员而言，大多数人都是通过你的博客来认识你。而且，多写博客能促使我们去专研问题并与人分享，同时通过他人反馈来改善自我。&lt;/li&gt;
-&lt;li&gt;热爱。通过写作，我们可以记录思考，记录生活，记录技术成长。这难道不是一件很正能量的事情吗？&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;ds-share&quot; data-thread-key=&quot;2016/04/13/谈一下我的博客/&quot; data-title=&quot;谈一下我的博客&quot; data-images=&quot;http://i4.piimg.com/6a3895a461aa3d1f.png&quot; data-content=&quot;谈一下我的博客&quot; data-url=&quot;http://lishichao.com/2016/04/13/谈一下我的博客/&quot;&gt;&lt;br&gt;&lt;div class=&quot;ds-share-inline&quot;&gt;&lt;br&gt;      &lt;ul class=&quot;ds-share-icons-16&quot;&gt;&lt;br&gt;      &lt;li style=&quot;color:#999999;font-size:13px;margin-top:2px&quot;&gt;分享到&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;ds-wechat&quot; href=&quot;javascript:void(0);&quot; data-service=&quot;wechat&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;微信&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;ds-weibo&quot; href=&quot;javascript:void(0);&quot; data-service=&quot;weibo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;微博&lt;/a&gt;&lt;/li&gt;&lt;li&gt; &lt;a class=&quot;ds-qq&quot; href=&quot;javascript:void(0);&quot; data-service=&quot;qq&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;QQ&lt;/a&gt; &lt;/li&gt;&lt;li&gt;&lt;a class=&quot;ds-qzone&quot; href=&quot;javascript:void(0);&quot; data-service=&quot;qzone&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;QQ空间&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;ds-qqt&quot; href=&quot;javascript:void(0);&quot; data-service=&quot;qqt&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;腾讯微博&lt;/a&gt;&lt;/li&gt;&lt;li&gt; &lt;a class=&quot;ds-facebook&quot; href=&quot;javascript:void(0);&quot; data-service=&quot;facebook&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Facebook&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a class=&quot;ds-douban&quot; href=&quot;javascript:void(0);&quot; data-service=&quot;douban&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;豆瓣网&lt;/a&gt; &lt;/li&gt;&lt;li&gt; &lt;a class=&quot;ds-huaban&quot; href=&quot;javascript:void(0);&quot; data-service=&quot;huaban&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;花瓣网&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;&lt;br&gt;      &lt;div class=&quot;ds-share-icons-more&quot;&gt;&lt;br&gt;      &lt;/div&gt;&lt;br&gt; &lt;/div&gt;&lt;br&gt;    &lt;/div&gt;
-
-
-
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://7xstl7.com1.z0.glb.clouddn.com/ui_title.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;博客终于上线啦&quot;&gt;&lt;a href=&quot;#博客终于上线啦&quot; class=&quot;headerlink&quot; title=&quot;博客终于上线啦&quot;&gt;&lt;/a&gt;博客终于上线啦&lt;/h3&gt;&lt;p&gt;一直想搭建一个属于自己的个人博客，最近几天抽出时间，今天终于正式上线。&lt;/p&gt;
-&lt;p&gt;我曾用过新浪博客，简书，LOFTER，OSChina，CSDN，累觉不爱，今天终于可以用这个逼格极高的程序猿写作方式来续写自己的故事，分享自己的技术文章了。&lt;/p&gt;
-&lt;p&gt;现在发觉搭建的个人博客令人思想更自由，可以记录一切，更不怕随着博客平台的更换而丢失。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="随笔" scheme="http://lishichao.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
