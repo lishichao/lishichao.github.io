@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion">
+<html class="theme-next pisces use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -27,9 +27,7 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
 
 
 
@@ -61,14 +59,12 @@
 
 
 
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="“李世超的博客, 程序员, 开发者, iOS开发者, 奇点日报创始人, 奇点日报, 奇点”" />
 
 
 
@@ -79,7 +75,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/uploads/favicon.ico?v=5.0.1" />
 
 
 
@@ -101,27 +97,21 @@
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Muse',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"always"},
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: '0',
+      userId: 0,
       author: '博主'
     }
   };
 </script>
 
-
-
-
-  <link rel="canonical" href="http://lishichao.github.io/page/2/"/>
-
-
-  <title> Larry·Blog </title>
+  <title> Larry·Blog - 嗨，我是李世超 (@Larry_qidian)，奇点日报创始人，现居广州。不断历练，记录自己学习的点滴。 </title>
 </head>
 
-<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
 
@@ -144,7 +134,7 @@
  ">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-meta ">
   
 
@@ -165,24 +155,38 @@
     <span class="btn-bar"></span>
   </button>
 </div>
-
 <nav class="site-nav">
   
 
   
     <ul id="menu" class="menu">
+
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
             
             首页
           </a>
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
             
             归档
           </a>
@@ -192,15 +196,39 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
             标签
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-schedule">
-          <a href="/schedule" rel="section">
+        <li class="menu-item menu-item-guestbook">
+          <a href="/guestbook" rel="section">
             
-            日程
+              <i class="menu-item-icon fa fa-commenting fa-fw"></i> <br />
+            
+            留言
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
+            
+            公益404
           </a>
         </li>
       
@@ -208,8 +236,10 @@
       
         <li class="menu-item menu-item-search">
           
-            <a href="javascript:;" class="st-search-show-outputs">
+            <a href="#" class="st-search-show-outputs">
           
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
             搜索
           </a>
@@ -259,7 +289,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
       <header class="post-header">
@@ -281,22 +311,21 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="fa fa-calendar-o" style="margin:2px"></span>
             <time itemprop="dateCreated" datetime="2016-06-14T10:35:47+08:00" content="2016-06-14">
               2016-06-14
             </time>
           </span>
+	
+	<span class="post-count">&nbsp; |&nbsp; 字数 3,392
+	</span>
+
+	<span class="post-count">&nbsp; |&nbsp; 阅读预计 13分钟</span>
 
           
             <span class="post-category" >
               &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
+              <span class="fa fa-folder-o" style="margin:2px"></span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/随笔/" itemprop="url" rel="index">
@@ -326,8 +355,13 @@
 
           
           
-
+             <span id="/2016/06/14/《魔兽》首映观影团开组，来-T、来奶、来-DPS/" class="leancloud_visitors" data-flag-title="《魔兽》首映观影团开组，来 T、来奶、来 DPS">
+               &nbsp; | &nbsp;
+               <span class="fa fa-eye" style="margin:2px"></span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
           
+
         </div>
       </header>
     
@@ -358,11 +392,19 @@
       
     </div>
 
+
     <div>
       
     </div>
 
+<! -- 添加微信图标 -->
+    
+    
+    
+    
+
     <footer class="post-footer">
+
       
 
       
@@ -385,7 +427,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
       <header class="post-header">
@@ -407,22 +449,21 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="fa fa-calendar-o" style="margin:2px"></span>
             <time itemprop="dateCreated" datetime="2016-06-07T11:16:57+08:00" content="2016-06-07">
               2016-06-07
             </time>
           </span>
+	
+	<span class="post-count">&nbsp; |&nbsp; 字数 1,007
+	</span>
+
+	<span class="post-count">&nbsp; |&nbsp; 阅读预计 5分钟</span>
 
           
             <span class="post-category" >
               &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
+              <span class="fa fa-folder-o" style="margin:2px"></span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/iOS技术归纳/" itemprop="url" rel="index">
@@ -452,8 +493,13 @@
 
           
           
-
+             <span id="/2016/06/07/适配IPV6需要替换的第三方SDK/" class="leancloud_visitors" data-flag-title="适配IPV6需要替换的第三方SDK">
+               &nbsp; | &nbsp;
+               <span class="fa fa-eye" style="margin:2px"></span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
           
+
         </div>
       </header>
     
@@ -484,11 +530,19 @@
       
     </div>
 
+
     <div>
       
     </div>
 
+<! -- 添加微信图标 -->
+    
+    
+    
+    
+
     <footer class="post-footer">
+
       
 
       
@@ -511,7 +565,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
       <header class="post-header">
@@ -533,22 +587,21 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="fa fa-calendar-o" style="margin:2px"></span>
             <time itemprop="dateCreated" datetime="2016-05-30T21:13:10+08:00" content="2016-05-30">
               2016-05-30
             </time>
           </span>
+	
+	<span class="post-count">&nbsp; |&nbsp; 字数 6,229
+	</span>
+
+	<span class="post-count">&nbsp; |&nbsp; 阅读预计 32分钟</span>
 
           
             <span class="post-category" >
               &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
+              <span class="fa fa-folder-o" style="margin:2px"></span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/iOS技术归纳/" itemprop="url" rel="index">
@@ -578,8 +631,13 @@
 
           
           
-
+             <span id="/2016/05/30/iOS应用支持IPV6，就那点事儿/" class="leancloud_visitors" data-flag-title="iOS应用支持IPV6，就那点事儿">
+               &nbsp; | &nbsp;
+               <span class="fa fa-eye" style="margin:2px"></span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
           
+
         </div>
       </header>
     
@@ -609,11 +667,19 @@
       
     </div>
 
+
     <div>
       
     </div>
 
+<! -- 添加微信图标 -->
+    
+    
+    
+    
+
     <footer class="post-footer">
+
       
 
       
@@ -636,7 +702,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
       <header class="post-header">
@@ -658,22 +724,21 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="fa fa-calendar-o" style="margin:2px"></span>
             <time itemprop="dateCreated" datetime="2016-05-24T10:35:46+08:00" content="2016-05-24">
               2016-05-24
             </time>
           </span>
+	
+	<span class="post-count">&nbsp; |&nbsp; 字数 1,458
+	</span>
+
+	<span class="post-count">&nbsp; |&nbsp; 阅读预计 7分钟</span>
 
           
             <span class="post-category" >
               &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
+              <span class="fa fa-folder-o" style="margin:2px"></span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/design/" itemprop="url" rel="index">
@@ -703,8 +768,13 @@
 
           
           
-
+             <span id="/2016/05/24/产品设计师常用网站/" class="leancloud_visitors" data-flag-title="产品设计师常用网站">
+               &nbsp; | &nbsp;
+               <span class="fa fa-eye" style="margin:2px"></span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
           
+
         </div>
       </header>
     
@@ -734,11 +804,19 @@
       
     </div>
 
+
     <div>
       
     </div>
 
+<! -- 添加微信图标 -->
+    
+    
+    
+    
+
     <footer class="post-footer">
+
       
 
       
@@ -761,7 +839,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
       <header class="post-header">
@@ -783,22 +861,21 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="fa fa-calendar-o" style="margin:2px"></span>
             <time itemprop="dateCreated" datetime="2016-05-20T17:57:04+08:00" content="2016-05-20">
               2016-05-20
             </time>
           </span>
+	
+	<span class="post-count">&nbsp; |&nbsp; 字数 1,122
+	</span>
+
+	<span class="post-count">&nbsp; |&nbsp; 阅读预计 5分钟</span>
 
           
             <span class="post-category" >
               &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
+              <span class="fa fa-folder-o" style="margin:2px"></span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/逆向工程/" itemprop="url" rel="index">
@@ -828,8 +905,13 @@
 
           
           
-
+             <span id="/2016/05/20/iOS-教你如何修改微信运动步数/" class="leancloud_visitors" data-flag-title="iOS 教你如何修改微信运动步数">
+               &nbsp; | &nbsp;
+               <span class="fa fa-eye" style="margin:2px"></span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
           
+
         </div>
       </header>
     
@@ -860,11 +942,19 @@
       
     </div>
 
+
     <div>
       
     </div>
 
+<! -- 添加微信图标 -->
+    
+    
+    
+    
+
     <footer class="post-footer">
+
       
 
       
@@ -913,7 +1003,7 @@
       
 
       <section class="site-overview sidebar-panel  sidebar-panel-active ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://qidianlife.oss-cn-shanghai.aliyuncs.com/blog_avatar.png"
                alt="李世超" />
@@ -930,10 +1020,10 @@
 
           
             <div class="site-state-item site-state-categories">
-              
+              <a href="/categories">
                 <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">分类</span>
-              
+              </a>
             </div>
           
 
@@ -959,13 +1049,82 @@
 
         <div class="links-of-author motion-element">
           
+            
+              <span class="links-of-author-item">
+                <a href="http://www.qidianlife.com" target="_blank">
+                  
+                    <i class="fa fa-pinterest"></i>
+                  
+                  奇点日报
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/lishichao706" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://zhuanlan.zhihu.com/lishichao" target="_blank">
+                  
+                    <i class="fa fa-gratipay"></i>
+                  
+                  知乎专栏
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/lishichao" target="_blank">
+                  
+                    <i class="fa fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
         </div>
 
         
         
 
         
-        
+        <div class="links-of-blogroll motion-element">
+          
+            <div class="links-of-blogroll-title">我的链接</div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.qidianlife.com" target="_blank">奇点日报</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://qidianlife.oss-cn-shanghai.aliyuncs.com/qidian_logo/wechat_code.png" target="_blank">微信公众号</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://blog.cocoachina.com/304267" target="_blank">CocoaChina</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://blog.csdn.net/lishichao706" target="_blank">CSDN</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.zhihu.com/people/amin706" target="_blank">知乎</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://twitter.com/Amin_706" target="_blank">twitter</a>
+                </li>
+              
+            </ul>
+          
+        </div>
 
       </section>
 
@@ -983,7 +1142,7 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
+  &copy;  2010 - 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
@@ -991,20 +1150,20 @@
   <span class="author" itemprop="copyrightHolder">李世超</span>
 </div>
 
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
-  </a>
-</div>
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
 
-        
+<span id="busuanzi_container_site_uv">
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+</span>
 
-        
+
+
+
       </div>
     </footer>
 
@@ -1034,42 +1193,49 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
-
-
-
-  
-  
-
-  
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
@@ -1094,10 +1260,7 @@
 
   
     
-    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
   
-
 
 
 
@@ -1105,15 +1268,104 @@
 
   
   
-
   
 
   
 
   
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("JDa3L42Y5MiAqtYFX35OrssM-gzGzoHsz", "lOQmfvDtuB60v4dhjjy7wbKv");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
-
 
 </body>
 </html>
