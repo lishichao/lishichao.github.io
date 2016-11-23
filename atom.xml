@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lishichao.github.io/"/>
-  <updated>2016-11-23T14:07:04.000Z</updated>
+  <updated>2016-11-23T14:09:15.000Z</updated>
   <id>http://lishichao.github.io/</id>
   
   <author>
@@ -20,15 +20,14 @@
     <link href="http://lishichao.github.io/2016/11/23/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/"/>
     <id>http://lishichao.github.io/2016/11/23/技术博客网站/</id>
     <published>2016-11-23T09:25:48.000Z</published>
-    <updated>2016-11-23T14:07:04.000Z</updated>
+    <updated>2016-11-23T14:09:15.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;http://qidianlife.oss-cn-shanghai.aliyuncs.com/MyBlog/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;互联网的蓬勃发展，每天大量的信息量让人应接不暇，今天想在自己的博客收纳一些个人觉得有用的相关网站。特别从事互联网开发行业的，技术更新太快，好的文章、好的网站、好的技术博客，太多太多的干货都在我们忙碌中错过。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;综合&lt;/p&gt;
-&lt;ul&gt;
+&lt;h4 id=&quot;综合&quot;&gt;&lt;a href=&quot;#综合&quot; class=&quot;headerlink&quot; title=&quot;综合&quot;&gt;&lt;/a&gt;综合&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.codeceo.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;码农网&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://toutiao.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;开发者头条&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://blog.jobbole.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;伯乐在线&lt;/a&gt;&lt;/li&gt;
@@ -49,8 +48,7 @@
 &lt;li&gt;&lt;a href=&quot;http://www.pintu360.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;品途网&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.techxue.com/elite/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;互联网分析沙龙&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;前端&lt;/p&gt;
-&lt;ul&gt;
+&lt;h4 id=&quot;前端&quot;&gt;&lt;a href=&quot;#前端&quot; class=&quot;headerlink&quot; title=&quot;前端&quot;&gt;&lt;/a&gt;前端&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.html-js.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;前端乱炖&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://web.jobbole.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;WEB前端 - 伯乐在线&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.qianduan.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;前端观察&lt;/a&gt;&lt;/li&gt;
@@ -60,8 +58,7 @@
 &lt;li&gt;&lt;a href=&quot;https://www.w3.org/html/ig/zh/wiki/%E7%BF%BB%E8%AF%91&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;W3C规范翻译&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.runoob.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;菜鸟教程&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;iOS&lt;/p&gt;
-&lt;ul&gt;
+&lt;h4 id=&quot;iOS&quot;&gt;&lt;a href=&quot;#iOS&quot; class=&quot;headerlink&quot; title=&quot;iOS&quot;&gt;&lt;/a&gt;iOS&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://cocoachina.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Cocoachina&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.swiftmi.com/code4swift?pn=3&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;swift开源代码&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://code4app.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Code4App&lt;/a&gt;&lt;/li&gt;
@@ -70,8 +67,7 @@
 &lt;li&gt;&lt;a href=&quot;https://www.objc.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;objc&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://objectivec2swift.com/#/home/converter/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;object-swift&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Android&lt;/p&gt;
-&lt;ul&gt;
+&lt;h4 id=&quot;Android&quot;&gt;&lt;a href=&quot;#Android&quot; class=&quot;headerlink&quot; title=&quot;Android&quot;&gt;&lt;/a&gt;Android&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://android.jobbole.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;安卓 - 伯乐在线&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://blog.daimajia.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码家&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.androiddevtools.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;AndroidDevTools&lt;/a&gt;&lt;/li&gt;
