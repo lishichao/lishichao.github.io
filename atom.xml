@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lishichao.github.io/"/>
-  <updated>2016-11-23T14:09:15.000Z</updated>
+  <updated>2016-11-24T06:57:21.000Z</updated>
   <id>http://lishichao.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://lishichao.github.io/2016/11/23/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/"/>
     <id>http://lishichao.github.io/2016/11/23/技术博客网站/</id>
     <published>2016-11-23T09:25:48.000Z</published>
-    <updated>2016-11-23T14:09:15.000Z</updated>
+    <updated>2016-11-24T06:57:21.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;http://qidianlife.oss-cn-shanghai.aliyuncs.com/MyBlog/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -34,6 +34,7 @@
 &lt;li&gt;&lt;a href=&quot;https://segmentfault.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;segmentfault&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.infoq.com/cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;infoQ&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://gold.xitu.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;掘金&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;简书&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.sdk.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;SDK.CN&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.csdn.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CSDN&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.51cto.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;51CTO&lt;/a&gt;&lt;/li&gt;
@@ -43,20 +44,32 @@
 &lt;li&gt;&lt;a href=&quot;http://www.alibuybuy.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;互联网的那些事&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.yixieshi.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;互联网的壹些事&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.ikanchai.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;砍柴网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.geekpark.net&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;极客公园&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://36kr.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;36Kr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cyzone.cn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;创业邦&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.leiphone.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;雷锋网&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.huxiu.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;虎嗅网&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.iheima.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;黑马网&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.pintu360.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;品途网&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.techxue.com/elite/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;互联网分析沙龙&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.egouz.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;国外网站推荐&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&quot;前端&quot;&gt;&lt;a href=&quot;#前端&quot; class=&quot;headerlink&quot; title=&quot;前端&quot;&gt;&lt;/a&gt;前端&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.html-js.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;前端乱炖&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://web.jobbole.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;WEB前端 - 伯乐在线&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.qianduan.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;前端观察&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.crimx.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;StrayBugs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.html5dw.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;HTML 5峰会&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.w3school.com.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;W3school&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.w3.org/html/ig/zh/wiki/%E7%BF%BB%E8%AF%91&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;W3C规范翻译&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.runoob.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;菜鸟教程&lt;/a&gt;&lt;/li&gt;
+&lt;p&gt;产品经理&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.pmcaff.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;PMCAFF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.woshipm.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;人人都是产品经理&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;运营/网络营销&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niaogebiji.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;鸟哥笔记&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;设计-摄影-图站&quot;&gt;&lt;a href=&quot;#设计-摄影-图站&quot; class=&quot;headerlink&quot; title=&quot;设计/摄影/图站&quot;&gt;&lt;/a&gt;设计/摄影/图站&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.zcool.com.cn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;站酷&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://hao.uisdc.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;设计师网址&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://niudana.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;牛大拿&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ui.cn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;UI中国&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://588ku.com/sucai/?h=bd&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;千库网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://699pic.com/?r=3&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;摄图网&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&quot;iOS&quot;&gt;&lt;a href=&quot;#iOS&quot; class=&quot;headerlink&quot; title=&quot;iOS&quot;&gt;&lt;/a&gt;iOS&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://cocoachina.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Cocoachina&lt;/a&gt;&lt;/li&gt;
@@ -71,6 +84,39 @@
 &lt;li&gt;&lt;a href=&quot;http://android.jobbole.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;安卓 - 伯乐在线&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://blog.daimajia.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码家&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.androiddevtools.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;AndroidDevTools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;前端&quot;&gt;&lt;a href=&quot;#前端&quot; class=&quot;headerlink&quot; title=&quot;前端&quot;&gt;&lt;/a&gt;前端&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.html-js.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;前端乱炖&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://web.jobbole.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;WEB前端 - 伯乐在线&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://imweb.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;WEB前端 腾讯IMWeb团队社区&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.qianduan.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;前端观察&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.crimx.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;StrayBugs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.html5dw.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;HTML 5峰会&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.w3school.com.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;W3school&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.w3.org/html/ig/zh/wiki/%E7%BF%BB%E8%AF%91&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;W3C规范翻译&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.runoob.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;菜鸟教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;觉得好玩的酷站&quot;&gt;&lt;a href=&quot;#觉得好玩的酷站&quot; class=&quot;headerlink&quot; title=&quot;觉得好玩的酷站&quot;&gt;&lt;/a&gt;觉得好玩的酷站&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ifanr.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;爱范儿&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.dgtle.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;数字尾巴&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.zealer.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;科技生活第一站&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.qdaily.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;好奇心日报&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sspai.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;少数派&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.appnz.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;爱屁屁&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://mindstore.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Mind&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.bilibili.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;B站 哔哩哔哩&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://baozoumanhua.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;暴走动漫&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.waerfa.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;玩儿法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ibantang.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;半塘&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.daizhe.cn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;待着&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zuimeia.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;最美应用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.douban.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;豆瓣&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://readfree.me&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ReadFree&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.rui123.com/albums&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;梵高的耳朵&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.rui123.com/albums&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;KnewOne&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.xinli001.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;壹心理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.pianduan.me&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;片段艺文志&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://pianke.me/index/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;片刻&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;如果你有好的网站推荐，评论区留下链接，更多内容持续更新中….&lt;/p&gt;
 </content>
